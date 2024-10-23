@@ -8,7 +8,7 @@ This module provides a REST API for creating campaigns to automatically dial ext
 * When the client answers, the call is connected to the internal queue or the employee’s extension.
 * If the internal number is busy, the call is automatically terminated.
 
-#### REST API Authentication
+### REST API Authentication
 
 For all requests, except local ones, authentication is required.
 
@@ -48,13 +48,13 @@ Example of executing requests:
 curl -b auth-cookies.txt 'http://172.16.156.223pbxcore/api/sip/getPeersStatuses'
 ```
 
-#### Polls
+### Polls
 
 Allows you to organize automatic client surveys. Using the API, you can define a set of questions, their connections, and answer options.
 
 It is possible to use text-to-speech generation or pre-recorded mp3/wav files.
 
-**Adding a Poll**
+### **Adding a Poll**
 
 Example cURL request:
 
@@ -86,7 +86,7 @@ JSON='{
 curl -X POST -d "$JSON" http://127.0.0.1/pbxcore/api/module-dialer/v1/polling
 ```
 
-**Fetching Poll List**
+### **Fetching Poll List**
 
 ```bash
 curl 'http://127.0.0.1/pbxcore/api/module-dialer/v1/polling'
@@ -119,7 +119,7 @@ Response example:
 }
 ```
 
-**Creating a Task**
+### **Creating a Task**
 
 ```bash
 JSON="{
@@ -159,7 +159,7 @@ Response example:
 }
 ```
 
-#### Media Files
+### Media Files
 
 **Uploading Media Files**
 
@@ -167,7 +167,7 @@ Response example:
 curl -F "file=@1.mp3" 'http://127.0.0.1/pbxcore/api/module-dialer/v1/audio'
 ```
 
-Response example:
+Response example:&#x20;
 
 ```json
 {
