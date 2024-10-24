@@ -6,7 +6,7 @@
 [ustanovka-dokera-i-cozdanie-polzovatelya-i-katalogov.md](ustanovka-dokera-i-cozdanie-polzovatelya-i-katalogov.md)
 {% endcontent-ref %}
 
-{% embed url="https://youtu.be/Bvfepw9LhAA" %}
+{% embed url="https://rutube.ru/video/ac7288d91ee5b48cbd1ab1c94a14dadf/" %}
 
 ### Запуск контейнера Docker
 
