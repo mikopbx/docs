@@ -1,6 +1,6 @@
 # Hyper-V
 
-{% embed url="https://youtu.be/k0x0T8xkFts" %}
+{% embed url="https://rutube.ru/video/99b3c9f0abab34dc19cd64306f09d690/" %}
 
 ### **Создание виртуальной машины**
 
