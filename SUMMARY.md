@@ -224,6 +224,7 @@
   * [Синхронизация с LDAP/AD](modules/miko/module-ldap-sync.md)
   * [Провайдер для звонков Telegram](modules/miko/module-telegram-provider.md)
   * [Zabbix агент](modules/miko/module-zabbix-agent.md)
+  * [Телефонная книга](modules/miko/phone-book.md)
 
 ## Прочее <a href="#other" id="other"></a>
 
