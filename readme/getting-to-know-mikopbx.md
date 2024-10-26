@@ -1,3 +1,9 @@
+---
+description: >-
+  Это статья про первый вход в MikoPBX. Здесь вы найдете процесс первого входа в
+  систему и некоторые рекомендации по первоначальной настройки после входа.
+---
+
 # Знакомство с MikoPBX
 
 ## Первый вход в систему MikoPBX <a href="#pervyj_vxod_v_sistemu_mikopbx" id="pervyj_vxod_v_sistemu_mikopbx"></a>
