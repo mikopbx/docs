@@ -1,21 +1,29 @@
 # Знакомство с MikoPBX
 
-### Первый вход в систему MikoPBX <a href="#pervyj_vxod_v_sistemu_mikopbx" id="pervyj_vxod_v_sistemu_mikopbx"></a>
+## Первый вход в систему MikoPBX <a href="#pervyj_vxod_v_sistemu_mikopbx" id="pervyj_vxod_v_sistemu_mikopbx"></a>
 
-Перейдите в консоль установки MikoPBX, запомните IP-адрес, которая получила Ваша АТС.
+Перейдите в консоль MikoPBX, вверху будет находиться IP-адрес, по которому вы можете подключиться через WEB-интерфейс. При установках не на локальный компьютер используйте внутренний IP-адрес. Скопируйте или запомните его.
 
-<figure><img src="../.gitbook/assets/1 (57).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/1 (57).png" alt=""><figcaption><p>IP-адрес MikoPBX для подключения к WEB-интерфейсу</p></figcaption></figure>
 
-Введите полученный IP-адрес MikoPBX в web-браузере. Отобразится страница авторизации.
+Введите или вставьте IP-адрес MikoPBX в web-браузере. Отобразится страница авторизации в web-интерфейс. Введите логин и пароль по умолчанию.
 
-{% hint style="success" %}
-По умолчанию **логин - admin, пароль - admin**.
+{% hint style="info" %}
+Данные по умолчанию:
+
+Логин - **admin**
+
+Пароль - **admin**
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/2 (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/2 (13).png" alt=""><figcaption><p>Страница авторизации в web-интерфейс</p></figcaption></figure>
 
-После успешной авторизации MikoPBX автоматически откроет настройки для смены пароля
+После первой успешной авторизации, MikoPBX автоматически откроет настройки для смены пароля. Поменяйте пароль и нажмите "**Сохранить**".
 
-<figure><img src="../.gitbook/assets/3 (22).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/3 (22).png" alt=""><figcaption><p>Первая авторизация в WEB-интерфейс MikoPBX</p></figcaption></figure>
 
+{% hint style="success" %}
 Более подробную информацию об _**Общих**_ настройках в разделе [Системных настроек.](../manual/system/general-settings.md)
+{% endhint %}
+
+После смены пароля система будет полностью готова к работе. Рекомендуется сразу же настроить правила firewall. Прочитать про то, как это сделать, можно по [ссылке](../manual/connectivity/firewall.md).
