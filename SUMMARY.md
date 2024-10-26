@@ -215,7 +215,7 @@
   * [Группы пользователей](modules/miko/module-users-groups.md)
   * [Интеграция с CRM Bitrix24](modules/miko/module-bitrix24-integration.md)
   * [Резервное копирование](modules/miko/module-backup.md)
-  * [Провижининг телефонов](modules/miko/module-autoprovision.md)
+  * [Автоматическая настройка телефонов](modules/miko/module-autoprovision.md)
   * [Автообработка пропущенных](modules/miko/module-callback-queues.md)
   * [Let's Encrypt](modules/miko/module-get-ssl-lets-encrypt.md)
   * [Управление доступом в систему](modules/miko/module-users-u-i.md)
