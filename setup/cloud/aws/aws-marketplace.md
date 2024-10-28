@@ -4,6 +4,10 @@
 
 MikoPBX в AWS Маркетплейс: [https://aws.amazon.com/marketplace/pp/prodview-ota6fb2tftuhw](https://aws.amazon.com/marketplace/pp/prodview-ota6fb2tftuhw)
 
+
+
+{% embed url="https://rutube.ru/video/8c04c19bb6af017a26a59a9c65344944/" %}
+
 Приступим к настройке
 
 {% hint style="info" %}
