@@ -71,7 +71,7 @@ createLink;
 5. Предоставьте права на исполнение
 
 ```
-chmode +x /storage/usbdisk1/mikopbx/custom_modules/shared-folder-script/mount-shared-folder.sh
+chmod +x /storage/usbdisk1/mikopbx/custom_modules/shared-folder-script/mount-shared-folder.sh
 ```
 
 6. В переменных скрипта «**HOST,USER,PASS**» следует описать параметры подключения к общему каталогу
