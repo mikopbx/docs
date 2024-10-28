@@ -4,6 +4,8 @@ Sign in to the service Amazon Web Services [https://aws.amazon.com](https://aws.
 
 MikoPBX in AWS Marketplace: [https://aws.amazon.com/marketplace/pp/prodview-ota6fb2tftuhw](https://aws.amazon.com/marketplace/pp/prodview-ota6fb2tftuhw)
 
+{% embed url="https://youtu.be/HdsX1UEJ8zE?si=EPlwDQHO8bXqhrQe" %}
+
 Let's get started with the setup
 
 {% hint style="info" %}
