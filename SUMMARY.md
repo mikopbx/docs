@@ -39,13 +39,13 @@
 
 ## Руководство пользователя <a href="#manual" id="manual"></a>
 
-* [Телефония](manual/telefoniya/README.md)
-  * [Сотрудники](manual/telefoniya/extensions.md)
-  * [Очереди вызовов](manual/telefoniya/call-queues.md)
-  * [IVR меню](manual/telefoniya/ivr-menu.md)
-  * [Конференции](manual/telefoniya/conference-rooms.md)
-  * [Звуковые файлы](manual/telefoniya/sound-files.md)
-  * [История вызовов](manual/telefoniya/call-detail-records.md)
+* [Телефония](manual/telephony/README.md)
+  * [Сотрудники](manual/telephony/extensions.md)
+  * [Очереди вызовов](manual/telephony/call-queues.md)
+  * [IVR меню](manual/telephony/ivr-menu.md)
+  * [Конференции](manual/telephony/conference-rooms.md)
+  * [Звуковые файлы](manual/telephony/sound-files.md)
+  * [История вызовов](manual/telephony/call-detail-records.md)
 * [Маршрутизация](manual/routing/README.md)
   * [Провайдеры телефонии](manual/routing/providers.md)
   * [Входящие маршруты](manual/routing/incoming-routing.md)

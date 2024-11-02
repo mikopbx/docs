@@ -10,7 +10,7 @@
 
 {% hint style="danger" %}
 **ВНИМАНИЕ!**\
-Перед установкой MikoPBX обязательно ознакомьтесь с [системными требованиями](../readme/system-requirements.md)!
+Перед установкой MikoPBX обязательно ознакомьтесь с [системными требованиями](system-requirements.md)!
 {% endhint %}
 
 **MikoPBX** - полноценная **операционная система** для вашего оборудования, не является отдельной программой. Поставляется в виде образа (файл \*.iso, \*.img, \*.raw).
@@ -24,7 +24,7 @@
 
 ### Шаг 2. Первый запуск АТС! <a href="#shag_3_pervyj_zapusk_ats" id="shag_3_pervyj_zapusk_ats"></a>
 
-После успешной установки АТС необходимо перейти к её настройкам в **web-интерфейсе**. Следуйте [инструкциям ](../readme/getting-to-know-mikopbx.md)для осуществления первого запуска АТС в web-интерфейсе.
+После успешной установки АТС необходимо перейти к её настройкам в **web-интерфейсе**. Следуйте [инструкциям ](getting-to-know-mikopbx.md)для осуществления первого запуска АТС в web-интерфейсе.
 
 ### Шаг 3. Настройка сетевого интерфейса <a href="#shag_4_nastrojka_setevogo_interfejsa" id="shag_4_nastrojka_setevogo_interfejsa"></a>
 
@@ -43,7 +43,7 @@ Fail2ban блокирует IP адреса с нестандартной акт
 
 ### Шаг 6. Настройка учетных записей сотрудников <a href="#shag_8_nastrojka_uchetnyx_zapisej_sotrudnikov" id="shag_8_nastrojka_uchetnyx_zapisej_sotrudnikov"></a>
 
-На данном этапе создаем учетные записи для внутренних номеров сотрудников. Следуйте [этим инструкциям](../manual/telefoniya/extensions.md) для создания списка внутренних номеров.
+На данном этапе создаем учетные записи для внутренних номеров сотрудников. Следуйте [этим инструкциям](../manual/telephony/extensions.md) для создания списка внутренних номеров.
 
 ### Шаг 7. Подключение провайдеров <a href="#shag_9_podkljuchenie_provajderov" id="shag_9_podkljuchenie_provajderov"></a>
 
@@ -58,9 +58,9 @@ Fail2ban блокирует IP адреса с нестандартной акт
 
 Для создания правил маршрутизации Вам могут понадобиться:
 
-* [Очереди вызовов](../manual/telefoniya/call-queues.md)
-* [IVR-меню](../manual/telefoniya/ivr-menu.md)
-* [Конференции](../manual/telefoniya/conference-rooms.md)
+* [Очереди вызовов](../manual/telephony/call-queues.md)
+* [IVR-меню](../manual/telephony/ivr-menu.md)
+* [Конференции](../manual/telephony/conference-rooms.md)
 
 На этом основная настройка MikoPBX завершена! Для более глубокого изучения возможностей MikoPBX рекомендуем обратиться к [документации](../).
 

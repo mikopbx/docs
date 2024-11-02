@@ -32,12 +32,12 @@
 
 &#x20;В разделе **Телефония** Вы можете настроить список сотрудников, настроить для каждого сотрудника его внутренний номер, настроить маршрутизацию звонков и проанализировать историю вызовов.
 
-* [Сотрудники](manual/telefoniya/extensions.md)&#x20;
-* [Очереди вызовов](manual/telefoniya/call-queues.md)
-* [IVR меню](manual/telefoniya/ivr-menu.md)
-* [Конференции](manual/telefoniya/conference-rooms.md)
-* [Звуковые файлы](manual/telefoniya/sound-files.md)
-* [История вызовов](manual/telefoniya/call-detail-records.md)
+* [Сотрудники](manual/telephony/extensions.md)&#x20;
+* [Очереди вызовов](manual/telephony/call-queues.md)
+* [IVR меню](manual/telephony/ivr-menu.md)
+* [Конференции](manual/telephony/conference-rooms.md)
+* [Звуковые файлы](manual/telephony/sound-files.md)
+* [История вызовов](manual/telephony/call-detail-records.md)
 
 ### Глава 5. Маршрутизация <a href="#glava_5_marshrutizacija" id="glava_5_marshrutizacija"></a>
 

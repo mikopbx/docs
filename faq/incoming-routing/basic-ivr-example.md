@@ -19,15 +19,15 @@
 
 ## Решение <a href="#reshenie" id="reshenie"></a>
 
-&#x20;1\. Создаем **учетные записи сотрудников** по [инструкции](../../manual/telefoniya/extensions.md). Подключаем программные или аппаратные телефоны к данным учетным записям.
+&#x20;1\. Создаем **учетные записи сотрудников** по [инструкции](../../manual/telephony/extensions.md). Подключаем программные или аппаратные телефоны к данным учетным записям.
 
 <figure><img src="../../.gitbook/assets/extensions (1).png" alt=""><figcaption><p>Сотрудники </p></figcaption></figure>
 
-2. Добавляем **звуковой файл** приветствия по [инструкции](../../manual/telefoniya/sound-files.md), который будет слышать клиент при звонке на номер компании.
+2. Добавляем **звуковой файл** приветствия по [инструкции](../../manual/telephony/sound-files.md), который будет слышать клиент при звонке на номер компании.
 
 <figure><img src="../../.gitbook/assets/SoundFiles.png" alt=""><figcaption><p>Меню "Звуковые файлы"</p></figcaption></figure>
 
-3. Добавляем новое **IVR-меню** по [инструкции](../../manual/telefoniya/ivr-menu.md).
+3. Добавляем новое **IVR-меню** по [инструкции](../../manual/telephony/ivr-menu.md).
 
 <figure><img src="../../.gitbook/assets/IVRMenu.png" alt=""><figcaption><p>IVR меню</p></figcaption></figure>
 
