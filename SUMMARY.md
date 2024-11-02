@@ -168,12 +168,12 @@
   * [Users groups](modules/miko/module-users-groups.md)
   * [CRM Bitrix24 integration](modules/miko/module-bitrix24-integration.md)
   * [Autoprovision](modules/miko/module-autoprovision.md)
-  * [Callback skipped calls](modules/miko/module-callback-queues.md)
   * [Let's Encrypt](modules/miko/module-get-ssl-lets-encrypt.md)
   * [Access control management](modules/miko/module-users-u-i.md)
   * [Module auto dialer](modules/miko/module-auto-dialer.md)
   * [Backup](modules/miko/module-quality-assessment.md)
   * [Synchronization with LDAP/AD](modules/miko/module-ldap-sync.md)
+  * [Callback module](modules/miko/module-callback-queues.md)
 
 ## other
 
