@@ -208,16 +208,17 @@
 ## Модули <a href="#modules" id="modules"></a>
 
 * [Модули МИКО](modules/miko/README.md)
-  * [Расширенная история звонков](modules/miko/module-extended-cdr.md)
-  * [Интеграция с amoCRM](modules/miko/amocrm/README.md)
-    * [Настройка интеграции с amoCRM](modules/miko/amocrm/amocrm-integration.md)
-    * [Описание функционала amoCRM](modules/miko/amocrm/amocrm-functional.md)
   * [Интеграция с 1С](modules/miko/integraciya-s-1s/README.md)
     * [Панель телефонии 1.0 для 1С](modules/miko/integraciya-s-1s/module-pt1c-core.md)
     * [Панель телефонии 4.0 для 1С](https://docs.telefon1c.ru)
     * [Модуль умной маршрутизации](https://docs.telefon1c.ru/user-guides/routing/smart-ivr-miko/)
+  * [Интеграция с amoCRM](modules/miko/amocrm/README.md)
+    * [Описание функционала amoCRM](modules/miko/amocrm/amocrm-functional.md)
+    * [Настройка интеграции с amoCRM](modules/miko/amocrm/amocrm-integration.md)
+  * [Интеграция с CRM Bitrix24](modules/miko/module-bitrix24-integration/README.md)
+    * [Описание функционала CRM Bitrix24](modules/miko/module-bitrix24-integration/functions.md)
+    * [Настройка интеграции с Bitrix24](modules/miko/module-bitrix24-integration/setting-up.md)
   * [Группы пользователей](modules/miko/module-users-groups.md)
-  * [Интеграция с CRM Bitrix24](modules/miko/module-bitrix24-integration.md)
   * [Резервное копирование](modules/miko/module-backup.md)
   * [Автоматическая настройка телефонов](modules/miko/module-autoprovision.md)
   * [Автообработка пропущенных](modules/miko/module-callback-queues.md)
@@ -229,6 +230,7 @@
   * [Провайдер для звонков Telegram](modules/miko/module-telegram-provider.md)
   * [Zabbix агент](modules/miko/module-zabbix-agent.md)
   * [Телефонная книга](modules/miko/phone-book.md)
+  * [Расширенная история звонков](modules/miko/module-extended-cdr.md)
 
 ## Прочее <a href="#other" id="other"></a>
 
