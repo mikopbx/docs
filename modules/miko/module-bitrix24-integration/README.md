@@ -18,6 +18,10 @@
 
 
 
+{% content-ref url="functions.md" %}
+[functions.md](functions.md)
+{% endcontent-ref %}
+
 {% content-ref url="setting-up.md" %}
 [setting-up.md](setting-up.md)
 {% endcontent-ref %}
