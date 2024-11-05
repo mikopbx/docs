@@ -4,6 +4,12 @@
 
 Установить VMware Workstation Pro можно [на сайте](https://www.vmware.com/).
 
+{% hint style="warning" %}
+Используйте для установки на VMware Workstation Pro версии АТС MikoPBX отличные от 2024.1.114
+
+Версия 2024.1.114 временно не поддерживает установку на VMware Workstation Pro
+{% endhint %}
+
 ## Создание виртуальной машины
 
 1. Перейдите в интерфейс VMware WorkStation Pro. Нажмите кнопку "**Create a New Virtual Machine**" для создания новой виртуальной машины.
@@ -16,7 +22,7 @@
 
 3. Далее выберите источник установки "**Installer disc image file (iso)**:", выберите файл образа диска с расширением .iso. Скачать дистрибутив вы можете по [ссылке](https://www.mikopbx.ru/download/). После выбора нажмите "**Next >**" для продолжения.
 
-<figure><img src="../../.gitbook/assets/chooseISOImage.png" alt=""><figcaption><p>Выбор источника установки системы для создаваемой виртуальной машины</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/chooseISOImage (2).png" alt=""><figcaption><p>Выбор источника установки системы для создаваемой виртуальной машины</p></figcaption></figure>
 
 4. Выберите "**Linux**" в поле "**Guest operating system**". В качестве "**Version**" - "**Debian 11.x 64-bit**". Нажмите "**Next >**"
 
@@ -80,7 +86,7 @@
 
 2. Откроется командный интерфейс MikoPBX. АТС начнет загружаться. На данном этапе MikoPBX загружается с оптического диска, на который записан ISO-образ. На это нам указывает строчка: "<mark style="color:red;">**The system is loaded in Recovery mode**</mark>".
 
-<figure><img src="../../.gitbook/assets/startPageConsole.png" alt=""><figcaption><p>Загруженная MikoPBX с оптического диска</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/startPageConsole (1).png" alt=""><figcaption><p>Загруженная MikoPBX с оптического диска</p></figcaption></figure>
 
 {% hint style="info" %}
 Перемещаться по пунктам меню можно [клавишами управления курсором](https://ru.wikipedia.org/wiki/%D0%9A%D0%BB%D0%B0%D0%B2%D0%B8%D1%88%D0%B8\_%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\_%D0%BA%D1%83%D1%80%D1%81%D0%BE%D1%80%D0%BE%D0%BC).
@@ -107,4 +113,23 @@
 
 8.  После завершения установки система перезагрузится.
 
-    Теперь MikoPBX будет запускаться с диска **sdb**, на который вы ее установили. Увидим, что строчка «<mark style="color:red;">**The system is loaded in Recovery mode**</mark>» отсутствует.
+    Теперь MikoPBX будет запускаться с диска **sdb**, на который вы ее установили. Увидим, что строчка «<mark style="color:red;">**The system is loaded in Recovery mode**</mark>» отсутствует. Это значит, что установка MikoPBX совершена успешно.
+
+<figure><img src="../../.gitbook/assets/finalConsoleMikoPBX.png" alt=""><figcaption><p>Успешно установленная MikoPBX</p></figcaption></figure>
+
+## Первый вход в MikoPBX
+
+Для того, чтобы открыть веб-интерфейс MikoPBX вам надо вписать в строку браузера IP-адрес вашей виртуальной машины, найти его вы можете в консоли.
+
+<figure><img src="../../.gitbook/assets/mikopbxipaddress.png" alt=""><figcaption><p>IP-адрес MikoPBX</p></figcaption></figure>
+
+Впишите IP-адрес в адресную строку вашего браузера. Произведите первый вход в MikoPBX по стандартному логину и паролю.
+
+{% hint style="success" %}
+При первом входе в WEB-интерфейс MikoPBX используйте стандартные данные:
+
+* Логин: admin
+* Пароль: admin
+{% endhint %}
+
+<figure><img src="../../.gitbook/assets/firstLoginToMikoPBXWEB.png" alt=""><figcaption><p>Страница авторизации в WEB-интерфейс MikoPBX</p></figcaption></figure>
