@@ -2,12 +2,12 @@
 
 В текущей инструкции будет описан процесс создания и настройки виртуальной машины в VMware Workstation Pro, а так же процесс установки MikoPBX.&#x20;
 
-Установить VMware Workstation Pro можно [на сайте](https://www.vmware.com/).
+Скачать установщик VMware Workstation Pro можно [на сайте](https://www.vmware.com/).
 
 {% hint style="warning" %}
 Используйте для установки на VMware Workstation Pro версии АТС MikoPBX отличные от 2024.1.114
 
-Версия 2024.1.114 временно не поддерживает установку на VMware Workstation Pro
+Версия 2024.1.114 временно не поддерживает установку с помощью VMware Workstation Pro!
 {% endhint %}
 
 ## Создание виртуальной машины
