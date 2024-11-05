@@ -6,6 +6,8 @@ description: Установка MikoPBX в Yandex Cloud из Marketplace
 
 Для начала зарегистрируйтесь в сервисе [Yandex Cloud](https://console.cloud.yandex.ru/?referralCode=dn22bvnhhe64i62i71ua).
 
+{% embed url="https://rutube.ru/video/134e9bc0f8df41220dcd4447f4cd8175/" %}
+
 Приступим к настройке
 
 ### Создание виртуальной машины
