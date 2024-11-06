@@ -38,7 +38,7 @@ Use versions of MikoPBX other than 2024.1.114 for installation on VMware Worksta
 
 <figure><img src="../../.gitbook/assets/summaryInformation.png" alt=""><figcaption><p>The final configuration of the machine being created.</p></figcaption></figure>
 
-### Adding and Connecting a Second Disk
+## Adding and Connecting a Second Disk
 
 Now, let's create and attach a second hard drive, which will be used to store call recordings.
 
@@ -70,7 +70,7 @@ Now, let's create and attach a second hard drive, which will be used to store ca
 
 <figure><img src="../../.gitbook/assets/nameForTheSecondDisk.png" alt=""><figcaption><p>Name for the second hard drive</p></figcaption></figure>
 
-### Configuring the Network Interface for the Virtual Machine
+## Configuring the Network Interface for the Virtual Machine
 
 In the settings, go to "**Network Adapter**" and select "**Network connection**" - "**Bridged: Connected directly to the physical network**". Click "**OK**".
 
