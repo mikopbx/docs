@@ -12,7 +12,7 @@
 
 Схематично маршрутизация вызовов представлена на рисунке.
 
-<figure><img src="../../.gitbook/assets/image (24).png" alt=""><figcaption><p>Схема маршрутизации</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (24) (1).png" alt=""><figcaption><p>Схема маршрутизации</p></figcaption></figure>
 
 ### Провайдеры телефонии <a href="#provajdery_telefonii" id="provajdery_telefonii"></a>
 
@@ -21,6 +21,8 @@
 <figure><img src="../../.gitbook/assets/providers.png" alt=""><figcaption><p>Раздел "Провайдеры телефонии"</p></figcaption></figure>
 
 Создайте провайдеров и заполните параметры подключения как на скриншоте ниже:&#x20;
+
+
 
 **Идентификатор провайдера появится в адресной строке только после записи провайдера**. Временно в поле «**Логин**» укажите производное значение. После записи провайдера можно его скорректировать.
 

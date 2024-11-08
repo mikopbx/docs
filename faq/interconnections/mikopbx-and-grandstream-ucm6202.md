@@ -22,11 +22,11 @@
 5. Установите флаг «**Keep Original CID**»
 6. Нажмите кнопку «**Save**»
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
 
 Список Trunks:
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Исходящие на \_2XX <a href="#isxodjaschie_na_2xx" id="isxodjaschie_na_2xx"></a>
 
@@ -47,7 +47,7 @@ _90000099
 
 6. **Privilege Level**» - в данном случае можно установить **internal**, на MikoPBX нет выхода на город / межгород
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Входящие на \_1XX <a href="#vxodjaschie_na_1xx" id="vxodjaschie_na_1xx"></a>
 
@@ -72,11 +72,11 @@ _90000099
 6. Установите «**Default detination**» в значение «**By DID**»
 7. Установите «**Privilage Level**» в значение «**National**»
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 Входящие маршруты «**SIP Trunks – MikoPBX**»:
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Extensions <a href="#extensions" id="extensions"></a>
 
@@ -84,20 +84,20 @@ _90000099
 
 * Раздел «**Extensions / Trunk**» - «**Extension**»
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### IVR <a href="#ivr" id="ivr"></a>
 
 1. Добавим возможность в IVR звонить на номера MikoPBX (**\_2XX**)
 2. Раздел «**Call Features**» - «**IVR**», создадим / откроем на редактирование IVR
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Установите «**Dial Other Extensions**» в значение **Yes**
 4. Установите «**Dial Trunk**» в значение **Yes**
 5. На вкладке «**Key Pressing Events**» настройте переадресацию на **External number**:
 
-<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 **90000099** - это номер очереди, которую мы позже определим на MikoPBX
 

@@ -14,10 +14,6 @@
 * Возможность позвонить из Bitrix24
 * Перехват на ответственного
 
-<table data-view="cards"><thead><tr><th data-type="content-ref"></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td></td><td>Описание функционала CRM Bitrix24</td><td></td><td><a href="functions.md">functions.md</a></td><td></td></tr><tr><td></td><td>Настройка интеграции с CRM Bitrix24</td><td></td><td><a href="setting-up.md">setting-up.md</a></td><td></td></tr></tbody></table>
-
-
-
 {% content-ref url="functions.md" %}
 [functions.md](functions.md)
 {% endcontent-ref %}

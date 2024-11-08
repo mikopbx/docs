@@ -46,7 +46,7 @@ callerid = 79257184275 <79257184275>
 * «**Username**» - сохраненный из АТС идентификатор **SIP-##########**.
 * «**Password**» - пароль провайдера
 
-<figure><img src="../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
 
 После успешного подключения софтфона, лампочка возле созданного провайдера загорится зеленым
 

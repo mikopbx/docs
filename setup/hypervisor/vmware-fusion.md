@@ -4,7 +4,7 @@
 
 1. Создаем новую виртуальную машину.
 
-<figure><img src="../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (16) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. После скачивания последней версии образа ([ссылка](https://www.askozia.ru/download/)), указываем ISO файл с установочным дистрибутивом.
 
