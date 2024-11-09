@@ -55,6 +55,7 @@
   * [Управление модулями](manual/modules/pbx-extension-modules/README.md)
     * [Регистрация в marketplace](manual/modules/pbx-extension-modules/licensing.md)
   * [Приложения диалпланов](manual/modules/dialplan-applications.md)
+  * [Регистрация в маркетплейсе модулей](manual/modules/licensing.md)
 * [Обслуживание](manual/maintenance/README.md)
   * [Обновление системы](manual/maintenance/update/README.md)
     * [Обновление из web-интерфейса](manual/maintenance/update/obnovlenie-iz-web-interfeisa.md)
