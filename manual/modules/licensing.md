@@ -65,3 +65,22 @@
 
 <figure><img src="../../.gitbook/assets/ketInFieldSAAS.png" alt=""><figcaption><p>Введённый лицензионный ключ</p></figcaption></figure>
 
+Вы попадете в систему, где находятся 9 секций:
+
+<figure><img src="../../.gitbook/assets/saasMenu.png" alt=""><figcaption><p>Система SaaS</p></figcaption></figure>
+
+Перейдите в раздел "**Монитор сессий**":
+
+<figure><img src="../../.gitbook/assets/sessionMonitorSectionSaaS.png" alt=""><figcaption><p>Раздел "<strong>Монитор сессий</strong>"</p></figcaption></figure>
+
+Слева для каждой привязки в колонке **Информация** есть кнопка **i**, которая позволяет посмотреть подробную информацию о хосте, к которому привязана лицензия.
+
+<figure><img src="../../.gitbook/assets/saasInfoHost.png" alt=""><figcaption><p>Информация о хосте</p></figcaption></figure>
+
+Для каждой привязки в колонке "**Действие"** есть кнопка **"Сброс"**, которая позволяет **сбросить активную привязку** лицензии от хоста.
+
+{% hint style="success" %}
+На одной лицензии может находится 10 хостов.
+{% endhint %}
+
+<figure><img src="../../.gitbook/assets/saasreset.png" alt=""><figcaption><p>Сброс лицензии на хосте.</p></figcaption></figure>
