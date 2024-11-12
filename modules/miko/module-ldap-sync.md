@@ -43,6 +43,24 @@ After testing, you can initiate manual or automatic data synchronization.
 
 In the columns "_status_" and "_updated_", you can track the current synchronization process.
 
-{% hint style="info" %}
-As of now, the removal of an employee from the domain will not lead to their automatic removal from MikoPBX. The account will be retained until manually deleted by a MikoPBX administrator. This is because there may be various complex call routing scenarios where it's not feasible to simply remove an employee from the call route without replacing them with someone else.
-{% endhint %}
+### Employee Deletion or Deactivation in the Domain
+
+When an employee is deleted or deactivated in the domain, they will remain active in MikoPBX but will be moved to a special table called “**Disabled Employees in LDAP/AD**.”&#x20;
+
+The account will be retained until it is manually deleted by the MikoPBX administrator.&#x20;
+
+This approach accommodates complex call routing scenarios where simply removing the employee from the route without a replacement is not feasible.
+
+### Synchronization Conflicts
+
+During synchronization, conflicts may occur if the system fails to create or modify employee data in MikoPBX or on the LDAP/AD server. All synchronization issues are logged by the module and recorded in a special table titled “**Synchronization Conflicts**.”&#x20;
+
+The MikoPBX administrator can manually resolve these issues and clear the conflicts table in the module.
+
+### SIP Password Synchronization
+
+The module includes an option for synchronizing SIP passwords with the domain controller. This can be useful for automatically configuring IP phones within the company based on domain data. To enable synchronization, a special attribute must be created on the domain controller side, and this attribute should be specified in the “**SIP Password**” field in the attribute mapping settings for synchronization.&#x20;
+
+Note that the password will be stored in plain text. With bidirectional synchronization enabled, the password value from MikoPBX will be sent to the domain and vice versa, based on the date of the last modification.
+
+Please note: The SIP password is not the same as the domain account password; it is a separate value.
