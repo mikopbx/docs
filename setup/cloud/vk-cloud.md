@@ -2,6 +2,8 @@
 
 Для начала авторизуйтесь на сайте [https://cloud.vk.com](https://cloud.vk.com)
 
+{% embed url="https://rutube.ru/video/21a48912fa139cd59f6096ed73b07ed0/" %}
+
 Приступим к настройке
 
 ### **Добавление локальной подсети**
