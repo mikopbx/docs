@@ -239,4 +239,5 @@
   * [MikoPBX 2024.1](other/changelog/mikopbx-2024.1.md)
   * [MikoPBX 2023.2](other/changelog/mikopbx-2023.2.md)
   * [MikoPBX 2023.1.223](other/changelog/mikopbx-2023.1.223.md)
-* [Руководство по MikoPBX](other/rukovodstvo-po-mikopbx.md)
+* [Руководство по MikoPBX](other/rukovodstvo-po-mikopbx/README.md)
+  * [Быстрое начало работы](other/rukovodstvo-po-mikopbx/bystroe-nachalo-raboty.md)

@@ -115,7 +115,7 @@
 
     Теперь MikoPBX будет запускаться с диска **sdb**, на который вы ее установили. Увидим, что строчка «<mark style="color:red;">**The system is loaded in Recovery mode**</mark>» отсутствует. Это значит, что установка MikoPBX совершена успешно.
 
-<figure><img src="../../.gitbook/assets/finalConsoleMikoPBX.png" alt=""><figcaption><p>Успешно установленная MikoPBX</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/finalConsoleMikoPBX (1).png" alt=""><figcaption><p>Успешно установленная MikoPBX</p></figcaption></figure>
 
 ## Первый вход в MikoPBX
 
@@ -132,4 +132,4 @@
 * Пароль: admin
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/firstLoginToMikoPBXWEB.png" alt=""><figcaption><p>Страница авторизации в WEB-интерфейс MikoPBX</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/firstLoginToMikoPBXWEB (1).png" alt=""><figcaption><p>Страница авторизации в WEB-интерфейс MikoPBX</p></figcaption></figure>
