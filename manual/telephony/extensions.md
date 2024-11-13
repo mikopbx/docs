@@ -6,13 +6,17 @@ description: Настройка основных телефонных номер
 
 ## **Подключение софтфонов**
 
-* <mark style="color:red;">MicroSIP</mark>
-* <mark style="color:red;">Jitsi</mark>
+* [MicroSIP](../../faq/softphones/microsip.md)
+* [Groundwire](../../faq/softphones/groundwire.md)
 * [Zoiper](../../faq/softphones/zoiper.md)
-* <mark style="color:red;">PhonerLite</mark>
-* <mark style="color:red;">Телефон (Mac OS)</mark>
-* <mark style="color:red;">WebRTC tutorial using SIPML5</mark>
+* [Jitsi](../../faq/softphones/jitsi.md)
+* [PhonerLite](../../faq/softphones/phonerlite.md)
+* [Linphone(MacOS)](../../faq/softphones/linphone-macos.md)
+* [Telephone(MacOS)](../../faq/softphones/telephone-macos.md)
+* [WebRTC с помощью SIPML5](../../faq/softphones/configuring-webrtc-client-sipml5.md)
 * <mark style="color:red;">Настройка телеграмм как SIP софтфон</mark>
+* [Softphone.pro](../../faq/softphones/softphone.pro.md)
+* [Bria Solo](../../faq/softphones/bria-solo.md)
 
 ## **Подключение телефонов**
 
