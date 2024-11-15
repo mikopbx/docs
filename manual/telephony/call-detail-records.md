@@ -1,88 +1,63 @@
-# Call detail records
+---
+description: Here you can find information about Call Detail Rescords (CDR)
+---
 
-**История вызовов** - это список истории входящих, исходящих и внутренних вызовов. Располагается в **Телефония -> История вызовов**.
+# Call detail records (CDR)
 
-<figure><img src="../../.gitbook/assets/istor_viz_0 (1).png" alt=""><figcaption></figcaption></figure>
+**Call History** provides a log of all incoming, outgoing, and internal calls. It is located under **Telephony -> Call History**.
 
-## Чем она полезна
+<figure><img src="../../.gitbook/assets/callDetailRecords(CDR).png" alt=""><figcaption><p>Call detail records (CDR)</p></figcaption></figure>
 
-История вызовов в MikoPBX позволяет:
+## Benefits
 
-* Отобразить **все** вызовы;
-* Отобразить вызовы **по отбору;**
-* Визуально отобразить **пропущенные вызовы** из общего списка звонков;
-* Скачать/прослушать запись разговора.
+The Call History feature in MikoPBX enables users to:
 
-Каждый элемент списка содержит информацию о:
+* Display **all** calls;
+* Filter calls **based on criteria**;
+* Visually identify **missed calls** from the call log;
+* Download or listen to call recordings.
 
-* номере телефона звонящего абонента (**Кто**);
-* номере телефона, на который звонили (**Кому**);
-* дате и времени свершения звонка (**Дата звонка**);
-* длительности разговора (**Длительность**) - время голосового приветствия не учитывается.
+Each entry in the call log contains information about:
 
-Вызовы, отмеченные <mark style="color:red;">красным цветом</mark>, являются **пропущенными**. Длительность разговора для пропущенных вызовов равна нулю, такие вызовы невозможно прослушать.
+* The caller’s phone number (**Who**);
+* The recipient’s phone number (**To Whom**);
+* The date and time of the call (**Call Date**);
+* The duration of the call (**Duration**) – this excludes time spent on greetings or announcements.
 
-<figure><img src="../../.gitbook/assets/istor_viz_2.png" alt=""><figcaption></figcaption></figure>
+Calls marked in <mark style="color:red;">red</mark> are **missed calls**. Their duration is logged as zero, and these calls cannot be played back:
 
-Для каждой записи истории звонков доступна возможность прослушивания и скачивания записи разговоров. Записи разговоров скачиваются локально на ПК в формате **.mp3**.
+<figure><img src="../../.gitbook/assets/missedCallsInCDR.png" alt=""><figcaption><p>Missed calls</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/istor_viz_1.png" alt=""><figcaption></figcaption></figure>
+For answered calls, users can listen to or download the recording. Call recordings are downloaded locally to your PC in **.mp3** format.
 
-Каждая строка вызова содержит полную информацию об участниках разговора.
+<figure><img src="../../.gitbook/assets/listenToTheRecording.png" alt=""><figcaption><p>Listen to the recording function</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/istor_viz_3.png" alt=""><figcaption></figcaption></figure>
+Each call log entry provides detailed information about the participants involved.
 
-На скриншоте выше отображено следующее:
+<figure><img src="../../.gitbook/assets/details.png" alt=""><figcaption><p>Detailed information</p></figcaption></figure>
 
-1. Вызов поступил на номер 79255283744;
-2. На вызов ответила Белкина;
-3. Белкина осуществила консультативный перевод на Шевченко;
-4. Шевченко продолжила разговор с клиентом.
-
-## Отборы <a href="#otbory" id="otbory"></a>
+## Filters
 
 {% hint style="info" %}
-Для применения отбора нужно после ввода в поле значения нажать **Enter**.
+To apply a filter, press **Enter** after entering the search criteria.
 {% endhint %}
 
-В строке поиска истории вызовов можно реализовать следующие отборы:
+The search bar in the Call History page supports the following filters:
 
-1\) Отбор по **номеру** телефона
+1. **Phone Number** Filter
 
-В строке поиска можно ввести как внутренний номер сотрудника, так и номер клиента (внешний).
+You can search using either an internal staff number or an external client number.
 
-<figure><img src="../../.gitbook/assets/istor_viz_4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/details (1).png" alt=""><figcaption><p>Filter by Phone number</p></figcaption></figure>
 
-2\) Отбор по **двум номерам** телефона
+2. **Two Phone Numbers** Filter
 
-В строке поиска через пробел можно ввести два номера телефона. Если ввести "74952293042 302", то будут отображены все **отвеченные** вызовы между двумя номерами. \
-Отвеченные вызовы - это вызовы, имеющие длительность разговора больше **0** секунд, время голосового приветствия не учитывается.
+Enter two phone numbers separated by a space. For example, entering "74952293042 302" will display all **answered** calls between these numbers. Answered calls are those with a duration greater than **0** seconds, excluding greeting time.
 
-<figure><img src="../../.gitbook/assets/istor_viz_5.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/filterBy2Nums.png" alt=""><figcaption><p>Filter by 2 numbers</p></figcaption></figure>
 
-3\) Отбор по **дате**
+3. **Date** Filter
 
-При открытии истории звонков, журнал по умолчанию формируется на текущую дату. Установите нужный вам период и нажмите **Применить**.
+When opening the Call History, the log defaults to the current date. To filter for a specific period, select the date range and click **Apply**.
 
-<figure><img src="../../.gitbook/assets/istor_viz_6.png" alt=""><figcaption></figcaption></figure>
-
-4\) Отбор по **linkedid**
-
-**linkedid** - уникальный идентификатор звонка. Данным отбором удобно пользоваться, если необходимо найти вызов, исходя из данных [журнала звонков 1С](https://docs.telefon1c.ru/user-guides/journal/calls-and-records/). \
-Для применения этого отбора:\
-1\. Откройте журнал звонков 1С;\
-2\. Выделите нужную строку;\
-3\. Нажмите Подробнее во встроенном плеере (или вызвав контекстное меню на данной строке);\
-4\. Скопируйте поле **Идентификатор**;\
-5\. Вставьте это значение в строку поиска истории вызовов MikoPBX и нажмите **Enter**.
-
-<figure><img src="../../.gitbook/assets/istor_viz_0.gif" alt=""><figcaption></figcaption></figure>
-
-\
-
-
-\
-
-
-
-
+<figure><img src="../../.gitbook/assets/filterByDate.png" alt=""><figcaption><p>Filter by date</p></figcaption></figure>

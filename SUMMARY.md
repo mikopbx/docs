@@ -37,7 +37,7 @@
   * [IVR Menu](manual/telephony/ivr-menu.md)
   * [Conference rooms](manual/telephony/conference-rooms.md)
   * [Sound files](manual/telephony/sound-files.md)
-  * [Call detail records](manual/telephony/call-detail-records.md)
+  * [Call detail records (CDR)](manual/telephony/call-detail-records.md)
 * [Call Routing](manual/routing/README.md)
   * [VoIP providers](manual/routing/providers.md)
   * [Incoming routing](manual/routing/incoming-routing.md)
