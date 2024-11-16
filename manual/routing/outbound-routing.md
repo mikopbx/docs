@@ -1,8 +1,14 @@
+---
+description: Описание и настройка исходящей маршрутизации
+---
+
 # Исходящие маршруты
 
-## Назначение
+Исходящие маршруты в MikoPBX — это набор правил и настроек, определяющих, как система обрабатывает исходящие звонки от сотрудников к внешним номерам. С их помощью администраторы могут управлять направлением вызовов через различные провайдеры телефонии или линии связи в зависимости от определенных условий, таких как набранный номер, префиксы, время суток или права доступа пользователя. Это позволяет оптимизировать затраты на связь, распределять нагрузку между каналами и применять политики безопасности, ограничивая или разрешая определенные типы вызовов. Настройка исходящих маршрутов обеспечивает гибкость и контроль над исходящей телефонной связью, способствуя эффективной работе коммуникационной системы компании.
 
-<figure><img src="../../.gitbook/assets/ish_marsh_0.png" alt=""><figcaption></figcaption></figure>
+В данной статье Вы найдете подробную документацию по настройке исходящей маршрутизации.
+
+<figure><img src="../../.gitbook/assets/ish_marsh_0.png" alt=""><figcaption><p>Раздел "Исходящие маршруты" в MikoPBX</p></figcaption></figure>
 
 ## Создание правила
 
@@ -10,17 +16,17 @@
 
 Вы можете создавать неограниченное количество правил исходящей маршрутизации.
 
-Для одного провайдера можно создать несколько правил.
+Для одного провайдера можно создать **несколько** правил.
 
 {% hint style="info" %}
-Дополнительные примеры настройки исходящей маршрутизации доступны в разделе [FAQ](broken-reference).
+Дополнительные примеры настройки исходящей маршрутизации доступны в разделе FAQ.
 {% endhint %}
 
 ### Шаг 1. Добавление нового правила
 
 Чтобы добавить новое правило исходящей маршрутизации нажмите на кнопку **Добавить новое правило.**
 
-<figure><img src="../../.gitbook/assets/ish_marsh_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ish_marsh_1.png" alt=""><figcaption><p>Элемент для добавления нового правила исходящей маршрутизации </p></figcaption></figure>
 
 ### Шаг 2. Название и заметка
 
@@ -28,13 +34,13 @@
 
 В заметке можно описать маршрут звонка, который хотите реализовать, в дальнейшем это может помочь вам в отладке.
 
-<figure><img src="../../.gitbook/assets/ish_marsh_2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ish_marsh_2.png" alt=""><figcaption><p>Названия правила и заметка</p></figcaption></figure>
 
 ### Шаг 3. Задание шаблона номеров
 
 Задайте шаблон для исходящих звонков. Подробнее про шаблоны номеров [в следующем параграфе](outbound-routing.md#primery-shablonov-nomerov).
 
-<figure><img src="../../.gitbook/assets/ish_marsh_3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ish_marsh_3.png" alt=""><figcaption><p>Указания шаблона номеров, попадающих под правило</p></figcaption></figure>
 
 Приведенный на картинке выше пример означает следующее: если  набранный номер начинается с "**7" или "8",** и остальная часть номера состоит **10 цифр**.
 
@@ -46,9 +52,11 @@
 
 Преобразовать номер - данная настройка предназначена для удаления префикса номера и замены его на нужный префикс.&#x20;
 
-Примеры преобразования номеров приведены [в следующем параграфе](outbound-routing.md#primery-izmeneniya-prefiksov-nomerov).
+{% hint style="info" %}
+Примеры преобразования номеров приведены [в следующем параграфе](outbound-routing.md#primery-izmeneniya-prefiksov-nomerov), а так же [в разделе FAQ](../../faq/outbound-routing/number-templates/).
+{% endhint %}
 
-<figure><img src="../../.gitbook/assets/ish_marsh_9.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ish_marsh_9.png" alt=""><figcaption><p>Настройки преобразования номера</p></figcaption></figure>
 
 В приведенном примере в начале номера **не отсекаются цифры и не добавляются цифры**.
 
@@ -56,7 +64,7 @@
 
 Выберите из списка провайдера, для которого настроили исходящую маршрутизацию и сохраните изменения.
 
-<figure><img src="../../.gitbook/assets/ish_marsh_8.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ish_marsh_8.png" alt=""><figcaption><p>Выбор провайдера для правила</p></figcaption></figure>
 
 ## Примеры&#x20;
 
@@ -83,7 +91,7 @@
 
 Реализация правила выглядит следующим образом:
 
-<figure><img src="../../.gitbook/assets/ish_marsh_4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ish_marsh_4.png" alt=""><figcaption><p>Шаблон для замены +7 -> 8</p></figcaption></figure>
 
 #### Пример 2. Необходимо **заменить** префиксы номеров "**8", "7"** на "**+7"**.&#x20;
 
@@ -91,7 +99,7 @@
 
 Реализация правила выглядит следующим образом:
 
-<figure><img src="../../.gitbook/assets/ish_marsh_5.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ish_marsh_5.png" alt=""><figcaption><p>Шаблон для замены 7,8 -> +7</p></figcaption></figure>
 
 #### Пример 3. Необходимо **добавить** префикс "8" к номеру.
 
@@ -99,7 +107,7 @@
 
 Реализация правила выглядит следующим образом:
 
-<figure><img src="../../.gitbook/assets/ish_marsh_6.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ish_marsh_6.png" alt=""><figcaption><p>Шаблон для преобразования номера</p></figcaption></figure>
 
 #### Пример 4. Необходимо **удалить** код города "8495" или "7495", или "8499", или "7499" и оставлять 7-значный номер.&#x20;
 
@@ -107,5 +115,4 @@
 
 Реализация правила выглядит следующим образом:
 
-<figure><img src="../../.gitbook/assets/ish_marsh_7.png" alt=""><figcaption></figcaption></figure>
-
+<figure><img src="../../.gitbook/assets/ish_marsh_7.png" alt=""><figcaption><p>Шаблон для преобразования номера</p></figcaption></figure>
