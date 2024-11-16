@@ -1,3 +1,7 @@
+---
+description: Установка MikoPBX с помощью VMware ESXi.
+---
+
 # VMware ESXi
 
 ## Создание виртуальной машины <a href="#sozdanie_virtualnoj_mashiny" id="sozdanie_virtualnoj_mashiny"></a>

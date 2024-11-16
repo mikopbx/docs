@@ -1,10 +1,12 @@
+---
+description: Установка MikoPBX с помощью образа из AWS Маркетплейса
+---
+
 # AWS Маркетплейс
 
 Авторизуйтесь в сервисе Amazon Web Services [https://aws.amazon.com](https://aws.amazon.com/)
 
 MikoPBX в AWS Маркетплейс: [https://aws.amazon.com/marketplace/pp/prodview-ota6fb2tftuhw](https://aws.amazon.com/marketplace/pp/prodview-ota6fb2tftuhw)
-
-
 
 {% embed url="https://rutube.ru/video/8c04c19bb6af017a26a59a9c65344944/" %}
 

@@ -1,3 +1,7 @@
+---
+description: Установка MikoPBX в AWS с помощью произвольного образа
+---
+
 # AWS подробная инструкция
 
 Авторизуйтесь в сервисе Amazon Web Services [https://aws.amazon.com](https://aws.amazon.com/)

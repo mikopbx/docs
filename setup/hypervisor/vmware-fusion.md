@@ -1,3 +1,7 @@
+---
+description: Установка MikoPBX с помощью VMware Fusion.
+---
+
 # VMware Fusion
 
 ## Создание виртуальной машины

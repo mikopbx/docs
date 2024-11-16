@@ -1,3 +1,7 @@
+---
+description: Установка MikoPBX с помощью Proxmox.
+---
+
 # Proxmox
 
 ### **Загрузка образа MikoPBX**

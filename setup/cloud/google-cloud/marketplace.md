@@ -1,3 +1,7 @@
+---
+description: Установка MikoPBX в Google Cloud с помощью Маркетплейса
+---
+
 # Google Cloud Маркетплейс
 
 Авторизуйтесь на платформе [https://console.cloud.google.com/](https://console.cloud.google.com/)

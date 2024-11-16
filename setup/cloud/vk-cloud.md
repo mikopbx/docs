@@ -1,3 +1,7 @@
+---
+description: Установка MikoPBX с помощью VK Cloud
+---
+
 # VK Cloud
 
 Для начала авторизуйтесь на сайте [https://cloud.vk.com](https://cloud.vk.com)

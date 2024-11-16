@@ -1,3 +1,7 @@
+---
+description: Установка MikoPBX с помощью Microsoft Azure.
+---
+
 # Microsoft Azure
 
 Для начала авторизуйтесь на портале Microsoft Azure [https://portal.azure.com/](https://portal.azure.com/)

@@ -1,3 +1,7 @@
+---
+description: В данной статье вы сможете найти системные требования для MikoPBX.
+---
+
 # Системные требования
 
 ### Требование к сетевому каналу <a href="#trebovanie_k_setevomu_kanalu" id="trebovanie_k_setevomu_kanalu"></a>

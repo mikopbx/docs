@@ -1,3 +1,7 @@
+---
+description: Установка MikoPBX с помощью Vscale
+---
+
 # Vscale
 
 ### Загрузка образа

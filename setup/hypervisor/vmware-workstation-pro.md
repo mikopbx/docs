@@ -1,3 +1,7 @@
+---
+description: Установка MikoPBX с помощью VMware Workstation Pro
+---
+
 # VMware Workstation Pro
 
 В текущей инструкции будет описан процесс создания и настройки виртуальной машины в VMware Workstation Pro, а так же процесс установки MikoPBX.&#x20;

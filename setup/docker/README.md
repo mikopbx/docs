@@ -1,3 +1,7 @@
+---
+description: Варианты установки MikoPBX в Docker контейнере
+---
+
 # В Docker контейнере
 
 {% hint style="danger" %}

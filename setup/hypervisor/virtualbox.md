@@ -1,5 +1,5 @@
 ---
-description: Установка MikoPBX в качестве гостевой машины в VirtualBOX
+description: Установка MikoPBX с помощью VirtualBox
 ---
 
 # VirtualBOX

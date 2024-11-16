@@ -40,7 +40,7 @@ description: Опубликован 16.05.2024
 * [Microsoft Azure](../../setup/cloud/microsoft-azure.md)
 * [VK облако](../../setup/cloud/vk-cloud.md)
 * [1C:Облачная инфраструктура](../../setup/cloud/1c-oblachnaya-infrastruktura.md)
-* [Google Cloud Platform](../../setup/cloud/google-cloud/google-cloud-podrobnaya-instrukciya.md)
+* [Google Cloud Platform](../../setup/cloud/google-cloud/deployment-guide.md)
 * [Amazon Web Services](../../setup/cloud/aws/)
 
 Добавлен механизм автоматического определения MTU при работе в облаках.

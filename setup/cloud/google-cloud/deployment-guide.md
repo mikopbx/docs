@@ -1,5 +1,5 @@
 ---
-description: Установка MikoPBX в облако Google Cloud
+description: Установка MikoPBX в облако Google Cloud с помощью произвольного образа
 ---
 
 # Google Cloud подробная инструкция
