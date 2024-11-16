@@ -1,8 +1,12 @@
+---
+description: Просмотр и фильтр истории вызовов в MikoPBX
+---
+
 # История вызовов
 
-**История вызовов** - это список истории входящих, исходящих и внутренних вызовов. Располагается в **Телефония -> История вызовов**.
+История вызовов в MikoPBX — это журнал, который сохраняет информацию о всех входящих и исходящих звонках через систему. Она предоставляет детальные данные о каждом вызове, включая время, длительность, номера участников и статус, что позволяет анализировать коммуникации и оптимизировать работу телефонной сети компании. Располагается в разделе "**Телефония" -> "История вызовов"**.
 
-<figure><img src="../../.gitbook/assets/istor_viz_0 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/istor_viz_0 (1).png" alt=""><figcaption><p>Раздел "<strong>История вызовов</strong>"</p></figcaption></figure>
 
 ## Чем она полезна
 
@@ -22,15 +26,15 @@
 
 Вызовы, отмеченные <mark style="color:red;">красным цветом</mark>, являются **пропущенными**. Длительность разговора для пропущенных вызовов равна нулю, такие вызовы невозможно прослушать.
 
-<figure><img src="../../.gitbook/assets/istor_viz_2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/istor_viz_2.png" alt=""><figcaption><p>Помеченные пропущенные вызовы в журнале</p></figcaption></figure>
 
 Для каждой записи истории звонков доступна возможность прослушивания и скачивания записи разговоров. Записи разговоров скачиваются локально на ПК в формате **.mp3**.
 
-<figure><img src="../../.gitbook/assets/istor_viz_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/istor_viz_1.png" alt=""><figcaption><p>Прослушивание и скачивание вызовов</p></figcaption></figure>
 
 Каждая строка вызова содержит полную информацию об участниках разговора.
 
-<figure><img src="../../.gitbook/assets/istor_viz_3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/istor_viz_3.png" alt=""><figcaption><p>Рашсиренная история вызова</p></figcaption></figure>
 
 На скриншоте выше отображено следующее:
 
@@ -51,20 +55,20 @@
 
 В строке поиска можно ввести как внутренний номер сотрудника, так и номер клиента (внешний).
 
-<figure><img src="../../.gitbook/assets/istor_viz_4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/istor_viz_4.png" alt=""><figcaption><p>Отбор по номеру телефона</p></figcaption></figure>
 
 2\) Отбор по **двум номерам** телефона
 
 В строке поиска через пробел можно ввести два номера телефона. Если ввести "74952293042 302", то будут отображены все **отвеченные** вызовы между двумя номерами. \
 Отвеченные вызовы - это вызовы, имеющие длительность разговора больше **0** секунд, время голосового приветствия не учитывается.
 
-<figure><img src="../../.gitbook/assets/istor_viz_5.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/istor_viz_5.png" alt=""><figcaption><p>Отбор по двум номерам телефона (кто звонил, кому звонил)</p></figcaption></figure>
 
 3\) Отбор по **дате**
 
 При открытии истории звонков, журнал по умолчанию формируется на текущую дату. Установите нужный вам период и нажмите **Применить**.
 
-<figure><img src="../../.gitbook/assets/istor_viz_6.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/istor_viz_6.png" alt=""><figcaption><p>Отбор по дате вызова</p></figcaption></figure>
 
 4\) Отбор по **linkedid**
 
@@ -76,13 +80,4 @@
 4\. Скопируйте поле **Идентификатор**;\
 5\. Вставьте это значение в строку поиска истории вызовов MikoPBX и нажмите **Enter**.
 
-<figure><img src="../../.gitbook/assets/istor_viz_0.gif" alt=""><figcaption></figcaption></figure>
-
-\
-
-
-\
-
-
-
-
+<figure><img src="../../.gitbook/assets/istor_viz_0.gif" alt=""><figcaption><p>Отбор по linkedid</p></figcaption></figure>
