@@ -1,53 +1,34 @@
 ---
-description: Настройка основных телефонных номеров
+description: Настройка сотрудников и основных телефонных номеров
 ---
 
 # Сотрудники
 
-## **Подключение софтфонов**
-
-* [MicroSIP](../../faq/softphones/microsip.md)
-* [Groundwire](../../faq/softphones/groundwire.md)
-* [Zoiper](../../faq/softphones/zoiper.md)
-* [Jitsi](../../faq/softphones/jitsi.md)
-* [PhonerLite](../../faq/softphones/phonerlite.md)
-* [Linphone(MacOS)](../../faq/softphones/linphone-macos.md)
-* [Telephone(MacOS)](../../faq/softphones/telephone-macos.md)
-* [WebRTC с помощью SIPML5](../../faq/softphones/configuring-webrtc-client-sipml5.md)
-* <mark style="color:red;">Настройка телеграмм как SIP софтфон</mark>
-* [Softphone.pro](../../faq/softphones/softphone.pro.md)
-* [Bria Solo](../../faq/softphones/bria-solo.md)
-
-## **Подключение телефонов**
-
-* <mark style="color:red;">Yealink T19</mark>
-* <mark style="color:red;">Yealink T21</mark>
-* <mark style="color:red;">Yealink T28</mark>
-* <mark style="color:red;">Snom D120</mark>
+Сотрудники в MikoPBX — это индивидуальные пользователи системы, которым назначены внутренние номера для совершения и приема звонков. Они имеют персональные учетные записи, позволяющие настроить права доступа, переадресацию вызовов и другие персональные настройки в системе.
 
 ## Список сотрудников <a href="#spisok_sotrudnikov" id="spisok_sotrudnikov"></a>
 
 В разделе **Сотрудники** представлен список внутренних учетных записей сотрудников. Слева от сотрудника отображается статус авторизованного устройства. Если устройство успешно авторизовано под данной внутренней учетной записью, то кружок отображается зеленым цветом, иначе серым.
 
-<figure><img src="../../.gitbook/assets/sotrud_0.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/sotrud_0.png" alt=""><figcaption><p>Статусы сотрудников</p></figcaption></figure>
 
 В строке поиска можно найти необходимый контакт. Поиск можно осуществлять по имени сотрудника, внутреннему номеру, мобильному номеру, адресу электронной почты.
 
-<figure><img src="../../.gitbook/assets/sotrud_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/sotrud_1.png" alt=""><figcaption><p>Поиск сотрудника по электронной почте</p></figcaption></figure>
 
-На форме также есть возможность сортировки списка сотрудников по имени, внутреннему номеру, мобильному номеру, адресу электронной почты. Имеются кнопки копирования пароля учетной записи в буфер обмена, редактирования учетной записи и её удаления.
+На форме также есть возможность сортировки списка сотрудников по имени, внутреннему номеру, мобильному номеру, адресу электронной почты. Имеются кнопки копирования пароля для SIP учетной записи в буфер обмена, редактирования учетной записи и её удаления.
 
-<figure><img src="../../.gitbook/assets/sotrud_2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/sotrud_2.png" alt=""><figcaption><p>Сортировка сотрудников и функции в главном меню</p></figcaption></figure>
 
 ## Добавление сотрудника <a href="#dobavlenie_sotrudnika" id="dobavlenie_sotrudnika"></a>
 
 Для добавления нового сотрудника необходимо нажать кнопку **Добавить сотрудника**.
 
-<figure><img src="../../.gitbook/assets/sotrud_3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/sotrud_3.png" alt=""><figcaption><p>Элемент "<strong>Добавить сотрудника</strong>"</p></figcaption></figure>
 
 ## Основные параметры учетной записи <a href="#osnovnye_parametry" id="osnovnye_parametry"></a>
 
-<figure><img src="../../.gitbook/assets/sotrud_4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/sotrud_4.png" alt=""><figcaption><p>Вкладка параметров учетной записи сотрудника</p></figcaption></figure>
 
 На вкладке **Основные параметры** задаются общие настройки внутренней учетной записи сотрудника:
 
@@ -69,7 +50,7 @@ description: Настройка основных телефонных номер
 
 Открываются путем нажатия на раскрывающийся список **Расширенные настройки**.
 
-<figure><img src="../../.gitbook/assets/sotrud_5.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/sotrud_5.png" alt=""><figcaption><p>Вкладка расширенных настроек учетной записи</p></figcaption></figure>
 
 #### **Переопределение строки набора**
 
@@ -154,7 +135,7 @@ permit = 0.0.0.0/0.0.0.0
 
 ## Настройки маршрутизации
 
-<figure><img src="../../.gitbook/assets/sotrud_12.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/sotrud_12.png" alt=""><figcaption><p>Раздел "<strong>Настройки маршрутизации</strong>"</p></figcaption></figure>
 
 На данной вкладке вы можете настроить правила переадресации вызовов в случае, если сотрудник не может ответить на звонок, занят или недоступен.
 
@@ -164,8 +145,23 @@ permit = 0.0.0.0/0.0.0.0
 
 Вы можете настроить эти параметры в соответствии с вашими предпочтениями и требованиями.
 
+## **Документации по подключению софтфонов**
 
+* [MicroSIP](../../faq/softphones/microsip.md)
+* [Groundwire](../../faq/softphones/groundwire.md)
+* [Zoiper](../../faq/softphones/zoiper.md)
+* [Jitsi](../../faq/softphones/jitsi.md)
+* [PhonerLite](../../faq/softphones/phonerlite.md)
+* [Linphone(MacOS)](../../faq/softphones/linphone-macos.md)
+* [Telephone(MacOS)](../../faq/softphones/telephone-macos.md)
+* [WebRTC с помощью SIPML5](../../faq/softphones/configuring-webrtc-client-sipml5.md)
+* <mark style="color:red;">Настройка телеграмм как SIP софтфон</mark>
+* [Softphone.pro](../../faq/softphones/softphone.pro.md)
+* [Bria Solo](../../faq/softphones/bria-solo.md)
 
+## **Документации по подключению телефонов**
 
-
-\
+* <mark style="color:red;">Yealink T19</mark>
+* <mark style="color:red;">Yealink T21</mark>
+* <mark style="color:red;">Yealink T28</mark>
+* <mark style="color:red;">Snom D120</mark>
