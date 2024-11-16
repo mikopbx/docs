@@ -3,7 +3,7 @@
 ## Вариант №1 <a href="#variant_1" id="variant_1"></a>
 
 1. Выполните **Резервное копирование** Вашей текущей MikoPBX по[ инструкции](../../modules/miko/module-backup.md).
-2. Установите MikoPBX на **новый сервер**. Выполните действия, указанные в [инструкции](../../readme/quick-start.md).
+2. Установите MikoPBX на **новый сервер**. Выполните действия, указанные в [инструкции](../../other/mikopbx2/quick-start.md).
 3. **Загрузите** ранее выполненную резервную копию конфигурации MikoPBX на новом сервере по [инструкции](../../modules/miko/module-backup.md#vosstanovlenie\_iz\_arxiva).
 
 ### Вариант №2 <a href="#variant_2" id="variant_2"></a>

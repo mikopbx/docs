@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Руководство по MikoPBX](README.md)
-  * [Быстрый старт](readme/quick-start.md)
+  * [Быстрое начало работы](readme/quick-start.md)
   * [Знакомство с MikoPBX](readme/getting-to-know-mikopbx.md)
   * [Системные требования](readme/system-requirements.md)
 
@@ -235,9 +235,9 @@
 
 ## Прочее <a href="#other" id="other"></a>
 
+* [Руководство по MikoPBX](other/mikopbx2/README.md)
+  * [Быстрый старт](other/mikopbx2/quick-start.md)
 * [История версий](other/changelog/README.md)
   * [MikoPBX 2024.1](other/changelog/mikopbx-2024.1.md)
   * [MikoPBX 2023.2](other/changelog/mikopbx-2023.2.md)
   * [MikoPBX 2023.1.223](other/changelog/mikopbx-2023.1.223.md)
-* [Руководство по MikoPBX](other/rukovodstvo-po-mikopbx/README.md)
-  * [Быстрое начало работы](other/rukovodstvo-po-mikopbx/bystroe-nachalo-raboty.md)
