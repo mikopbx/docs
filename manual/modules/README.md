@@ -1,5 +1,5 @@
 ---
-description: Описание раздела "Модули" в MikoPBX
+description: Описание раздела Модули в MikoPBX
 ---
 
 # Модули
