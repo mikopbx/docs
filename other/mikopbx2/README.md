@@ -60,7 +60,7 @@
 * [Обновление системы](../../manual/maintenance/update/)
 * [Диагностика системы](../../manual/maintenance/system-diagnostic.md)
 * [Перезагрузка и выключение системы](../../manual/maintenance/restart.md)
-* [Модуль резервного копирования ](../../manual/maintenance/backup.md)
+* [Модуль резервного копирования ](backup.md)
 
 ### Глава 8. Сеть и Firewall <a href="#glava_8_set_i_firewall" id="glava_8_set_i_firewall"></a>
 

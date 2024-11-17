@@ -1,12 +1,16 @@
+---
+description: Вариант обновления из web-интерфейса
+---
+
 # Обновление из web-интерфейса
 
 В некоторых разделах интерфейса (например, **Сотрудники**) в правом нижнем углу указана текущая версия MikoPBX.
 
-<figure><img src="../../../.gitbook/assets/obnov_ats_0 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/obnov_ats_0 (1).png" alt=""><figcaption><p>Отображение версии в web-интерфейсе</p></figcaption></figure>
 
 В web-интерфейсе АТС перейдите в **Обслуживание** → **Обновление PBX**.
 
-<figure><img src="../../../.gitbook/assets/obnov_ats_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/obnov_ats_1.png" alt=""><figcaption><p>Раздел "<strong>Обновление PBX</strong>"</p></figcaption></figure>
 
 Если есть версии АТС новее вашей текущей, они будут отображены в таблице **Доступны онлайн обновления**, в которой в первом поле номер версии, а во втором - список изменений.
 
@@ -14,7 +18,7 @@
 Рекомендуем проводить обновления последовательно, «не перепрыгивая» через релизы.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/obnov_ats_2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/obnov_ats_2.png" alt=""><figcaption><p>Раздел "<strong>Доступные онлайн обновления</strong>"</p></figcaption></figure>
 
 Далее возможны два варианта обновления: **обновление онлайн, обновление скачанным img-файлом**.
 
@@ -27,11 +31,11 @@
 Обновления загружаются на АТС и сразу же применяются.\
 Для обновления таким способом нажмите кнопку ![](../../../.gitbook/assets/obnov\_ats\_3.png) в нужной вам версии обновления.
 
-<figure><img src="../../../.gitbook/assets/obnov_ats_4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/obnov_ats_4.png" alt=""><figcaption><p>Кнопка для обновления системы</p></figcaption></figure>
 
 Появится окно предупреждения. Нажмите в нем **Обновить.**
 
-<figure><img src="../../../.gitbook/assets/obnov_ats_5.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/obnov_ats_5.png" alt=""><figcaption><p>Окно предупреждения</p></figcaption></figure>
 
 АТС загрузит и применит обновления, а затем перезагрузится.
 
@@ -43,18 +47,18 @@
 
 Для обновления данным способом нажмите кнопку ![](../../../.gitbook/assets/obnov\_ats\_6.png) в нужной вам версии обновления.
 
-<figure><img src="../../../.gitbook/assets/obnov_ats_7.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/obnov_ats_7.png" alt=""><figcaption><p>Кнопка для загрузки файла обновления</p></figcaption></figure>
 
 Начнется скачивание img-образа. Дождитесь завершения загрузки.
 
 Затем нажмите кнопку ![](../../../.gitbook/assets/obnov\_ats\_8.png) и выберите данный img-файл.
 
-<figure><img src="../../../.gitbook/assets/obnov_ats_0.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/obnov_ats_0.gif" alt=""><figcaption><p>Выбор файла для обновления</p></figcaption></figure>
 
 Затем нажмите **Применить обновление,** а в появившемся окне предупреждения нажмите **Обновить.**&#x20;
 
-<figure><img src="../../../.gitbook/assets/obnov_ats_1.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/obnov_ats_1.gif" alt=""><figcaption><p>Установка обновления</p></figcaption></figure>
 
 Начнется применение обновлений. После окончания которого АТС перезагрузится.
 
-<figure><img src="../../../.gitbook/assets/obnov_ats_2.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/obnov_ats_2.gif" alt=""><figcaption><p>Процесс обновления</p></figcaption></figure>

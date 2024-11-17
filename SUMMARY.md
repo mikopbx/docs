@@ -62,7 +62,6 @@
     * [Обновление Docker](manual/maintenance/update/obnovlenie-docker.md)
   * [Диагностика системы](manual/maintenance/system-diagnostic.md)
   * [Перезагрузка и выключение системы](manual/maintenance/restart.md)
-  * [Модуль резервного копирования](manual/maintenance/backup.md)
 * [Сеть и Firewall](manual/connectivity/README.md)
   * [Сетевые интерфейсы](manual/connectivity/network.md)
   * [Сетевой экран](manual/connectivity/firewall.md)
@@ -236,6 +235,7 @@
 
 * [Руководство по MikoPBX](other/mikopbx2/README.md)
   * [Быстрый старт](other/mikopbx2/quick-start.md)
+  * [Модуль резервного копирования](other/mikopbx2/backup.md)
 * [История версий](other/changelog/README.md)
   * [MikoPBX 2024.1](other/changelog/mikopbx-2024.1.md)
   * [MikoPBX 2023.2](other/changelog/mikopbx-2023.2.md)
