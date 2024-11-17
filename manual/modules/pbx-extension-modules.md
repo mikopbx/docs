@@ -3,14 +3,14 @@
 Дополнительные модули позволяют расширить возможности функционала основной системы. В данной инструкции вы сможете найти информацию про управление модулями, а так же про установку приложений с помощью встроенного Marketplace.&#x20;
 
 {% hint style="info" %}
-Для использования платных и бесплатных модулей, необходимо зарегистрировать копию MikoPBX и бесплатно получить лицензионный ключ. Инструкцию по тому, как это сделать - вы можете найти [здесь](../licensing.md).
+Для использования платных и бесплатных модулей, необходимо зарегистрировать копию MikoPBX и бесплатно получить лицензионный ключ. Инструкцию по тому, как это сделать - вы можете найти [здесь](licensing.md).
 {% endhint %}
 
-Подробные инструкции по настройке и эксплуатации каждого модуля вы можете найти [здесь](../../../modules/miko/).
+Подробные инструкции по настройке и эксплуатации каждого модуля вы можете найти [здесь](../../modules/miko/).
 
 Найти раздел Управления модулями вы можете в **"Модули"** -> **"Маркетплейс модулей".**
 
-<figure><img src="../../../.gitbook/assets/ModulesSection.png" alt=""><figcaption><p>Раздел "Маркетплейс модулей"</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ModulesSection (1).png" alt=""><figcaption><p>Раздел "Маркетплейс модулей"</p></figcaption></figure>
 
 ## Установленные модули
 
@@ -18,39 +18,39 @@
 
 Все установленные модули находятся в списке, в одноимённой вкладке:
 
-<figure><img src="../../../.gitbook/assets/allModules.png" alt=""><figcaption><p>Все установленные модули</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/allModules.png" alt=""><figcaption><p>Все установленные модули</p></figcaption></figure>
 
 Есть возможность загрузить свой модуль, используя кнопку **"Загрузить новый модуль"**. Необходимо загружать файлы .zip. После загрузки модуль появится в списке на вкладке "**Установленные модули**"
 
-<figure><img src="../../../.gitbook/assets/newModule.png" alt=""><figcaption><p>Кнопка "Загрузить новый модуль"</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/newModule.png" alt=""><figcaption><p>Кнопка "Загрузить новый модуль"</p></figcaption></figure>
 
 Так же есть возможность перейти в настройки любого модуля для дальнейшей его конфигурации:
 
-<figure><img src="../../../.gitbook/assets/modulesSettings.png" alt=""><figcaption><p>Переход в настройки модуля</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/modulesSettings.png" alt=""><figcaption><p>Переход в настройки модуля</p></figcaption></figure>
 
 Помимо этого, можно включить/отключить модуль.
 
-<figure><img src="../../../.gitbook/assets/onOffModule.png" alt=""><figcaption><p>Включение/отключение модуля</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/onOffModule.png" alt=""><figcaption><p>Включение/отключение модуля</p></figcaption></figure>
 
 Из интерфейса установленного модуля можно быстро перейти к его документации, нажав на знак вопроса справа от короткого описания модуля:
 
-<figure><img src="../../../.gitbook/assets/moduleInfo.png" alt=""><figcaption><p>Быстрый переход к документации по модулю</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/moduleInfo.png" alt=""><figcaption><p>Быстрый переход к документации по модулю</p></figcaption></figure>
 
 ## Быстрый доступ к модулю
 
 Существует возможность вынести любой модуль в боковое меню для быстрого доступа к нему, что может быть полезно, если вам требуется постоянный доступ к настройки модуля для изменения параметров или его состояния.
 
-<figure><img src="../../../.gitbook/assets/ModulesInTheMenu.png" alt=""><figcaption><p>Модули в быстром доступе</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ModulesInTheMenu.png" alt=""><figcaption><p>Модули в быстром доступе</p></figcaption></figure>
 
 Для того, чтобы это сделать - выполните дальнейшую инструкцию:
 
 1. Перейдите в настройки модуля, который Вы хотите вывести в боковое меню, нажав на элемент редактирования справа от версии модуля:
 
-<figure><img src="../../../.gitbook/assets/editModule (1).png" alt=""><figcaption><p>Переход в настройки модуля</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/editModule (1).png" alt=""><figcaption><p>Переход в настройки модуля</p></figcaption></figure>
 
 2. Нажмите на значок настроек справа от статуса состояния модуля для перехода к настройкам отображения модуля в боковом меню:
 
-<figure><img src="../../../.gitbook/assets/settingsModule.png" alt=""><figcaption><p>Параметры модуля</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/settingsModule.png" alt=""><figcaption><p>Параметры модуля</p></figcaption></figure>
 
 3. В данном разделе вы можете:
 
@@ -60,17 +60,17 @@
 
 После завершения настройки - нажмите "**Сохранить**".
 
-<figure><img src="../../../.gitbook/assets/settingsModule2.png" alt=""><figcaption><p>Параметры отображения модуля в боковом меню</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/settingsModule2.png" alt=""><figcaption><p>Параметры отображения модуля в боковом меню</p></figcaption></figure>
 
 ## Маркетплейс модулей
 
 В данном разделе вы можете установить модули от MIKO, а так же от производителей-партнеров.
 
-<figure><img src="../../../.gitbook/assets/marketplace.png" alt=""><figcaption><p>Раздел "Маркетплейс"</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/marketplace.png" alt=""><figcaption><p>Раздел "Маркетплейс"</p></figcaption></figure>
 
 Напротив каждого модуля есть кнопка для его скачивания и установки. Так же здесь отображена базовая информация по модулю с коротким описанием каждого модуля.&#x20;
 
-<figure><img src="../../../.gitbook/assets/installModule.png" alt=""><figcaption><p>Кнопка для установки модуля</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/installModule.png" alt=""><figcaption><p>Кнопка для установки модуля</p></figcaption></figure>
 
 Слева от названия модуля вы можете найти значок, по которому можно понять платный ли он или бесплатный. Например, на изображении выше модуль "**REST API Автоинформатор**" - платный, а модуль "**Генератор SSL сертификатов через Let's Encrypt**" - бесплатный.
 
@@ -82,7 +82,7 @@
 
 Существует возможность перейти в карточку модуля, нажав на его название в интерфейсе маркетплейса.
 
-<figure><img src="../../../.gitbook/assets/moduleCard.png" alt=""><figcaption><p>Карточка модуля</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/moduleCard.png" alt=""><figcaption><p>Карточка модуля</p></figcaption></figure>
 
 Здесь вы можете найти версию актуального релиза, информацию про разработчика, платный ли модуль или бесплатный. Тут же находятся 3 раздела:
 
@@ -92,7 +92,7 @@
 
 #### История версий
 
-<figure><img src="../../../.gitbook/assets/versionHistory.png" alt=""><figcaption><p>Раздел "История версий"</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/versionHistory.png" alt=""><figcaption><p>Раздел "История версий"</p></figcaption></figure>
 
 В данном разделе вы можете найти историю версий модуля, с подробным описанием изменений, а также минимально совместимой версии MikoPBX для корректной его работы. Так же вы можете установить конкретную версию модуля, нажав на синий элемент под общим ее описанием.
 
@@ -104,7 +104,7 @@
 
 В случае покупки модуля, вам будет выдан купон. Для его активации перейдите в Модули -> Маркетплейс модулей:
 
-<figure><img src="../../../.gitbook/assets/modulesMarkerplace.png" alt=""><figcaption><p>Раздел "Модули" -> "Маркетплейс модулей"</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/modulesMarkerplace.png" alt=""><figcaption><p>Раздел "Модули" -> "Маркетплейс модулей"</p></figcaption></figure>
 
 Далее перейдите в раздел "**Управление лицензией**"
 
@@ -114,4 +114,4 @@
 Ключ защиты всегда начинается с MIKO-. Купон для изменения состава продуктов всегда начинается с MIKOUPD-
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/coupon.png" alt=""><figcaption><p>Активация купона</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/coupon.png" alt=""><figcaption><p>Активация купона</p></figcaption></figure>
