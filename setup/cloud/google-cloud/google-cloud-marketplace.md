@@ -4,6 +4,8 @@ Log in to the platform at [https://console.cloud.google.com/](https://console.cl
 
 MikoPBX on Google Cloud Marketplace: [https://console.cloud.google.com/marketplace/product/mikopbx-public/mikopbx](https://console.cloud.google.com/marketplace/product/mikopbx-public/mikopbx)
 
+{% embed url="https://youtu.be/9wy-Pq7_71o" %}
+
 Let's start with the setup
 
 {% hint style="info" %}
