@@ -1,23 +1,27 @@
+---
+description: Описание и настройка Firewall правил в MikoPBX
+---
+
 # Сетевой экран
+
+**Сетевой экран** в MikoPBX — это интерфейс для настройки брандмауэра (Firewall) системы. Здесь администраторы могут создавать и управлять правилами фильтрации сетевого трафика, контролируя доступ к MikoPBX и защищая ее от несанкционированного доступа и сетевых угроз. Настройка сетевого экрана обеспечивает безопасность телефонной системы, предотвращая потенциальные атаки и обеспечивая стабильную работу в сетевой инфраструктуре организации.
 
 В MikoPBX все локальные подсети возможно описать в разделе «**Сеть и Firewall**» → «**Сетевой экран**». Сетевой экран предназначен для ограничения доступа к станции по типу трафика и подсетям.
 
-<figure><img src="../../.gitbook/assets/new1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/new1.png" alt=""><figcaption><p>Раздел "<strong>Сеть и Firewall</strong>" -> "<strong>Сетевой экран</strong>" в MikoPBX</p></figcaption></figure>
 
-Чтобы добавить новое правило, необходимо нажать на кнопку:
+Для того, чтобы добавить новое правило, необходимо нажать на кнопку "**Добавить новую подсеть**":
 
-<figure><img src="../../.gitbook/assets/new2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/new2.png" alt=""><figcaption><p>Элемент для создания нового правила</p></figcaption></figure>
 
 ## Общие настройки
 
-<figure><img src="../../.gitbook/assets/13 (13).png" alt=""><figcaption></figcaption></figure>
+Название - задайте произвольное имя для нового правила сетевого экрана.\
+Справа от **адреса подсети** находится поле **Маска подсети** в формате CIDR.&#x20;
 
-Название правила можно задать произвольным.\
-Справа от **адреса подсети** есть поле **Маска подсети** в формате CIDR.&#x20;
+<figure><img src="../../.gitbook/assets/13 (13).png" alt=""><figcaption><p>Параметры правила</p></figcaption></figure>
 
 ## Доступные сервисы <a href="#dostupnye_servisy" id="dostupnye_servisy"></a>
-
-<figure><img src="../../.gitbook/assets/14 (6).png" alt=""><figcaption></figcaption></figure>
 
 * SIP\&RTP-регистрация телефонов и голосовой трафик - Session Initiation Protocol используется для установки соединений между VoIP телефонами
 * WEB-доступ к административному интерфейсу настройки АТС
@@ -27,10 +31,11 @@
 * ICMP-проверка связи командой ping
 * CTICLIENT-подключение панели телефонии для 1С
 
-## Дополнительные параметры <a href="#dopolnitelnye_parametry" id="dopolnitelnye_parametry"></a>
+<figure><img src="../../.gitbook/assets/14 (6).png" alt=""><figcaption><p>Раздел "<strong>Доступные сервисы</strong>"</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/15 (11).png" alt=""><figcaption></figcaption></figure>
+## Дополнительные параметры <a href="#dopolnitelnye_parametry" id="dopolnitelnye_parametry"></a>
 
 * У каждой подсети есть флаг «**Это VPN или локальная сеть**». При установке этого флага MikoPBX будет представляться всем локальным подсетям локальным IP, а не внешним.
 * Флаг «**Никогда не блокировать адреса из этой сети**» следует включать только для доверенных подсетей. Если включен данный флаг, то правила защиты от взлома на данную подсеть не распространяются.
 
+<figure><img src="../../.gitbook/assets/15 (11).png" alt=""><figcaption><p>Раздел "<strong>Дополнительные параметры</strong>"</p></figcaption></figure>
