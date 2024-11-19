@@ -11,7 +11,7 @@
 
 ## Настройка модуля <a href="#nastrojka_modulja" id="nastrojka_modulja"></a>
 
-1\. Выполните установку модуля в разделе [Управление модулями](../../manual/modules/pbx-extension-modules/).
+1\. Выполните установку модуля в разделе [Управление модулями](../../manual/modules/pbx-extension-modules.md).
 
 2\. Включите модуль и зайдите в его настройки.
 

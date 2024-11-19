@@ -27,7 +27,7 @@ First steps with MikoPBX. How to find out the IP address of your system, log in 
 
 ## Chapter 3. Configuring licensing in MikoPBX
 
-After installing MikoPBX, it is necessary to configure the software license MIKO Sas License, without it it is impossible to work with additional modules. [read more...](manual/modules/pbx-extension-modules/licensing.md)
+After installing MikoPBX, it is necessary to configure the software license MIKO Sas License, without it it is impossible to work with additional modules. [read more...](manual/modules/licensing.md)
 
 ## Chapter 4. Telephony
 
@@ -51,8 +51,8 @@ MikoPBX manages phone accounts, service providers. You will learn how to set up 
 
 ## Chapter 6. Modules <a href="#glava_6_moduli" id="glava_6_moduli"></a>
 
-* [Registration in the marketplace](manual/modules/pbx-extension-modules/licensing.md)
-* [Extensions and plugins](manual/modules/pbx-extension-modules/)
+* [Registration in the marketplace](manual/modules/licensing.md)
+* [Extensions and plugins](manual/modules/pbx-extension-modules.md)
 * [Miko Modules](modules/miko/)
 * [Application dialplans](manual/modules/dialplan-applications.md)
 
