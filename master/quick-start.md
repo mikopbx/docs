@@ -51,25 +51,25 @@ In MikoPBX, all local subnets can be defined in the **Network and Firewall** →
 
 ***
 
-#### Configuring Protection Against Hacking (Fail2Ban)
+### Configuring Protection Against Hacking (Fail2Ban)
 
 Fail2Ban blocks IP addresses exhibiting unusual activity; it can reduce the rate of failed authentication attempts and helps protect your PBX from hacking. Instructions to help with the setup can be found [here](../manual/connectivity/fail2-ban.md).
 
 ***
 
-#### Adding and Configuring Employee Accounts
+### Adding and Configuring Employee Accounts
 
 After completing the initial PBX setup, you can proceed to create accounts for your employees. This [instruction](../manual/telephony/extensions.md) will assist you.
 
 ***
 
-#### Connecting Providers
+### Connecting Providers
 
 After adding employees, you need to connect providers to your PBX. Instructions for this section can be found [here](../manual/routing/providers.md). Instructions with examples of configuring real providers can be found [here](https://chatgpt.com/faq/providers/).
 
 ***
 
-#### Setting Up Incoming and Outgoing Routing
+### Setting Up Incoming and Outgoing Routing
 
 At this stage, you need to set routing rules for incoming and outgoing calls: how calls passing through a specific provider will be handled:
 
@@ -84,7 +84,7 @@ To create routing rules, you may also need the following features:
 
 ***
 
-#### Marketplace and Modules
+### Marketplace and Modules
 
 The Marketplace allows you to extend the system's standard functionality using modules:
 
