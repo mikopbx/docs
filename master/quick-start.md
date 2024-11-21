@@ -1,65 +1,96 @@
+---
+description: >-
+  This guide provides detailed steps to get started with MikoPBX and helps you
+  quickly configure the system.
+---
+
 # Quick start
 
-This guide will help you get MikoPBX up and running as quickly as possible. Follow the instructions step-by-step in the order in which they are presented.
+Follow the **step-by-step** instructions in the order presented for a quick and successful system setup.
+
+## Installing MikoPBX
+
+**MikoPBX** is a full-fledged **operating system** for your hardware; it is **not a standalone application**. It is provided as an image file (\*.iso, \*.img, \*.raw).
+
+It supports various installation methods:
+
+* Installation [on a standalone computer](../setup/bare-metal.md).
+* Installation [in a virtual machine](../setup/hypervisor/).
+* Installation [using cloud services](../setup/cloud/).
+* Installation in a [Docker container](../setup/docker/).
+
+Follow the link for your preferred installation method and proceed according to the provided instructions.
+
+## First Login to the Web Interface
+
+After installation, you need to access the MikoPBX web interface for further system configuration. To do this, find the PBX's IP address in the MikoPBX console:
+
+<figure><img src="../.gitbook/assets/mikopbxIPAddress.png" alt=""><figcaption><p>Example of MikoPBX Console</p></figcaption></figure>
+
+In this example, the IP address is **192.168.0.203**. To access the web interface, enter this IP address into your browser's address bar:
+
+<figure><img src="../.gitbook/assets/mikopbxWEBinterface.png" alt=""><figcaption><p>MikoPBX login window</p></figcaption></figure>
 
 {% hint style="success" %}
-The contents of the complete MikoPBX documentation are available at the [link](../).
+If the logs do not provide a username and password, use the default credentials:
+
+Username: admin
+
+Password: admin
 {% endhint %}
 
-### Step 1. Installing MikoPBX
+After the first login, the system will prompt you to change your password.
 
-{% hint style="danger" %}
-Attention! Before installing MikoPBX, be sure to read the [system requirements](system-requirements.md)!
-{% endhint %}
+## Settings Within the Web Interface:
 
-**MikoPBX** is a full-fledged operating system for your hardware, it is not a separate program. It is delivered as an image (\*.iso, \*.img, \*.raw file).&#x20;
+### Network and Firewall Settings
 
-There are several options for installing MikoPBX. Choose the most suitable installation option for yourself:
+For stable PBX operation, you need to configure the **network** through the **Network and Firewall** → **Network Interface** section. Detailed instructions for these settings can be found [here](../manual/connectivity/network.md).
 
-* Installing a PBX on a **virtual machine.** [Installation instructions. ](../setup/hypervisor/)
-* Installing a PBX in a public **cloud**. [Installation instructions. ](../setup/cloud/)
-* Installing MikoPBX from **USB** to a separate dedicated server. The PC must support booting from USB. [Installation instructions. ](../setup/bare-metal.md)
-* Installing MikoPBX in a **Docker** container. [Installation instructions.](../setup/docker/)
+In MikoPBX, all local subnets can be defined in the **Network and Firewall** → **Firewall** section. The firewall is intended to restrict access to the PBX based on traffic type and subnets. Follow the setup instructions [here](../manual/connectivity/firewall.md).
 
-### Step 2. The first launch of the PBX!
+***
 
-After successful installation of the PBX, you need to go to its settings in the web interface. Follow the [instructions ](getting-to-know-mikopbx.md)to perform the first launch of the PBX in the web interface.
+#### Configuring Protection Against Hacking (Fail2Ban)
 
-### Step 3. Configuring the network interface <a href="#shag_4_nastrojka_setevogo_interfejsa" id="shag_4_nastrojka_setevogo_interfejsa"></a>
+Fail2Ban blocks IP addresses exhibiting unusual activity; it can reduce the rate of failed authentication attempts and helps protect your PBX from hacking. Instructions to help with the setup can be found [here](../manual/connectivity/fail2-ban.md).
 
-For stable operation of the PBX, you need to configure the network through the **Network and Firewall → Network Interfaces section**. Follow the [instructions ](../manual/connectivity/network.md)to set up.
+***
 
-### Step 4. Configuring the Firewall
+#### Adding and Configuring Employee Accounts
 
-In MikoPBX, all local subnets can be described in the **Network and Firewall → Firewall** section. The firewall is designed to restrict access to the station by traffic type and subnets. Perform the setup according to the [instructions](../manual/connectivity/firewall.md).
+After completing the initial PBX setup, you can proceed to create accounts for your employees. This [instruction](../manual/telephony/extensions.md) will assist you.
 
-### Step 5. Setting up Fail2ban
+***
 
-Fail2ban blocks IP addresses with non-standard activity, it is able to reduce the speed of unsuccessful authentication attempts, and allows you to protect your PBX from hacking. Perform the setup according to the [instructions](../manual/connectivity/fail2-ban.md).
+#### Connecting Providers
 
-### Step 6. Setting Up Employee Accounts
+After adding employees, you need to connect providers to your PBX. Instructions for this section can be found [here](../manual/routing/providers.md). Instructions with examples of configuring real providers can be found [here](https://chatgpt.com/faq/providers/).
 
-At this stage, we are creating accounts for internal employee numbers. Follow these [instructions ](../manual/telephony/extensions.md)to create a list of internal numbers.
+***
 
-### Step 7. Connecting providers
+#### Setting Up Incoming and Outgoing Routing
 
-To connect the provider to MikoPBX, follow these [instructions](../manual/routing/providers.md).
+At this stage, you need to set routing rules for incoming and outgoing calls: how calls passing through a specific provider will be handled:
 
-### Step 8. Configuring Routing
+* [Incoming Call Routing](../manual/routing/incoming-routing.md)
+* [Outbound Call Routing](../manual/routing/outbound-routing.md)
 
-At this stage, it is necessary to set the routing rules for incoming and outgoing calls, how calls coming through a certain provider will be handled.
+To create routing rules, you may also need the following features:
 
-* [Incoming routing](../manual/routing/incoming-routing.md)
-* [Outbound routing](../manual/routing/outbound-routing.md)
-
-To create routing rules, you may need:
-
-* [Call queue](../manual/telephony/call-queues.md)
+* [Call Queues](../manual/telephony/call-queues.md)
 * [IVR Menu](../manual/telephony/ivr-menu.md)
-* [Conference rooms](../manual/telephony/conference-rooms.md)
+* [Conferences](../manual/telephony/conference-rooms.md)
 
-This completes the basic setup of MikoPBX! For a deeper study of the capabilities of MikoPBX, we recommend that you refer to the [documentation](../).
+***
 
-### Step 9. Register in the Marketplace
+#### Marketplace and Modules
 
-To use the various modules, you need to register in the Marketplace. You can read about how to do this [here](../manual/modules/licensing.md).
+The Marketplace allows you to extend the system's standard functionality using modules:
+
+* You can read more about Modules in MikoPBX in [this article](../manual/modules/).
+* Information on registering in the MikoPBX Marketplace can be found [here](../manual/modules/licensing.md).
+
+{% hint style="info" %}
+This completes the basic setup of MikoPBX! For a deeper exploration of MikoPBX's capabilities, we recommend referring to the comprehensive documentation.
+{% endhint %}
