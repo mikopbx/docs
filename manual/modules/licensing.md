@@ -74,15 +74,27 @@ To manage your license, go to **Marketplace -> License Management** and click th
 
 You will be redirected to the [SaaS Licensing Server](https://lm.mikopbx.com/client-cabinet/session/index/):
 
+<figure><img src="../../.gitbook/assets/saasOverallPage.png" alt=""><figcaption><p>SaaS Licensing Server Page</p></figcaption></figure>
+
 Enter your license key in the **Enter your license key or activated coupon** field and click **Login**:
+
+<figure><img src="../../.gitbook/assets/loginBtn.png" alt=""><figcaption><p>Entered license key</p></figcaption></figure>
 
 You will access a system with nine sections:
 
-Go to the **Session Monitor** section:
+<figure><img src="../../.gitbook/assets/saasInside.png" alt=""><figcaption><p>SaaS System</p></figcaption></figure>
+
+Go to the **Session monitor** section:
+
+<figure><img src="../../.gitbook/assets/sessionMonitorSection (1).png" alt=""><figcaption><p>"Session monitor" Section</p></figcaption></figure>
 
 In the **Info** column, click the **i** button for each binding to view detailed host information.
 
-In the **Action** column, use the **Reset** button to **unbind the license** from the current host.
+<figure><img src="../../.gitbook/assets/infoHost.png" alt=""><figcaption><p>Host information</p></figcaption></figure>
+
+In the **Action** column, use the **Drop** button to **unbind the license** from the current host.
+
+<figure><img src="../../.gitbook/assets/dropBtn.png" alt=""><figcaption><p>Resetting the license on the host</p></figcaption></figure>
 
 ***
 
