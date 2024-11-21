@@ -9,7 +9,7 @@ description: >-
 Additional modules allow you to expand the functionality of the main system. In this guide, you will find information on managing modules and installing applications using the built-in Marketplace.
 
 {% hint style="info" %}
-To use both paid and free modules, you need to register your copy of MikoPBX and obtain a free license key. Instructions on how to do this can be found [here](https://chatgpt.com/c/licensing.md).
+To use both paid and free modules, you need to register your copy of MikoPBX and obtain a free license key. Instructions on how to do this can be found [here](licensing.md).
 {% endhint %}
 
 Detailed instructions for configuring and operating each module can be found [here](../../modules/miko/).
