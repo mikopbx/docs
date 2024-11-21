@@ -75,7 +75,7 @@ description: Описание процесса регистрации
 
 Нажмите "**Login**"
 
-<figure><img src="../../.gitbook/assets/ketInFieldSAAS.png" alt=""><figcaption><p>Введённый лицензионный ключ</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (2).png" alt=""><figcaption><p>Введённый лицензионный ключ</p></figcaption></figure>
 
 Вы попадете в систему, где находятся 9 секций:
 
@@ -83,7 +83,7 @@ description: Описание процесса регистрации
 
 Перейдите в раздел "**Монитор сессий**":
 
-<figure><img src="../../.gitbook/assets/sessionMonitorSectionSaaS.png" alt=""><figcaption><p>Раздел "<strong>Монитор сессий</strong>"</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (2).png" alt=""><figcaption><p>Раздел "<strong>Монитор сессий</strong>"</p></figcaption></figure>
 
 Слева для каждой привязки в колонке **Информация** есть кнопка **i**, которая позволяет посмотреть подробную информацию о хосте, к которому привязана лицензия.
 
@@ -91,7 +91,7 @@ description: Описание процесса регистрации
 
 Для каждой привязки в колонке "**Действие"** есть кнопка **"Сброс"**, которая позволяет **сбросить активную привязку** лицензии от хоста.
 
-<figure><img src="../../.gitbook/assets/saasreset.png" alt=""><figcaption><p>Сброс лицензии на хосте.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (3).png" alt=""><figcaption><p>Сброс лицензии на хосте.</p></figcaption></figure>
 
 ## Возможные проблемы
 
