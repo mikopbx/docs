@@ -52,7 +52,7 @@ MikoPBX manages phone accounts, service providers. You will learn how to set up 
 ## Chapter 6. Modules <a href="#glava_6_moduli" id="glava_6_moduli"></a>
 
 * [Registration in the marketplace](manual/modules/licensing.md)
-* [Extensions and plugins](manual/modules/pbx-extension-modules.md)
+* [Extensions and plugins](broken-reference)
 * [Miko Modules](modules/miko/)
 * [Application dialplans](manual/modules/dialplan-applications.md)
 
