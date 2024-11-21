@@ -1,95 +1,63 @@
+---
+description: >-
+  Description of MikoPBX and the sections you can find in the documentation.
+  Introduction to the documentation.
+---
+
 # MikoPBX Manual
 
-## Introduction
+## Foreword
 
-Thank You for choosing **MikoPBX ♥️**&#x20;
+Welcome to the MikoPBX documentation resource! Here you can find step-by-step instructions related to interacting with the MikoPBX PBX system. For your convenience, the documentation is organized into sections—just like in the web interface—making it very easy to navigate.
 
-**MikoPBX** is a telephony server with an operating system and a convenient web interface. It works with almost any phone technology in the world. MikoPBX is based on **Asterisk** and has very low PC hardware requirements.
+Thank you for choosing **MikoPBX**! :heart:
 
-{% hint style="success" %}
-Don't know where to start? Follow [these instructions](master/quick-start.md) to help you get MikoPBX up and running as quickly as possible.
-{% endhint %}
+## What is MikoPBX?
 
-## Structure of this manual
+**MikoPBX** is a **free** telephony server with its own operating system and a simple, user-friendly web interface. It works with virtually any telephony technology in the world.
 
-## Chapter 1. Installation
+<figure><img src=".gitbook/assets/MikoPBXInterface.png" alt=""><figcaption><p>MikoPBX Interface</p></figcaption></figure>
 
-This chapter provides step-by-step instructions for installing MikoPBX on various platforms.
+MikoPBX is a fully modular interface for Asterisk, written in PHP and JavaScript. This means that you can implement absolutely any additional Asterisk telephony functionality within MikoPBX. Moreover, if you develop a useful module, you can place it in the public repository and make it available to all MikoPBX users. Additionally, MikoPBX has very low hardware requirements:
 
-* [Separate Computer](setup/bare-metal.md)
-* [Virtual Machine](setup/hypervisor/)
-* [Cloud](setup/cloud/)
-* [Docker container](setup/docker/)
+| Simultaneous Calls |  Minimally Recommended Configuration  |
+| :----------------: | :-----------------------------------: |
+|       5 - 10       |        1 GHz x86-64, 512 MB RAM       |
+|      Up to 25      |         3 GHz x86-64, 1 GB RAM        |
+|       Over 25      | 2 CPUs 3 GHz x86-64, 2 GB RAM or more |
 
-## Chapter 2. Introduction to MikoPBX
+## Where to Start?
 
-First steps with MikoPBX. How to find out the IP address of your system, log in to the web interface and perform basic settings. [read more...](master/getting-to-know-mikopbx.md)
+To get started, you should install MikoPBX using any method convenient for you. Below are installation options. By clicking on their names, you can access detailed articles:
 
-## Chapter 3. Configuring licensing in MikoPBX
+* Installation [on a standalone computer](setup/bare-metal.md).
+* Installation [in a virtual machine](setup/hypervisor/).
+* Installation [using cloud services](setup/cloud/).
+* Installation in a [Docker container](setup/docker/).
 
-After installing MikoPBX, it is necessary to configure the software license MIKO Sas License, without it it is impossible to work with additional modules. [read more...](manual/modules/licensing.md)
+After installation, you can begin exploring your PBX system. The "**User Guide**" documentation will help you with this, providing detailed information about specific sections:
 
-## Chapter 4. Telephony
+* [Telephony](manual/telephony/).
+* [Call Routing](manual/routing/).
+* [Modules](manual/modules/).
+* [Maintenance](manual/maintenance/).
+* [Network and Firewall](manual/connectivity/).
+* [System](manual/system/).
 
-In the **Telephony** section, you can set up a list of employees, set up an internal number for each employee, configure call routing and analyze call history.
+For additional help with getting started quickly, you can refer to [this article](master/quick-start.md).
 
-* [Extensions](manual/telephony/extensions.md)
-* [Call queue](manual/telephony/call-queues.md)
-* [IVR Menu](manual/telephony/ivr-menu.md)
-* [Conference rooms](manual/telephony/conference-rooms.md)
-* [Sound Files](manual/telephony/sound-files.md)
-* [Сall history](manual/telephony/call-detail-records.md)
+## Modules
 
-## Chapter 5. Call  Routing
+If you have familiarized yourself with the basic setup and operation of MikoPBX, you can expand its functionality using modules.
 
-MikoPBX manages phone accounts, service providers. You will learn how to set up accounts in this chapter.
+Modules allow you to add extra features to your system. You can learn more about them step by step:
 
-* [Telephony providers](manual/routing/providers.md)
-* [Incoming routing](manual/routing/incoming-routing.md)
-* [Outbound routing](manual/routing/outbound-routing.md)
-* [Night and Holiday Switch](manual/routing/out-off-work-time.md)
+1. [Registration in the MikoPBX Marketplace](manual/modules/licensing.md) – here you'll find a detailed description of the registration process and its specifics.
+2. [Module Management](manual/modules/pbx-extension-modules.md) – this section provides a detailed explanation of how to install and manage modules.
+3. [Documentation on Specific Modules](modules/miko/) – in this section, you'll find detailed descriptions of each module, as well as steps for configuring and using them.
 
-## Chapter 6. Modules <a href="#glava_6_moduli" id="glava_6_moduli"></a>
+## FAQ Section
 
-* [Registration in the marketplace](manual/modules/licensing.md)
-* [Extensions and plugins](broken-reference)
-* [Miko Modules](modules/miko/)
-* [Application dialplans](manual/modules/dialplan-applications.md)
+In this section, you can find answers to your questions and solutions that will help you expand the functionality of basic features. This section, like the main documentation, is divided into categories for easy navigation.
 
-## Chapter 7. Maintenance <a href="#glava_7_obsluzhivanie" id="glava_7_obsluzhivanie"></a>
-
-* [PBX Update ](manual/maintenance/update/)
-* [System log entries](manual/maintenance/system-diagnostic.md)&#x20;
-* [Reboot](manual/maintenance/restart.md)
-* [Backup module](broken-reference)
-
-## Chapter 8. Network and Firewall  <a href="#glava_8_set_i_firewall" id="glava_8_set_i_firewall"></a>
-
-* [Network setting](manual/connectivity/network.md)
-* [Network Firewall](manual/connectivity/firewall.md)
-* [Anti brute force](manual/connectivity/fail2-ban.md)
-
-## Chapter 9. System <a href="#glava_9_sistema" id="glava_9_sistema"></a>
-
-* [General settings](manual/system/general-settings.md)
-* [Date and Time ](manual/system/time-settings.md)
-* [Mail settings](manual/system/mail-settings/)
-* [Asterisk Manager Interface](manual/system/asterisk-managers.md)
-* [System file customization ](manual/system/custom-files.md)
-
-## FAQ <a href="#faq" id="faq"></a>
-
-The section presents the solution of telephony problems that telephone exchange administrators most often face. By clicking on the links below, you can get acquainted with practical examples and find answers to frequently asked questions about MikoPBX.&#x20;
-
-* [Setup](faq/setup/)
-* [Managment](faq/management/)
-* [Troubleshooting](faq/troubleshooting/)
-* [Incoming Routing](faq/incoming-routing/)
-* [Outbound routing](faq/outbound-routing/)
-* [Integration with 1C ](faq/1c-integrations.md)
-* [Scenarios and cases ](faq/cases/)
-* [Configuring Providers ](faq/providers/)
-* [Setting up softphones ](faq/softphones/)
-* [VoIP gateways ](faq/voip-gateways/)
-* [IP Phones](faq/ip-telefones/)
-* [Interconnections](faq/interconnections/)
+If you have a question that isn't covered here, you can seek assistance in the [Telegram Community](https://t.me/mikopbx), where MikoPBX users help each other resolve issues and needs related to the PBX system.

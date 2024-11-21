@@ -102,7 +102,7 @@ In this section, you can find the module's version history with detailed descrip
 
 <figure><img src="../../.gitbook/assets/versionHistory.png" alt=""><figcaption><p>Version History section</p></figcaption></figure>
 
-### Activating Coupons
+## Activating Coupons
 
 If you purchase a module, you will receive a coupon. To activate it, go to **Modules -> Marketplace of modules**:
 
