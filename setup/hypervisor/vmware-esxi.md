@@ -12,7 +12,7 @@ description: Установка MikoPBX с помощью VMware ESXi.
 <figure><img src="../../.gitbook/assets/image (26) (1).png" alt=""><figcaption><p>Имя, Тип и Версия виртуальной машины</p></figcaption></figure>
 
 3. Выбираем хранилище для создания.
-4. Для данной виртуальной машины выделяем объём оперативной памяти **1024 Мб**. Создаём **новый** виртуальный жёсткий диск для основной системы размером <mark style="color:green;">**1024**</mark>** Мб**.
+4. Для данной виртуальной машины выделяем объём оперативной памяти **1024 Мб**. Создаём **новый** виртуальный жёсткий диск для основной системы размером <mark style="color:green;">**1024**</mark>**&#x20;Мб**.
 
 <figure><img src="../../.gitbook/assets/image (27) (1).png" alt=""><figcaption><p>Размер оперативной памяти и памяти для системного жесткого диска</p></figcaption></figure>
 
@@ -48,11 +48,11 @@ description: Установка MikoPBX с помощью VMware ESXi.
 <figure><img src="../../.gitbook/assets/firstPageInPBX.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-Перемещаться по пунктам меню можно [клавишами управления курсором](https://ru.wikipedia.org/wiki/%D0%9A%D0%BB%D0%B0%D0%B2%D0%B8%D1%88%D0%B8\_%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F\_%D0%BA%D1%83%D1%80%D1%81%D0%BE%D1%80%D0%BE%D0%BC).
+Перемещаться по пунктам меню можно [клавишами управления курсором](https://ru.wikipedia.org/wiki/%D0%9A%D0%BB%D0%B0%D0%B2%D0%B8%D1%88%D0%B8_%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F_%D0%BA%D1%83%D1%80%D1%81%D0%BE%D1%80%D0%BE%D0%BC).
 
 Выбрать пункт меню - клавиша **Enter**.
 
-Также можно выбирать пункт меню нажав на [буквенно-цифровом блоке клавиатуры](https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80%D0%BD%D0%B0%D1%8F\_%D0%BA%D0%BB%D0%B0%D0%B2%D0%B8%D0%B0%D1%82%D1%83%D1%80%D0%B0#%D0%91%D1%83%D0%BA%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE-%D1%86%D0%B8%D1%84%D1%80%D0%BE%D0%B2%D0%BE%D0%B9\_%D0%B1%D0%BB%D0%BE%D0%BA) соответствующую пункту цифру.
+Также можно выбирать пункт меню нажав на [буквенно-цифровом блоке клавиатуры](https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80%D0%BD%D0%B0%D1%8F_%D0%BA%D0%BB%D0%B0%D0%B2%D0%B8%D0%B0%D1%82%D1%83%D1%80%D0%B0#%D0%91%D1%83%D0%BA%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE-%D1%86%D0%B8%D1%84%D1%80%D0%BE%D0%B2%D0%BE%D0%B9_%D0%B1%D0%BB%D0%BE%D0%BA) соответствующую пункту цифру.
 {% endhint %}
 
 3. Переключите язык интерфейса на русский. Для этого выполните **Change Language -> Русский**. Меню примет вид:

@@ -75,7 +75,7 @@ description: Описание процесса регистрации
 
 Нажмите "**Login**"
 
-<figure><img src="../../.gitbook/assets/image (1) (2).png" alt=""><figcaption><p>Введённый лицензионный ключ</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (2) (1).png" alt=""><figcaption><p>Введённый лицензионный ключ</p></figcaption></figure>
 
 Вы попадете в систему, где находятся 9 секций:
 
@@ -83,7 +83,7 @@ description: Описание процесса регистрации
 
 Перейдите в раздел "**Монитор сессий**":
 
-<figure><img src="../../.gitbook/assets/image (2) (2).png" alt=""><figcaption><p>Раздел "<strong>Монитор сессий</strong>"</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (2) (1).png" alt=""><figcaption><p>Раздел "<strong>Монитор сессий</strong>"</p></figcaption></figure>
 
 Слева для каждой привязки в колонке **Информация** есть кнопка **i**, которая позволяет посмотреть подробную информацию о хосте, к которому привязана лицензия.
 

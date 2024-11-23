@@ -82,7 +82,7 @@ exten => bye,1,ExecIf($["x${filename_bye}" != "x"]?Playback(${filename_bye}));
 [ID-ПРОВАЙДЕРА-after-dial-custom]
 ```
 
-* **ID-ПРОВАЙДЕРА** - значение, которое вы сохранили на первом шаге данной инструкции. В нашем примере это **SIP-PROVIDER-**1687947415.
+* **ID-ПРОВАЙДЕРА** - значение, которое вы сохранили на первом шаге данной инструкции. В нашем примере это **SIP-PROVIDER-**&#x31;687947415.
 
 ### Скрипт обработки результата оценки <a href="#skript_obrabotki_rezultata_ocenki" id="skript_obrabotki_rezultata_ocenki"></a>
 

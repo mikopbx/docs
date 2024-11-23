@@ -12,11 +12,11 @@
 1. Наше приложение в [**маркетплейс Bitrix 24**](https://www.bitrix24.ru/apps/?app=miko.pbxaskozia).
 2. Выполните установку модуля «**MikoPBX**»:
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>MikoPBX в маркетплейсе Bitrix24</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (2).png" alt=""><figcaption><p>MikoPBX в маркетплейсе Bitrix24</p></figcaption></figure>
 
 3. Перейдите в раздел «**Телефония**» - «**Настройки телефонии**» - «**Пользователи телефонии**»:
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Раздел "Пользователи телефонии"</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (2).png" alt=""><figcaption><p>Раздел "Пользователи телефонии"</p></figcaption></figure>
 
 4. Назначьте сотрудникам внутренние номера:
 
@@ -24,7 +24,7 @@
 Назначенные внутренние номера должны существовать в MikoPBX!
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Назначение внутренних номеров сотрудникам</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (2).png" alt=""><figcaption><p>Назначение внутренних номеров сотрудникам</p></figcaption></figure>
 
 5. Перейдите в раздел «**Телефония**» - «**Настройки телефонии**» - «**Общие настройки**»:
 
@@ -151,7 +151,7 @@ miko.bitrix24.ru
 ### Приложения нет в Marketplace <a href="#prilozhenija_net_v_marketplehjs" id="prilozhenija_net_v_marketplehjs"></a>
 
 {% hint style="warning" %}
-В случае, если используется «**коробочная**» версия Bitrix24, то настройка отличается. См. [документацию](https://dev.1c-bitrix.ru/learning/course/index.php?COURSE\_ID=99\&LESSON\_ID=9289\&LESSON\_PATH=8771.8583.8593.9289). В «коробочной» версии нет возможности создать «**Статичное локальное приложение**»
+В случае, если используется «**коробочная**» версия Bitrix24, то настройка отличается. См. [документацию](https://dev.1c-bitrix.ru/learning/course/index.php?COURSE_ID=99\&LESSON_ID=9289\&LESSON_PATH=8771.8583.8593.9289). В «коробочной» версии нет возможности создать «**Статичное локальное приложение**»
 {% endhint %}
 
 На текущий момент не во всех регионах интеграция «**Bitrix 24 и MikoPBX**» доступна в маркетплэйс. В этом случае есть возможность ручной настройки.
