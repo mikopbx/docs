@@ -24,11 +24,11 @@
 Назначенные внутренние номера должны существовать в MikoPBX!
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (3) (2).png" alt=""><figcaption><p>Назначение внутренних номеров сотрудникам</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (2) (1).png" alt=""><figcaption><p>Назначение внутренних номеров сотрудникам</p></figcaption></figure>
 
 5. Перейдите в раздел «**Телефония**» - «**Настройки телефонии**» - «**Общие настройки**»:
 
-<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption><p>Раздел "Общие настройки"</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (2).png" alt=""><figcaption><p>Раздел "Общие настройки"</p></figcaption></figure>
 
 6. В поле «**Номер для исходящего звонка по умолчанию**» - укажите приложение «**Интеграция с MIKOPBX**» (**следует выполнить после аутентификации модуля со стороны MikoPBX**)
 
