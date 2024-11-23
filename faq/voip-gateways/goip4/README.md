@@ -20,7 +20,7 @@ description: Подключение GSM шлюза GOIP4
 * **Логин** - будет установлен равным ID провайдера, поменять возможности нет, пример логина «**SIP-TRUNK-3A13EB43**».
 * **Пароль** - укажем и запомним сложный пароль, с ним шлюз будет регистрироваться на MikoPBX.
 
-<figure><img src="../../.gitbook/assets/newProvider (2).png" alt=""><figcaption><p>Параметры провайдера </p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/newProvider (2).png" alt=""><figcaption><p>Параметры провайдера </p></figcaption></figure>
 
 2. В расширенных настройках провайдера, в поле "**Дополнительные параметры**", укажите:
 
@@ -35,7 +35,7 @@ trust_id_inbound=yes
 Шлюз при направлении звонка в MikoPBX будет присылать дополнительных заголовок «**Remoe Party ID**», в нем будет содержаться информация по номеру телефона клиента. MikoPBX будет устанавливать CID согласно этому заголовку.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/additionalParameters.png" alt=""><figcaption><p>Дополнительные параметры создаваемого провайдера </p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/additionalParameters.png" alt=""><figcaption><p>Дополнительные параметры создаваемого провайдера </p></figcaption></figure>
 
 ## Настройка шлюза <a href="#nastrojka_shljuza" id="nastrojka_shljuza"></a>
 
@@ -45,7 +45,7 @@ trust_id_inbound=yes
 
 Перейдем на вкладку **Configurations - Preferences**. Необходимо установить подходящий часовой пояс, отключить использование IVR:
 
-<figure><img src="../../.gitbook/assets/image (87).png" alt=""><figcaption><p>Параметры шлюза</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (87).png" alt=""><figcaption><p>Параметры шлюза</p></figcaption></figure>
 
 ### Configurations - Basic VoIP <a href="#configurations_-_basic_voip" id="configurations_-_basic_voip"></a>
 
@@ -62,7 +62,7 @@ trust_id_inbound=yes
 Позже, на MikoPBX мы добавим маршруты исходящих звонков для каждой SIM карты, перед набором к номеру будет добавляться необходимый префикс.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (88).png" alt=""><figcaption><p>Параметры подключения</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (88).png" alt=""><figcaption><p>Параметры подключения</p></figcaption></figure>
 
 ### Configurations - Call Out <a href="#configurations_-_call_out" id="configurations_-_call_out"></a>
 
@@ -79,7 +79,7 @@ trust_id_inbound=yes
 Правило dialplan ««1:-1» означает,что если номер начинается на 1, то первая цифра будет удалена, отсекаем префикс
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (90).png" alt=""><figcaption><p>Параметры на вкладке "Call Out"</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (90).png" alt=""><figcaption><p>Параметры на вкладке "Call Out"</p></figcaption></figure>
 
 ### Configurations - Call In <a href="#configurations_-_call_in" id="configurations_-_call_in"></a>
 
@@ -88,7 +88,7 @@ trust_id_inbound=yes
 * **CID Forward Mode** выставляем значение «**Use Remoe Party ID**».
 * Для каждого GSM канала **CH1**, **CH2**… **CH**\*, в поле **Forwarding to VoIP Number**, укажем номер телефона SIM без (только цифры).
 
-<figure><img src="../../.gitbook/assets/image (91).png" alt=""><figcaption><p>Параметры на вкладке "Call In"</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (91).png" alt=""><figcaption><p>Параметры на вкладке "Call In"</p></figcaption></figure>
 
 На этом настройка шлюза завершена.
 
@@ -96,7 +96,7 @@ trust_id_inbound=yes
 
 Перейдем на страницу **Status - Summary**. В колонке **VoIP** отображается статус подключения шлюза к АТС MikoPBX, **Y** - шлюз успешно зарегистрировался на АТС(по 4 линии статус **N**, т.к. на ней не установлена sim):
 
-<figure><img src="../../.gitbook/assets/image (92).png" alt=""><figcaption><p>Итоговая конфигурация</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (92).png" alt=""><figcaption><p>Итоговая конфигурация</p></figcaption></figure>
 
 ## Маршруты звонков MikoPBX <a href="#marshruty_zvonkov_mikopbx" id="marshruty_zvonkov_mikopbx"></a>
 
@@ -112,7 +112,7 @@ trust_id_inbound=yes
 
 Нажмите "**Сохранить**".
 
-<figure><img src="../../.gitbook/assets/incomingInMikoPBX.png" alt=""><figcaption><p>Новое правило обработки входящих вызовов</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/incomingInMikoPBX.png" alt=""><figcaption><p>Новое правило обработки входящих вызовов</p></figcaption></figure>
 
 ### Исходящие маршруты <a href="#isxodjaschie_marshruty" id="isxodjaschie_marshruty"></a>
 
@@ -129,22 +129,22 @@ trust_id_inbound=yes
 
 Нажмите "**Сохранить**".
 
-<figure><img src="../../.gitbook/assets/firstOutcomingRule.png" alt=""><figcaption><p>Параметры исходящего правила для первой SIM</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/firstOutcomingRule.png" alt=""><figcaption><p>Параметры исходящего правила для первой SIM</p></figcaption></figure>
 
 Добавим новое правило для звонков через **вторую** sim:
 
 Звонки на номера с шаблоном 8926XXXXXXX или 7926XXXXXXX, будем отправлять через провайдера GoIP4, перед набором к номеру будем добавлять префикс **2+**.
 
-<figure><img src="../../.gitbook/assets/secondOutcomingRule.png" alt=""><figcaption><p>Параметры исходящего правила для второй SIM</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/secondOutcomingRule.png" alt=""><figcaption><p>Параметры исходящего правила для второй SIM</p></figcaption></figure>
 
 Аналогичным образом можно настроить правила для звонков через другие sim.
 
 {% hint style="info" %}
-Правила настройки исходящих маршрутов подробно описаны на в [этой статье](../../manual/routing/outbound-routing.md).
+Правила настройки исходящих маршрутов подробно описаны на в [этой статье](../../../manual/routing/outbound-routing.md).
 {% endhint %}
 
 На этом настройка подключения шлюза к MikoPBX завершена. Можно тестировать входящие и исходящие звонки через GSM шлюз.
 
 {% hint style="success" %}
-Используя модуль "[Группы пользователей](../../modules/miko/module-users-groups.md)" можно назначить каждому сотруднику свою SIM карту для исходящих.
+Используя модуль "[Группы пользователей](../../../modules/miko/module-users-groups.md)" можно назначить каждому сотруднику свою SIM карту для исходящих.
 {% endhint %}

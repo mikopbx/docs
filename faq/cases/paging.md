@@ -77,7 +77,7 @@ exten => s,1,Set(PJSIP_HEADER(add,Call-Info)=\;answer-after=0)
 1,Page(Local/202@paging-users&Local/203@paging-users)
 ```
 
-<figure><img src="../../.gitbook/assets/codeForDialplan.png" alt=""><figcaption><p>Код для диалплана</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/codeForDialplan (1).png" alt=""><figcaption><p>Код для диалплана</p></figcaption></figure>
 
 {% hint style="warning" %}
 В коде приложения опишите контакты, кому следует звонить. Контакты перечисляются с разделителем **&**.
