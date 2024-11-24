@@ -1,3 +1,7 @@
+---
+description: Настройка SMS в Telegram для шлюза GoIP4
+---
+
 # SMS в Telegram
 
 ## Настройки в Telegram <a href="#nastrojki_telegram" id="nastrojki_telegram"></a>

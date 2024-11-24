@@ -197,7 +197,7 @@
     * [SMS в Telegram](faq/voip-gateways/goip4/sms-to-telegram.md)
   * [Yeastar NeoGate TG 400](faq/voip-gateways/yeastar-neogate-tg-400.md)
   * [Grandstream HT503](faq/voip-gateways/grandstream-ht503.md)
-  * [Звонки через 3G модем Huawei E173 (chan\_dongle)](faq/voip-gateways/zvonki-cherez-3g-modem-huawei-e173-chan_dongle.md)
+  * [Звонки через 3G модем Huawei E173 (chan\_dongle)](faq/voip-gateways/calls-through-huawei-e173.md)
 * [IP-Телефоны](faq/ip-telefones/README.md)
   * [Snom D120](faq/ip-telefones/snom-d120.md)
   * [Yealink T19](faq/ip-telefones/yealink-t19.md)
