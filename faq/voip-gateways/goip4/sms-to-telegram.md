@@ -109,5 +109,27 @@ exten => _[hit],1,Hangup()
 1. Перейдите в раздел "**Маршрутизация**" -> "**Провайдеры телефонии**". Добавьте нового SIP-провайдера, со следующими параметрами:
 
 * "**Название**" - произвольное
-* **"Тип учетной записи"** - Аутентификация по IP, без пароля.
-*
+* **"Тип учетной записи"** - Аутентификация по IP адресу, без пароля.
+* "**Хост или IP адрес**" - IP-адрес Вашего шлюза
+
+<figure><img src="../../../.gitbook/assets/newProviderGOIP4.png" alt=""><figcaption><p>Параметры провайдера</p></figcaption></figure>
+
+2. В "**Расширенные настройки**" -> "**Дополнительные параметры**" пропишите:
+
+```
+[endpoint]
+message_context = messages-from-goip
+```
+
+<figure><img src="../../../.gitbook/assets/additionalParameters (1).png" alt=""><figcaption><p>Дополнительные параметры</p></figcaption></figure>
+
+## Настройка GoIP <a href="#nastrojka_goip" id="nastrojka_goip"></a>
+
+1. Перейдите в раздел «**Configurations**» - «**SMS**»
+2. Для каждого канала CH1 / CH2 … CHN выполните настройку:
+
+* «**SMS to VoIP**» (верхнее) - «**Call Function**»
+* «**Call mode**» - «**Mode 1**»
+* «**SMS to VoIP**» (нижнее) - укажите номер телефона sim карты
+
+<figure><img src="../../../.gitbook/assets/image (103).png" alt=""><figcaption><p>Параметры в GoIP</p></figcaption></figure>
