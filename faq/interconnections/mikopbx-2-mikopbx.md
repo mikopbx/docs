@@ -8,7 +8,7 @@ description: Analysis of a case involving the integration of two MikoPBX systems
 
 In this example, a call center company has two offices: in **Berlin** and in **Cologne**. Each office uses a separate **MikoPBX** system:
 
-* **PBX Berlin** - _192.168.0.202_ - all internal employee numbers are assigned using the pattern **2XX (e.g., 201, 202, 203, ...)**
+* **PBX Berlin** - _192.168.0.202_ - all internal employee numbers are assigned using the pattern 2**XX (e.g., 201, 202, 203, ...)**
 * **PBX Cologne** - _192.168.0.201_ - all internal employee numbers are assigned using the pattern **3XX (e.g., 301, 302, 303, ...)**
 
 {% hint style="info" %}
