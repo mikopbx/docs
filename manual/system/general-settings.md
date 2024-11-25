@@ -69,8 +69,8 @@ MikoPBX offers two types of transfers: **Attended** and **Unattended** (blind).
 * An **unattended transfer** occurs when you transfer the call without first speaking to your colleague. For example, when you receive a second incoming call while already on the phone, you can transfer the new call to a colleague without interrupting your current call.
 
 {% hint style="info" %}
-* By default, the combination for an attended transfer is two pound signs (##).
-* By default, the combination for an unattended transfer is two asterisks (\*\*).
+- By default, the combination for an attended transfer is two pound signs (##).
+- By default, the combination for an unattended transfer is two asterisks (\*\*).
 {% endhint %}
 
 #### Timeouts <a href="#tajmauty" id="tajmauty"></a>
@@ -95,7 +95,7 @@ In real-time, the **Transport Protocol (RTP)** defines the standard format for t
 
 * **STUN Server** Address - helps with PBX operation behind NAT, especially when using WebRTC.
 * **Use WebRTC** - additional settings will be configured for WebRTC connections. For example, for extension 201, an additional endpoint will be created, accessible via WebRTC using the URL\
-  **`sip:201-WS@IP_PBX`**
+  &#xNAN;**`sip:201-WS@IP_PBX`**
 
 ## Audio/Video Codecs <a href="#audio_video_kodeki" id="audio_video_kodeki"></a>
 

@@ -6,7 +6,7 @@
 Supported file format mp3 and wav
 {% endhint %}
 
-Audio files in MikoPBX are used in various call scenarios and interactive voice menus **(**In **IVR menu**, during **non-working hours**, in **call queues**, for various system notifications, and in **hold music**.) to play voice greetings or notify customers.
+Audio files in MikoPBX are used in various call scenarios and interactive voice menus **(**&#x49;n **IVR menu**, during **non-working hours**, in **call queues**, for various system notifications, and in **hold music**.) to play voice greetings or notify customers.
 
 The list of available sound files is displayed in the **Telephony** -> **Sound files.**
 

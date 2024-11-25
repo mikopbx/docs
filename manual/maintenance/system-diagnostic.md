@@ -2,7 +2,7 @@
 
 <figure><img src="../../.gitbook/assets/LogsSection.png" alt=""><figcaption><p>System logs section</p></figcaption></figure>
 
-Contains 3 tabs: _**Show log**_**, **_**System information**_**, **_**Capturing network packets**_.
+Contains 3 tabs: _**Show log**_**,&#x20;**_**System information**_**,&#x20;**_**Capturing network packets**_.
 
 <figure><img src="../../.gitbook/assets/ThreeSection.png" alt=""><figcaption><p>Three sections</p></figcaption></figure>
 
@@ -21,9 +21,9 @@ This section allows you to view log files for detailed analysis of PBX operation
 
 The following options are available:
 
-1. **Download** the selected log as a file ![](../../.gitbook/assets/sistem\_logi\_skachat.png)
-2. **Refresh** the log ![](../../.gitbook/assets/sistem\_logi\_obnovit.png)
-3. **Auto-refresh** the log ![](../../.gitbook/assets/sistem\_logi\_obnovit\_avt.png)
+1. **Download** the selected log as a file ![](../../.gitbook/assets/sistem_logi_skachat.png)
+2. **Refresh** the log ![](../../.gitbook/assets/sistem_logi_obnovit.png)
+3. **Auto-refresh** the log ![](../../.gitbook/assets/sistem_logi_obnovit_avt.png)
 
 ### Example: Call Analysis <a href="#primer_analiz_zvonka" id="primer_analiz_zvonka"></a>
 

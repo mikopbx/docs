@@ -8,7 +8,7 @@
 <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Name, Type and Version of the virtual machine</p></figcaption></figure>
 
 3. Select a datastore for the virtual machine.
-4. Allocate **1024 MB** of memory to the virtual machine and create a **new** virtual hard disk for the system with a size of <mark style="color:green;">**1024**</mark>** MB**.
+4. Allocate **1024 MB** of memory to the virtual machine and create a **new** virtual hard disk for the system with a size of <mark style="color:green;">**1024**</mark>**&#x20;MB**.
 
 <figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Size of RAM and memory for the system hard drive</p></figcaption></figure>
 
@@ -42,7 +42,7 @@ We recommend allocating at least 50 GB for this disk.
 <figure><img src="../../.gitbook/assets/theSystemIsLoadedInRecoveryMode.png" alt=""><figcaption><p>System is loaded in recovery mode </p></figcaption></figure>
 
 {% hint style="info" %}
-Use the [arrow keys](https://en.wikipedia.org/wiki/Arrow\_keys) to navigate the menu, and press **Enter** to select an option. You can also press the corresponding number on the [numpad](https://en.wikipedia.org/wiki/Computer\_keyboard#Alphanumeric\_keys).
+Use the [arrow keys](https://en.wikipedia.org/wiki/Arrow_keys) to navigate the menu, and press **Enter** to select an option. You can also press the corresponding number on the [numpad](https://en.wikipedia.org/wiki/Computer_keyboard#Alphanumeric_keys).
 {% endhint %}
 
 3. Install MikoPBX:&#x20;
