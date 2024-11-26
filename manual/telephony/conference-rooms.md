@@ -1,22 +1,26 @@
-# Conference rooms
+---
+description: Creating and configuring conferences in MikoPBX
+---
+
+# Conferences
 
 Conference calling is used for conducting group discussions, meetings, or negotiations in cases where participants are unable to meet in person. It is also used when a particular matter needs to be discussed with multiple participants simultaneously.
 
 ## Create conference rooms
 
-The list of conference rooms is located in the **Telephony** -> **Conferences section**.
+The list of conference rooms is located in the "**Telephony"** -> **"Conferences section"**.
 
 To create a new conference room, click the "**Add conference**".
 
-<figure><img src="../../.gitbook/assets/2 (24).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2 (24).png" alt=""><figcaption><p>"Add conference" button</p></figcaption></figure>
 
 You must specify the name of the conference and its internal number, by calling which you can enter this conference
 
-<figure><img src="../../.gitbook/assets/new1 (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/new1 (2).png" alt=""><figcaption><p>New conference room parameters</p></figcaption></figure>
 
 To prevent unauthorized access to the conference by employees for whom the discussion is not intended, you can secure the conference room with a password. To do this, fill in the "**Conference Pin**" field. Only digits can be entered in this field, with a minimum requirement of at least one digit.
 
-<figure><img src="../../.gitbook/assets/new.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/new.png" alt=""><figcaption><p>Conference PIN field</p></figcaption></figure>
 
 In this case, to join the conference, employees will need to enter the PIN code after dialing the **conference PIN**.
 

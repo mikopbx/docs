@@ -1,10 +1,10 @@
 ---
-description: Here you can find information about Call Detail Rescords (CDR)
+description: How to view and filter call history in MikoPBX
 ---
 
 # Call detail records (CDR)
 
-**Call History** provides a log of all incoming, outgoing, and internal calls. It is located under **Telephony -> Call History**.
+**Call History** provides a log of all incoming, outgoing, and internal calls. It is located under "**Telephony" -> "Call History"**.
 
 <figure><img src="../../.gitbook/assets/callDetailRecords(CDR).png" alt=""><figcaption><p>Call detail records (CDR)</p></figcaption></figure>
 

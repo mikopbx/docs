@@ -4,50 +4,31 @@ description: Setting Primary Phone Numbers
 
 # Extensions
 
-## Connecting softphones
-
-* [<mark style="color:blue;">MicroSIP</mark>](../../faq/softphones/microsip.md)
-* [Groundwire](../../faq/softphones/groundwire.md)
-* [Zoiper](../../faq/softphones/zoiper.md)
-* [<mark style="color:blue;">Jitsi</mark>](../../faq/softphones/jitsi.md)
-* [<mark style="color:blue;">PhonerLite</mark>](../../faq/softphones/phonerlite.md)
-* [<mark style="color:blue;">Linphone(Mac OS)</mark>](../../faq/softphones/linphone-macos.md)
-* [<mark style="color:blue;">Telephone(Mac OS)</mark>](../../faq/softphones/telephone-macos.md)
-* [<mark style="color:blue;">WebRTC tutorial using SIPML5</mark>](../../faq/softphones/configuring-webrtc-client-simpl5.md)
-* <mark style="color:red;">Configuring telegram as SIP softphone</mark>
-* [<mark style="color:blue;">Softphone.pro</mark>](../../faq/softphones/softphone.pro.md)
-* [<mark style="color:blue;">Bria Solo</mark>](../../faq/softphones/bria-solo.md)
-
-## Connecting telephones
-
-* <mark style="color:red;">Yealink T19</mark>
-* <mark style="color:red;">Yealink T21</mark>
-* <mark style="color:red;">Yealink T28</mark>
-* <mark style="color:red;">Snom D120</mark>
+Extensions in MikoPBX are individual users of the system who are assigned internal numbers for making and receiving calls. They have personal accounts that allow you to configure access rights, call forwarding and other personal settings in the system.
 
 ## Extensions List
 
 The "**Extensions**" section displays a list of internal user accounts for **employees**. On the left side of each employee, the status of the authorized device is displayed. If the device is successfully authorized under the respective internal user account, a green circle is shown; otherwise, it appears gray.
 
-<figure><img src="../../.gitbook/assets/2 (29).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2 (29).png" alt=""><figcaption><p>Extensions status</p></figcaption></figure>
 
 In the search bar, you can find the desired contact. You can search by the employee's name, internal number, mobile number, or email address.
 
-<figure><img src="../../.gitbook/assets/3 (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/3 (4).png" alt=""><figcaption><p>Search for an employee by email</p></figcaption></figure>
 
 The form also provides the ability to sort the list of employees by name, internal number, mobile number, or email address. There are buttons for copying the account password to the clipboard, editing the account, and deleting the account.
 
-<figure><img src="../../.gitbook/assets/4 (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/4 (10).png" alt=""><figcaption><p>Sorting employees and functions in the main menu</p></figcaption></figure>
 
-## Adding an Employee
+## Adding an extension
 
 To add a new employee, simply click on the "**Add new extension**" button.
 
-<figure><img src="../../.gitbook/assets/5 (26).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/5 (26).png" alt=""><figcaption><p>Button "Add new extension"</p></figcaption></figure>
 
 ## Main Account Settings
 
-<figure><img src="../../.gitbook/assets/6 (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/6 (10).png" alt=""><figcaption><p>Employee Account Settings Tab</p></figcaption></figure>
 
 On the "Basic Parameters" tab, you can configure the general settings for an employee's internal account:
 
@@ -67,9 +48,9 @@ Please ensure that the passwords for SIP accounts meet the following requirement
 
 ## Advanced Account Settings
 
-Accesses the Advanced drop-down list.
+Accesses the Advanced drop-down list:
 
-<figure><img src="../../.gitbook/assets/9 (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/extensionsAdvancedSettings.png" alt=""><figcaption><p>Advanced settings option</p></figcaption></figure>
 
 **Redefining the set string**
 
@@ -150,7 +131,7 @@ To override fields in the sections, you should fill in the "Additional Parameter
 
 ## Routing Settings
 
-<figure><img src="../../.gitbook/assets/17 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/17 (1).png" alt=""><figcaption><p>"Routing settings" section</p></figcaption></figure>
 
 On this tab, you can set rules for call forwarding when the employee is unavailable, busy, or does not answer.
 
@@ -160,8 +141,23 @@ You can also specify the numbers to which the call should be redirected in case 
 
 Feel free to configure these parameters according to your preferences and requirements.
 
+## Connecting softphones
 
+* [<mark style="color:blue;">MicroSIP</mark>](../../faq/softphones/microsip.md)
+* [Groundwire](../../faq/softphones/groundwire.md)
+* [Zoiper](../../faq/softphones/zoiper.md)
+* [<mark style="color:blue;">Jitsi</mark>](../../faq/softphones/jitsi.md)
+* [<mark style="color:blue;">PhonerLite</mark>](../../faq/softphones/phonerlite.md)
+* [<mark style="color:blue;">Linphone(Mac OS)</mark>](../../faq/softphones/linphone-macos.md)
+* [<mark style="color:blue;">Telephone(Mac OS)</mark>](../../faq/softphones/telephone-macos.md)
+* [<mark style="color:blue;">WebRTC tutorial using SIPML5</mark>](../../faq/softphones/configuring-webrtc-client-simpl5.md)
+* <mark style="color:red;">Configuring telegram as SIP softphone</mark>
+* [<mark style="color:blue;">Softphone.pro</mark>](../../faq/softphones/softphone.pro.md)
+* [<mark style="color:blue;">Bria Solo</mark>](../../faq/softphones/bria-solo.md)
 
+## Connecting telephones
 
-
-\
+* <mark style="color:red;">Yealink T19</mark>
+* <mark style="color:red;">Yealink T21</mark>
+* <mark style="color:red;">Yealink T28</mark>
+* <mark style="color:red;">Snom D120</mark>

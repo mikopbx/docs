@@ -1,4 +1,8 @@
-# Call queue
+---
+description: Creating and configuring call queues.
+---
+
+# Call queues
 
 Queues allow you to:
 
@@ -9,7 +13,7 @@ Queues allow you to:
 
 To configure call queues in MikoPBX, go to the "**Telephony**" section and select "**Call Queue**." Here, you can create and customize your queues according to your business requirements and customer service needs.
 
-<figure><img src="../../.gitbook/assets/1 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/1 (1).png" alt=""><figcaption><p>"Call queue" section</p></figcaption></figure>
 
 {% hint style="warning" %}
 **The default call duration for a queue is set to 300 seconds (5 minutes)**. After this time limit is reached, the call will be automatically terminated. To bypass this limitation, you can configure "**Scenario 1**" as described in the instructions for "**Call Routing on Failures**".
@@ -19,20 +23,20 @@ To configure call queues in MikoPBX, go to the "**Telephony**" section and selec
 
 To add a new queue, perform the "Add a new call queue" action
 
-<figure><img src="../../.gitbook/assets/2 (19).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2 (19).png" alt=""><figcaption><p>"Add a new call queue" button</p></figcaption></figure>
 
 In the queue creation form or dialog, you will find the following fields:
 
 * **Queue Name**: Enter a name for the queue. This name will be used for reference when setting up call routing rules.&#x20;
 * **Note**: Provide a brief description or note about the queue. This information will be visible in the queue list, allowing you to provide additional details or instructions.
 
-<figure><img src="../../.gitbook/assets/3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/3.png" alt=""><figcaption><p>New call queue parameters</p></figcaption></figure>
 
-## Queue Operators
+## Queue Agents
 
-In the **Queue Operators** section, you can add an arbitrary number of employees (queue agents) and specify a call distribution **strategy**.
+In the **Queue Agents** section, you can add an arbitrary number of employees (queue agents) and specify a call distribution **strategy**.
 
-<figure><img src="../../.gitbook/assets/4 (15).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/4 (15).png" alt=""><figcaption><p>Queue agents section</p></figcaption></figure>
 
 Here are the options for queue strategy:
 
@@ -47,7 +51,7 @@ Here are the options for queue strategy:
 
 ## **Advanced Settings**
 
-<figure><img src="../../.gitbook/assets/5 (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/5 (9).png" alt=""><figcaption><p>Advanced settings button</p></figcaption></figure>
 
 In this section, you can provide additional information:
 
@@ -56,7 +60,7 @@ In this section, you can provide additional information:
 
 <figure><img src="../../.gitbook/assets/6 (1).png" alt=""><figcaption></figcaption></figure>
 
-### Queue settings for the agent
+### Queue settings for agents
 
 <figure><img src="../../.gitbook/assets/7 (6).png" alt=""><figcaption></figcaption></figure>
 
@@ -66,7 +70,7 @@ In this section, you can provide additional information:
 
 ### Queue settings for the caller
 
-<figure><img src="../../.gitbook/assets/8 (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/8 (12).png" alt=""><figcaption><p>Queue settings for the caller</p></figcaption></figure>
 
 * **What the caller hears while waiting** - During the wait for their call to be answered, the caller can hear either hold music or a ringing tone.
 * **Background Music** (MOH) - You can specify a unique audio file to be played to the caller during the wait, such as promotional materials.
@@ -77,7 +81,7 @@ In this section, you can provide additional information:
 
 ### Call routing in case of failures
 
-<figure><img src="../../.gitbook/assets/9 (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/9 (8).png" alt=""><figcaption><p>Call routing in case of failures</p></figcaption></figure>
 
 * **The script #1** - In this scenario, you can configure the maximum allowable wait time for a client in the queue. If none of the queue agents can answer the client within the specified time, you can set a number to which the call will be redirected.
 * **The script #2** - If there are no agents available in the queue (meaning no agents are currently logged into the phone system), you can specify a number to which the client's call will be transferred.
@@ -89,4 +93,3 @@ In these scenarios, as a redirection number, you can choose not only an internal
 {% hint style="warning" %}
 **The default call duration for the queue is set to 300 seconds (5 minutes)**. If you require a longer interval, you can specify a higher duration in **Scenario 1** and provide a backup number to redirect the call to. This allows you to customize the wait time and ensure that if none of the queue agents can answer the call within the specified duration, it will be redirected to the designated backup number.
 {% endhint %}
-
