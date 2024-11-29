@@ -1,3 +1,7 @@
+---
+description: Installation guide for MikoPBX image from AWS Marketplace
+---
+
 # AWS Marketplace
 
 Sign in to the service Amazon Web Services [https://aws.amazon.com](https://aws.amazon.com/)

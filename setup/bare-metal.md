@@ -1,3 +1,9 @@
+---
+description: >-
+  In this article you will find instructions on how to install MikoPBX on a
+  separate computer.
+---
+
 # Standalone Computer
 
 {% hint style="info" %}

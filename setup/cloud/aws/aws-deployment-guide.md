@@ -1,3 +1,7 @@
+---
+description: Full installation guide for MikoPBX using AWS
+---
+
 # AWS deployment guide
 
 Sign in to the service Amazon Web Services [https://aws.amazon.com](https://aws.amazon.com)

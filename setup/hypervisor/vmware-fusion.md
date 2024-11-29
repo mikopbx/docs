@@ -1,3 +1,7 @@
+---
+description: Installing MikoPBX using VMware Fusion.
+---
+
 # VMware Fusion
 
 ## Creating a virtual machine

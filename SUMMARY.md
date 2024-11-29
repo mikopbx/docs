@@ -23,7 +23,7 @@
   * [Google Cloud](setup/cloud/google-cloud/README.md)
     * [Google Cloud deployment guide](setup/cloud/google-cloud/google-cloud.md)
     * [Google Cloud Marketplace](setup/cloud/google-cloud/google-cloud-marketplace.md)
-  * [Hetzner cloud](setup/cloud/hetzner-cloud.md)
+  * [Hetzner cloud (In dev)](setup/cloud/hetzner-cloud.md)
 * [Docker container](setup/docker/README.md)
   * [Docker installation and creating a user and directories](setup/docker/docker-installation-and-creating-a-user-and-directories.md)
   * [Running MikoPBX in a container](setup/docker/running-mikopbx-in-a-container.md)

@@ -1,3 +1,7 @@
+---
+description: Installing MikoPBX using VMware Workstation Pro.
+---
+
 # VMware Workstation Pro
 
 This guide covers creating and configuring a virtual machine in VMware Workstation Pro and installing MikoPBX on it.
@@ -87,8 +91,8 @@ In the settings, go to "**Network Adapter**" and select "**Network connection**"
 <figure><img src="../../.gitbook/assets/startPageConsole (1).png" alt=""><figcaption><p>Loaded MikoPBX from optical disk</p></figcaption></figure>
 
 {% hint style="info" %}
-Use the [arrow keys](https://en.wikipedia.org/wiki/Arrow\_keys) to navigate through the menu options.\
-Press **Enter** to select an option, or press the corresponding number on the [numpad](https://en.wikipedia.org/wiki/Computer\_keyboard#Alphanumeric\_keys).
+Use the [arrow keys](https://en.wikipedia.org/wiki/Arrow_keys) to navigate through the menu options.\
+Press **Enter** to select an option, or press the corresponding number on the [numpad](https://en.wikipedia.org/wiki/Computer_keyboard#Alphanumeric_keys).
 {% endhint %}
 
 3. To install MikoPBX, select "**\[8] Install**".

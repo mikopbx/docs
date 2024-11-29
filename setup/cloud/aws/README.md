@@ -1,3 +1,7 @@
+---
+description: MikoPBX Installation Options Using AWS
+---
+
 # AWS
 
 The simplest way to install MikoPBX is by deploying a ready-made image from the AWS Marketplace. If you wish to launch a custom version of MikoPBX, please refer to the detailed instructions where we describe step-by-step how to create an AMI image from any MikoPBX distribution.
