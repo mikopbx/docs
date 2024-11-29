@@ -1,3 +1,7 @@
+---
+description: Preparation guide for MikoPBX using Docker
+---
+
 # Docker installation and creating a user and directories
 
 ### Installing Docker and Docker Compose on Ubuntu 22.04

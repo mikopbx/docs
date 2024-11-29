@@ -1,3 +1,7 @@
+---
+description: MikoPBX Installation Guide using Google Cloud
+---
+
 # Google Cloud
 
 Installing MikoPBX in Google Cloud can be done in two ways: using an image from the Google Cloud Marketplace or from an image based on a file uploaded from the MikoPBX distribution. The first method provides quick and easy deployment of the standard version of MikoPBX, while the second is suitable for intermediate releases.
