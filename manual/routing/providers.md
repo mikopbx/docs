@@ -1,28 +1,34 @@
-# VoIP providers
+---
+description: Connecting and configuring telephony providers in MikoPBX
+---
+
+# Telephony providers
 
 ### General Information
 
-To make or receive external phone calls over the public switched telephone network or the Internet, you must create at least one provider account. Each technology has its own account type. To add a new account or modify an existing one, go to **Routing** -> **Telephony Providers**.
+"**Telephony Providers**" in MikoPBX is a section of the system where connections to external telecom operators via Internet protocols for IP telephony are configured. Here, administrators can add and configure SIP trunk accounts or other types of connections that allow the system to make and receive calls from landline and mobile numbers.
+
+To make or receive external phone calls via the public switched telephone network or the Internet, you must create at least one provider account. Each technology has its own account type. To add a new account or change an existing one, go to "**Call Routing**" -> "**Telephony Providers**":
 
 <figure><img src="../../.gitbook/assets/providers.png" alt=""><figcaption><p>Telephony providers section</p></figcaption></figure>
 
 The provider overview contains a list of all available service providers. A green icon next to the provider's name indicates that MikoPBX has registered this provider, and you can start using this provider. You can enable or disable the use of the provider using the switch on the left.
 
-<figure><img src="../../.gitbook/assets/ProvidersSection.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ProvidersSection.png" alt=""><figcaption><p>Switching provider status</p></figcaption></figure>
 
 To connect a new provider account, click **Connect SIP** or **Connect IAX** depending on the type of account you are connecting.
 
 <figure><img src="../../.gitbook/assets/DifferentTypesOfConnection.png" alt=""><figcaption><p>Different types of connection </p></figcaption></figure>
 
-### Setting up SIP Provider <a href="#nastrojka_sip_provajdera" id="nastrojka_sip_provajdera"></a>
+## Setting up SIP Provider <a href="#nastrojka_sip_provajdera" id="nastrojka_sip_provajdera"></a>
 
-#### General Settings
+### General Settings
 
 {% hint style="info" %}
 Instructions for connecting to the most popular service providers can be found in our [FAQ](../../faq/providers/).
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/ParametersOfProvider.png" alt=""><figcaption><p>General settibngs of provider</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ParametersOfProvider.png" alt=""><figcaption><p>General settings of provider</p></figcaption></figure>
 
 In the general settings of the SIP provider, specify the following settings:
 
@@ -39,7 +45,7 @@ In the general settings of the SIP provider, specify the following settings:
 * **inband** sends keypresses as "tones." To use this standard, you need a high-quality audio codec.
 * **Auto**, **rfc**, and **info** transmit keypresses through SIP encoding.
 
-#### Advanced SIP Provider Settings <a href="#rasshirennye_nastrojki_sip_provajdera" id="rasshirennye_nastrojki_sip_provajdera"></a>
+### Advanced SIP Provider Settings <a href="#rasshirennye_nastrojki_sip_provajdera" id="rasshirennye_nastrojki_sip_provajdera"></a>
 
 <figure><img src="../../.gitbook/assets/AdvancedSettings.png" alt=""><figcaption><p>Advanced Settings</p></figcaption></figure>
 
@@ -162,7 +168,7 @@ To complete the configuration, click **Save Settings**.
 
 <figure><img src="../../.gitbook/assets/SaveSettings.png" alt=""><figcaption><p>Save settings</p></figcaption></figure>
 
-### Multiple Providers on One IP <a href="#neskolko_provajderov_na_odnom_ip" id="neskolko_provajderov_na_odnom_ip"></a>
+## Multiple Providers on One IP (Host) <a href="#neskolko_provajderov_na_odnom_ip" id="neskolko_provajderov_na_odnom_ip"></a>
 
 There are cases when you need to connect multiple accounts from one communication service provider. In this case, the settings **Host or IP Address** and **SIP Connection Port** may be the same for all accounts.
 
@@ -170,25 +176,25 @@ Asterisk handles this situation differently. The PBX will not be able to correct
 
 As a solution, in older versions of the PBX, you could describe additional inbound routes for which you would fill in the **Additional Number (DID)** field with the **Username** value for each account of the provider. This required creating N number of additional routes, equal to the number of provider accounts.
 
-An alternative is the [<mark style="color:red;">Registering multiple accounts from one provider</mark>](providers.md#neskolko\_provajderov\_na\_odnom\_ip) instruction. This approach was not very intuitive.
+An alternative is the "[Registering multiple accounts from one provider](../../faq/cases/registering-multiple-accounts-from-one-provider.md)" instruction. This approach was not very intuitive.
 
 The **Username** field, in most cases, will be used as the destination number **Additional Number (DID)** for incoming calls. Considering that outgoing routes for all **Usernames** will be configured, the call will be correctly processed by the PBX.
 
-### More about Registration Types
+## More about Registration Types
 
-#### **Outgoing Registration**
+#### **1. Outgoing Registration**
 
 This option is used when connecting most providers.
 
 Registration is necessary when the provider cannot know from which IP address the client will connect. For example, when the PBX is behind NAT. The provider's server is usually on a public IP address.
 
-#### **Incoming Registration**
+#### **2. Incoming Registration**
 
 This option is relevant for the operation of some FXO / GSM gateways when an external device must connect to your PBX using a login and password.
 
 This option is also relevant when the remote device is behind NAT, and MikoPBX cannot know its IP address.
 
-#### **IP Authentication, No Password**
+#### **3. IP Authentication, No Password**
 
 Relevant for secure private networks. For example, Rostelecom often lays its network cable and connects the client to its local network.
 

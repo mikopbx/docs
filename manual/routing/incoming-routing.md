@@ -1,13 +1,15 @@
+---
+description: Description and configuration of incoming routing
+---
+
 # Incoming routing
-
-## General information
-
-<figure><img src="../../.gitbook/assets/IncomingRoutingSection.png" alt=""><figcaption><p>Incoming Routing section</p></figcaption></figure>
 
 In this section, you need to create rules and templates for distributing incoming calls for providers created in MikoPBX. The rules for incoming calls describe the route of a call from the moment it arrives at the PBX to the moment it is completed. You can create an unlimited number of inbound routing rules. You can create several rules for one provider.
 
+<figure><img src="../../.gitbook/assets/IncomingRoutingSection.png" alt=""><figcaption><p>"Call Routing" -> "Incoming Routing" section</p></figcaption></figure>
+
 {% hint style="info" %}
-Additional examples of configuring incoming routing are available in the [FAQ ](broken-reference)section.
+Additional examples of configuring incoming routing are available in the [FAQ ](../../faq/incoming-routing/)section.
 {% endhint %}
 
 ## Routing rule priority and default route

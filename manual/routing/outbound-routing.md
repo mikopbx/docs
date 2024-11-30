@@ -1,24 +1,24 @@
+---
+description: Description and configuration of outgoing routing
+---
+
 # Outbound routing
 
-## Purpose
+Outgoing routes in MikoPBX are a set of rules and settings that determine how the system handles outgoing calls from employees to external numbers. With their help, administrators can control the direction of calls through different telephony providers or communication lines depending on certain conditions, such as the dialed number, prefixes, time of day or user access rights. This allows you to optimize communication costs, distribute the load between channels and apply security policies by restricting or allowing certain types of calls. Setting up outgoing routes provides flexibility and control over outgoing telephone communications, contributing to the efficient operation of the company's communication system.
 
-<figure><img src="../../.gitbook/assets/OutboundRoutingSection.png" alt=""><figcaption><p>Outbound routing section</p></figcaption></figure>
+In this article, you will find detailed documentation on setting up outgoing routing.
 
-## Create a rule
+<figure><img src="../../.gitbook/assets/OutboundRoutingSection.png" alt=""><figcaption><p>"Call routing" -> "Outbound routing" section</p></figcaption></figure>
 
-In this section, you need to create rules and templates for distributing outgoing calls for providers connected to the PBX.
-
-You can create an unlimited number of outbound routing rules.
-
-You can create several rules for one provider.
+## Creating a rule
 
 {% hint style="info" %}
-Additional examples of configuring outgoing routing are available in the [FAQ ](broken-reference)section.
+Additional examples of configuring outgoing routing are available in the [FAQ ](../../faq/outbound-routing/)section.
 {% endhint %}
 
 ### Step 1: Add a new rule
 
-To add a new outgoing routing rule, click the **Add a new rule** button.
+To add a new outgoing routing rule, click the "**Add a new rule"** button.
 
 <figure><img src="../../.gitbook/assets/AddANewRule.png" alt=""><figcaption><p>New rule in outbound routing</p></figcaption></figure>
 
@@ -32,7 +32,7 @@ The name of the rule can be set arbitrarily.
 
 ### Step 3. Setting the number template
 
-Set a template for outgoing calls. Read more about number templates in the [next paragraph](outbound-routing.md#primery-shablonov-nomerov).
+Set a template for outgoing calls. Read more about number templates in this [articles group](../../faq/outbound-routing/number-templates/).
 
 <figure><img src="../../.gitbook/assets/Step2CreatingANewRule.png" alt=""><figcaption><p>Step 3: Setting the number template</p></figcaption></figure>
 
@@ -97,4 +97,3 @@ For example, the numbers 84952293042 and 74996382584 should be converted to 2293
 The implementation of the rule looks like this:
 
 <figure><img src="../../.gitbook/assets/removePrefix.png" alt=""><figcaption><p>Remove prefix</p></figcaption></figure>
-
