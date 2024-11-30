@@ -1,12 +1,16 @@
+---
+description: Creating and Configuring Dialplan Applications
+---
+
 # Application dialplans
 
-**Application dialplans** are programmable voice applications in PHP and Asterisk Dialplan.
+Dialplan applications are programmable voice applications in PHP and Asterisk Dialplan. MikoPBX comes with several pre-configured applications. With some basic knowledge of Asterisk dialplans, additional applications can be easily created. Like a phone account, applications can have an extension assigned in the settings.
 
 MikoPBX comes with several pre-configured applications. With some basic knowledge of Asterisk dialplan, you can easily create additional applications. Like a phone extension, applications can have an internal number assigned in the settings.
 
 Below you will see a description of the basic applications included in MikoPBX:
 
-<figure><img src="../../.gitbook/assets/1 (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/1 (2).png" alt=""><figcaption><p>List of basic Application dialplans</p></figcaption></figure>
 
 | Application Number | Application Description                                                                                                                                                                                 |
 | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -18,7 +22,7 @@ Below you will see a description of the basic applications included in MikoPBX:
 
 MikoPBX applications are created from several plans of the Asterisk application suite. There are many examples of ready-to-run applications in the system. To add a new MikoPBX application, click on "**Add a New**" in the application menu.
 
-<figure><img src="../../.gitbook/assets/2 (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2 (12).png" alt=""><figcaption><p>"Add a new" button</p></figcaption></figure>
 
 In just a few steps, you can create your own applications. First, define the **Name and Call Number** for the application, and optionally fill in the **Comment field**.
 
@@ -27,13 +31,13 @@ Possible application code types:
 * **PHP-AGI script** - AGI is an embedded method in Asterisk for executing external scripts (similar to CGI for HTTP servers), which can extend Asterisk's functionality using other programming languages, particularly PHP. AGI scripts can control call handling in the dialplan and are invoked from the extensions.conf file.
 * **Asterisk Dialplan** - The configuration of the dialplan is contained in the Asterisk configuration file called **extensions.conf**. This is one of the most important configuration files where the processing and routing of incoming and outgoing calls are defined. This file governs the behavior of all connections passing through your PBX (Private Branch Exchange).
 
-<figure><img src="../../.gitbook/assets/3 (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/3 (6).png" alt=""><figcaption><p>Parameters of the new dialplan application</p></figcaption></figure>
 
 Let's clarify: we will refer to MikoPBX applications as "applications" and Asterisk dialplan functions as "functions". For example, Answer(), NoOP(), Set(), and Wait() are functions. These are individual target functions in Asterisk that are then combined in MikoPBX to create more powerful MikoPBX applications.
 
 Describe the logical operations in the text field of the **Programme Code**. Please note that only one command is allowed per line, for example:
 
-<figure><img src="../../.gitbook/assets/4 (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/4 (4).png" alt=""><figcaption><p>"Programme code" section</p></figcaption></figure>
 
 The figure shows an example of the simplest application for the number 000063. After dialing the number, you will hear the robot voice your internal number.
 
