@@ -1,3 +1,7 @@
+---
+description: Discription of system requirements for the MikoPBX system
+---
+
 # System requirements
 
 ### Network Channel Requirement
@@ -10,7 +14,7 @@ An example of calculating the required channel bandwidth for different codecs fo
 * **G.729** - 1.38 Mbps&#x20;
 
 {% hint style="info" %}
-The calculation is approximate, when using the same codec on all devices connected to the PBX. Read more [here](https://www.asteriskguru.com/tools/bandwidth\_calculator.php).
+The calculation is approximate, when using the same codec on all devices connected to the PBX. Read more [here](https://www.asteriskguru.com/tools/bandwidth_calculator.php).
 {% endhint %}
 
 ### Minimum system requirements
@@ -35,5 +39,5 @@ A PC with such parameters, in our tests, holds **38 simultaneous incoming calls*
 {% endhint %}
 
 {% hint style="warning" %}
-Approximately, **1 hour** of conversation takes up **14MB** of disk space.
+Approximately, **1 hour** of conversation takes up **14MB** of disk space. The recommended size for the disk storing call recordings is at least 50 gigabytes.
 {% endhint %}
