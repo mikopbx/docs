@@ -1,4 +1,8 @@
-# Network Firewall
+---
+description: Description and configuration of Firewall rules in MikoPBX
+---
+
+# Firewall
 
 "In MikoPBX, all local subnets can be configured in the 'Network and Firewall' → 'Network Firewall' section. The network firewall is designed to restrict access to the station based on traffic type and subnets."
 
