@@ -1,4 +1,12 @@
-# System diagnostic
+---
+description: Description of section functions
+---
+
+# System log entries
+
+The "**System Diagnostics"** section in MikoPBX is a tool for monitoring and analyzing the status of the telephone system. Using this section helps to promptly detect and eliminate technical problems, ensuring stable and efficient operation of MikoPBX.
+
+Section location: "**Maintenance**" -> "**System log entries**"
 
 <figure><img src="../../.gitbook/assets/LogsSection.png" alt=""><figcaption><p>System logs section</p></figcaption></figure>
 
@@ -8,8 +16,6 @@ Contains 3 tabs: _**Show log**_**,&#x20;**_**System information**_**,&#x20;**_**
 
 ## Show log section <a href="#prosmotr_logov" id="prosmotr_logov"></a>
 
-<figure><img src="../../.gitbook/assets/ShowLogSection.png" alt=""><figcaption></figcaption></figure>
-
 This section allows you to view log files for detailed analysis of PBX operations.
 
 1. To start, select a **file**.
@@ -17,15 +23,17 @@ This section allows you to view log files for detailed analysis of PBX operation
 3. Set the **offset** value to shift the selection.
 4. Set the **filter** by entering a string to be included in the selection.
 
-<figure><img src="../../.gitbook/assets/fuilters.png" alt=""><figcaption><p>Filters</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ShowLogSection.png" alt=""><figcaption><p>"Show log" section</p></figcaption></figure>
 
 The following options are available:
 
-1. **Download** the selected log as a file ![](../../.gitbook/assets/sistem_logi_skachat.png)
-2. **Refresh** the log ![](../../.gitbook/assets/sistem_logi_obnovit.png)
-3. **Auto-refresh** the log ![](../../.gitbook/assets/sistem_logi_obnovit_avt.png)
+1. **Download** the selected log as a file ![](../../.gitbook/assets/sistem_logi_skachat.png).
+2. **Refresh** the log ![](../../.gitbook/assets/sistem_logi_obnovit.png).
+3. **Auto-refresh** the log ![](../../.gitbook/assets/image.png).
 
-### Example: Call Analysis <a href="#primer_analiz_zvonka" id="primer_analiz_zvonka"></a>
+<figure><img src="../../.gitbook/assets/fuilters.png" alt=""><figcaption><p>Filters</p></figcaption></figure>
+
+## Example: Call Analysis <a href="#primer_analiz_zvonka" id="primer_analiz_zvonka"></a>
 
 Suppose you need to analyze an outgoing call to the number **74952293042**.
 
@@ -45,8 +53,6 @@ Suppose you need to analyze an outgoing call to the number **74952293042**.
 
 ## System Information <a href="#informacija_o_sisteme" id="informacija_o_sisteme"></a>
 
-<figure><img src="../../.gitbook/assets/sysInfoSection.png" alt=""><figcaption><p>System information section</p></figcaption></figure>
-
 The tab displays the following information:
 
 * Network settings
@@ -54,11 +60,13 @@ The tab displays the following information:
 * RAM usage
 * iptables settings
 
-### Campuring network packets <a href="#zaxvat_logov" id="zaxvat_logov"></a>
+<figure><img src="../../.gitbook/assets/sysInfoSection.png" alt=""><figcaption><p>System information section</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/captureSection.png" alt=""><figcaption></figcaption></figure>
+## Campuring network packets <a href="#zaxvat_logov" id="zaxvat_logov"></a>
 
 This section allows you to perform a detailed analysis of errors in PBX operation.
+
+<figure><img src="../../.gitbook/assets/captureSection.png" alt=""><figcaption><p>"Computer network packets" section</p></figcaption></figure>
 
 #### Capturing Network Packets
 
@@ -75,7 +83,7 @@ You can start capturing network packets passing through the network interface.
 
 The network packets will automatically be saved in the archive **MikoPBXLogs\_log-tcpdump-XXXXXXXXXX**. They should also automatically save in your browser's **Downloads** folder.
 
-<figure><img src="../../.gitbook/assets/file.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/file.png" alt=""><figcaption><p>Logs file</p></figcaption></figure>
 
 If you cannot find the archive in the **Downloads** folder, you can [connect to the PBX via WinSCP](../../faq/troubleshooting/connecting-to-a-pbx-using-winscp.md) and download it from the **/storage/usbdisk1/mikopbx/tmp** directory - the file will be **log-tcpdump-XXXXXXXXXX.zip**.
 
@@ -87,7 +95,7 @@ You can use the search function in WinSCP by entering "**log-tcpdump\***" in the
 
 You can download all system logs accumulated on the PBX. To do this, click the **Download All System Logs** button.
 
-<figure><img src="../../.gitbook/assets/dnldAllSysLog.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/dnldAllSysLog.png" alt=""><figcaption><p>"Download all system logs" button</p></figcaption></figure>
 
 The system logs will automatically be saved in the archive **MikoPBXLogs\_log-sys-XXXXXXXXXX.zip**. The logs should also automatically save in your browser's **Downloads** folder.\
 You can also obtain this log archive from the **/storage/usbdisk1/mikopbx/tmp** directory by connecting to the PBX using WinSCP. The file will be **log-sys-XXXXXXXXXX.zip**.

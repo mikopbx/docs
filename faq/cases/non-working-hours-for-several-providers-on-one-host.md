@@ -46,7 +46,7 @@ In the above code fragment, you need to specify the logins for your provider acc
 
 Below, the fragments highlighted in red are the ones you need to modify:
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Fragments to change</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>Fragments to change</p></figcaption></figure>
 
 Let's break down the **ExecIfTime** command in more detail. This command executes the specified Asterisk application if the current time matches the given time specification. In our case, the command plays an audio file located in the directory **/offload/asterisk/sounds/other/out\_work\_times** in MikoPBX. Command syntax:
 

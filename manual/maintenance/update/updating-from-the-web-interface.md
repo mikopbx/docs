@@ -1,12 +1,16 @@
+---
+description: Update option from the web interface
+---
+
 # Updating from the web interface
 
 In some sections of the interface (e.g., **Extensions**), the current version of MikoPBX is displayed in the lower right corner.
 
-<figure><img src="../../../.gitbook/assets/MikoPBXupgrade_eng_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/MikoPBXupgrade_eng_1.png" alt=""><figcaption><p>Displaying the version in the web interface</p></figcaption></figure>
 
 In the PBX web interface, go to **Maintenance** → **PBX update**.
 
-<figure><img src="../../../.gitbook/assets/MikoPBXupgrade_eng_2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/MikoPBXupgrade_eng_2.png" alt=""><figcaption><p>"PBX update" section</p></figcaption></figure>
 
 If there are newer versions of the PBX available, they will be displayed in the **Online updates** **available** table, with the version number in the first field and the list of changes in the second.
 
@@ -14,7 +18,7 @@ If there are newer versions of the PBX available, they will be displayed in the 
 We recommend performing updates sequentially without skipping releases.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/MikoPBXupgrade_eng_3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/MikoPBXupgrade_eng_3.png" alt=""><figcaption><p>Section "Available online updates"</p></figcaption></figure>
 
 There are two update options: **online update** and **update using a downloaded img file**.
 
@@ -25,13 +29,13 @@ There are two update options: **online update** and **update using a downloaded 
 {% endhint %}
 
 Updates are downloaded to the PBX and applied immediately.\
-To update this way, click the button ![](../../../.gitbook/assets/obnov\_ats\_3.png) for the desired version.
+To update this way, click the button ![](../../../.gitbook/assets/obnov_ats_3.png) for the desired version.
 
-<figure><img src="../../../.gitbook/assets/MikoPBXupgrade_eng_4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/MikoPBXupgrade_eng_4.png" alt=""><figcaption><p>Button to update the system</p></figcaption></figure>
 
 A warning window will appear. Click **Upgrade**.
 
-<figure><img src="../../../.gitbook/assets/MikoPBXupgrade_eng_5.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/MikoPBXupgrade_eng_5.png" alt=""><figcaption><p>Warning window</p></figcaption></figure>
 
 The PBX will download and apply the updates, and then reboot.
 
@@ -41,20 +45,20 @@ The PBX will download and apply the updates, and then reboot.
 Please note that this method can also be used to roll back to a previous version.
 {% endhint %}
 
-To update using this method, click the button ![](../../../.gitbook/assets/obnov\_ats\_6.png) for the desired version.
+To update using this method, click the button ![](../../../.gitbook/assets/obnov_ats_6.png) for the desired version.
 
-<figure><img src="../../../.gitbook/assets/MikoPBXupgrade_eng_6.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/MikoPBXupgrade_eng_6.png" alt=""><figcaption><p>Button to download the update file</p></figcaption></figure>
 
 The img file will start downloading. Wait for the download to complete.
 
-Then click the button ![](../../../.gitbook/assets/obnov\_ats\_8.png) and select the downloaded img file.
+Then click the button ![](../../../.gitbook/assets/obnov_ats_8.png) and select the downloaded img file.
 
-<figure><img src="../../../.gitbook/assets/MikoPBXupgrade_eng_7.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/MikoPBXupgrade_eng_7.png" alt=""><figcaption><p>Selecting a file to update</p></figcaption></figure>
 
 Then click **Apply the update**, and in the warning window, click **Upgrade**.
 
-<figure><img src="../../../.gitbook/assets/MikoPBXupgrade_eng_8.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/MikoPBXupgrade_eng_8.png" alt=""><figcaption><p>Installing the update</p></figcaption></figure>
 
 The updates will be applied, and the PBX will reboot upon completion.
 
-<figure><img src="../../../.gitbook/assets/MikoPBXupgrade_eng_9.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/MikoPBXupgrade_eng_9.png" alt=""><figcaption><p>The update process</p></figcaption></figure>

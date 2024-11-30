@@ -9,12 +9,12 @@ description: Installing MikoPBX using VMware ESXi.
 1. Start by creating a new virtual machine.
 2. Enter the **Name**, **Type**, and **Version** of the virtual machine, as shown in the image below.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Name, Type and Version of the virtual machine</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Name, Type and Version of the virtual machine</p></figcaption></figure>
 
 3. Select a datastore for the virtual machine.
 4. Allocate **1024 MB** of memory to the virtual machine and create a **new** virtual hard disk for the system with a size of <mark style="color:green;">**1024**</mark>**&#x20;MB**.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Size of RAM and memory for the system hard drive</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Size of RAM and memory for the system hard drive</p></figcaption></figure>
 
 5. Choose the SCSI controller type and adapter type, as shown in the image below.
 

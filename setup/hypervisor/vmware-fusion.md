@@ -94,7 +94,7 @@ In our case - _sdb_, enter its name and press **Enter**
 
 In our case - _sdc_, enter its name and press **Enter**
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption><p>Installation process</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Installation process</p></figcaption></figure>
 
 6. The system will reboot and MikoPBX will be ready for use.
 

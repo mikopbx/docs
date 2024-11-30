@@ -1,3 +1,7 @@
+---
+description: Upgrade option for MikoPBX in Docker container
+---
+
 # Updating the docker
 
 To update the MikoPBX container to the latest version, you can follow these steps in the command line. These steps include stopping the current container, downloading the new version of the image, and running the container with the updated image.&#x20;
@@ -43,7 +47,7 @@ sudo docker rm mikopbx
 The next step is to download the latest MikoPBX image:
 
 ```bash
-# Скачивание последней версии образа контейнера
+# Downloading the latest container image
 sudo docker pull ghcr.io/mikopbx/mikopbx-x86-64:latest
 ```
 
