@@ -60,7 +60,7 @@
   * [Anti brute force](manual/connectivity/fail2-ban.md)
 * [System](manual/system/README.md)
   * [General settings](manual/system/general-settings.md)
-  * [Date and Time](manual/system/time-settings.md)
+  * [Time Settings](manual/system/time-settings.md)
   * [Mail settings](manual/system/mail-settings/README.md)
     * [Setting up E-mail notifications for the Gmail mail service](manual/system/mail-settings/gmail.md)
   * [Asterisk Manager Interface(AMI)](manual/system/asterisk-managers.md)

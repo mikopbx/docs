@@ -8,7 +8,7 @@ description: >-
 
 ## Foreword
 
-Welcome to the MikoPBX documentation resource! Here you can find step-by-step instructions related to interacting with the MikoPBX PBX system. For your convenience, the documentation is organized into sections—just like in the web interface—making it very easy to navigate.
+Welcome to the MikoPBX documentation resource! Here you can find step-by-step instructions related to interacting with the MikoPBX PBX system. For your convenience, the documentation is organized into sections - just like in the web interface, making it very easy to navigate.
 
 Thank you for choosing **MikoPBX**! :heart:
 

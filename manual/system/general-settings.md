@@ -1,8 +1,12 @@
+---
+description: Description of the settings of the main system parameters
+---
+
 # General settings
 
 This section configures the main system parameters. It is recommended to set these parameters immediately after installing the PBX.
 
-<figure><img src="../../.gitbook/assets/GnrlSettSection.png" alt=""><figcaption><p>General settings</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/GnrlSettSection.png" alt=""><figcaption><p>General settings section in the MikoPBX system</p></figcaption></figure>
 
 ## Main Settings <a href="#osnovnye" id="osnovnye"></a>
 
@@ -15,7 +19,7 @@ This section configures the main system parameters. It is recommended to set the
 * **The PBX is restarted every night** - restart Asterisk every night.
 * **Send developers information about crashes** - when an error occurs, its description will be sent to the developers (requires internet access).
 
-<figure><img src="../../.gitbook/assets/MainSettings.png" alt=""><figcaption><p>Main Settings</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/MainSettings.png" alt=""><figcaption><p>Main Settings section</p></figcaption></figure>
 
 ## Call Recording <a href="#zapis_razgovorov" id="zapis_razgovorov"></a>
 
@@ -27,7 +31,7 @@ There is a slider that allows you to choose how long call recordings will be sto
 
 You can also select an audio file for call recording notifications.
 
-<figure><img src="../../.gitbook/assets/CallRecordingSection.png" alt=""><figcaption><p>Call recording </p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/CallRecordingSection.png" alt=""><figcaption><p>Call recording section</p></figcaption></figure>
 
 Phone calls are saved in **mp3** format. Here is an example of the final call recording file information:
 
@@ -48,7 +52,7 @@ Approximately, **1 hour** of conversation takes up **14MB** of disk space.
 
 ## Call Transfers <a href="#perevody_vyzovov" id="perevody_vyzovov"></a>
 
-<figure><img src="../../.gitbook/assets/callTransfers section.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/callTransfers section.png" alt=""><figcaption><p>Call transfers section</p></figcaption></figure>
 
 #### Call Park Number <a href="#parkovka_uderzhanie" id="parkovka_uderzhanie"></a>
 
@@ -84,7 +88,7 @@ If you don't know your colleague's number, simply dial **\*8**.
 
 ## SIP <a href="#sip" id="sip"></a>
 
-<figure><img src="../../.gitbook/assets/SIPSettings.png" alt=""><figcaption><p>Sip settings</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/SIPSettings.png" alt=""><figcaption><p>Sip settings section</p></figcaption></figure>
 
 **Session Initiation Protocol (SIP)** is the signaling protocol used by most VoIP phones. You can change the SIP port (default is port 5060) to enhance security. Additionally, some SIP providers require additional parameters, such as **Registration Periods** (the time before the registration expires). Some firewalls close ports after a period of inactivity, which may require shortening the SIP provider's registration timeout. Another reason might be the need for different **registration timeouts** for certain SIP providers. The default values are:
 
@@ -142,7 +146,7 @@ You can save the **public** SSH key on the PBX in the **SSH Authorized Keys** fi
 
 ## Web Interface <a href="#web-interfejs" id="web-interfejs"></a>
 
-<figure><img src="../../.gitbook/assets/WebIntSection.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/WebIntSection.png" alt=""><figcaption><p>Web-interface section</p></figcaption></figure>
 
 In this subsection, you can increase security by changing the HTTP port (default is port 80) or activating HTTPS mode.
 
@@ -167,4 +171,4 @@ Default MikoPBX authorization:
 
 ## Delete all system settings <a href="#udalenie_nastroek" id="udalenie_nastroek"></a>
 
-<figure><img src="../../.gitbook/assets/deleteAllSet.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/deleteAllSet.png" alt=""><figcaption><p>"Delete all system settings" section</p></figcaption></figure>

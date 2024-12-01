@@ -1,6 +1,10 @@
+---
+description: Description of the capabilities of the "System file customization" section
+---
+
 # System files customisation
 
-The system file customization section can be found under **System -> System file customization**:
+The system file customization section can be found under "**System" -> "System file customization"**:
 
 <figure><img src="../../.gitbook/assets/sysFileCust.png" alt=""><figcaption><p>System file customization section</p></figcaption></figure>
 
@@ -30,7 +34,7 @@ To edit a configuration file, use the button:  ![](<../../.gitbook/assets/image 
 
 You will be presented with the configuration file editing form:
 
-<figure><img src="../../.gitbook/assets/customizationMenu.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/customizationMenu.png" alt=""><figcaption><p>Customization menu of the system file /acl.conf (example)</p></figcaption></figure>
 
 Choose one of four editing options:
 

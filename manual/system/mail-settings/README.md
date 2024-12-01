@@ -1,10 +1,16 @@
+---
+description: Setting up mail and notifications
+---
+
 # Mail settings
+
+The Mail and Notifications section in MikoPBX allows you to configure sending system notifications via email. Here, administrators specify SMTP server parameters, define notification events such as voice messages or system errors, and edit email templates. This section helps to promptly inform users and administrators about important events, ensuring effective control over the system.
 
 ## Connecting to the SMTP server
 
 To receive notifications about missed calls and voicemail messages by email, you need to configure the SMTP client. **SMTP (Simple Mail Transfer Protocol)** is used to send e-mail over the Internet. SMTP clients interact with an SMTP server that sends email.
 
-<figure><img src="../../../.gitbook/assets/1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/1.png" alt=""><figcaption><p>"Mail settings" section in the MikoPBX system</p></figcaption></figure>
 
 * **SMTP host** - address of the mail server
 * **SMTP port** - the port of the mail server
@@ -15,7 +21,7 @@ To receive notifications about missed calls and voicemail messages by email, you
 * **Use mail motifications** - allows you to enable/disable all email alerts, including voice mail
 
 {% hint style="warning" %}
-If the server supports a secure connection only over **SSL**, then you can explicitly specify the protocol in the "**SMTP host**" field, for example
+If the server supports a secure connection only over **SSL**, then you can explicitly specify the protocol in the "**SMTP host**" field, for example:
 
 ```
 ssl://smtp.gmail.com
@@ -30,7 +36,9 @@ Setting up notifications for mail services:
 
 ## Missed Notifications
 
-<figure><img src="../../../.gitbook/assets/2 (20).png" alt=""><figcaption></figcaption></figure>
+It is possible to customize the address and template for notifications about missed calls:
+
+<figure><img src="../../../.gitbook/assets/2 (20).png" alt=""><figcaption><p>"Template - missed calls" section</p></figcaption></figure>
 
 * **Email for missed notifications** - by default, missed notifications are sent to the email specified in the employee card. If the call cannot be matched with an employee or email is not specified, the call will be sent to this "shared" address
 * **The subject, text, and footer** of the letter may contain parameters in the form of PARAMETER\_NAME
@@ -47,7 +55,7 @@ List of available "parameters":
 
 It is possible to set up an address and a template for a voicemail notification:
 
-<figure><img src="../../../.gitbook/assets/3 (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/3 (14).png" alt=""><figcaption><p>Template - Voicemail" section</p></figcaption></figure>
 
 * Voice mail will be sent to **each** employee who missed the call (if the email is specified in his card).&#x20;
 * Voicemail will always be sent to the "**Email address to receive all voice mail records**"
