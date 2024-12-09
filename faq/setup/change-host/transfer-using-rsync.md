@@ -1,23 +1,4 @@
-# Перенос MikoPBX на другой сервер
-
-## Вариант №1 <a href="#variant_1" id="variant_1"></a>
-
-1. Выполните **Резервное копирование** Вашей текущей MikoPBX по[ инструкции](../../modules/miko/module-backup.md).
-2. Установите MikoPBX на **новый сервер**. Выполните действия, указанные в [инструкции](../../other/mikopbx2/quick-start.md).
-3. **Загрузите** ранее выполненную резервную копию конфигурации MikoPBX на новом сервере по [инструкции](../../modules/miko/module-backup.md#vosstanovlenie\_iz\_arxiva).
-
-### Вариант №2 <a href="#variant_2" id="variant_2"></a>
-
-**Если размер данных большой**, то имеет смысл сохранить резервную копию сразу на целевую машину. Порядок действий:
-
-1. Устанавливаем MikoPBX на новый ПК
-2. На основной MikoPBX настраиваем «[Резервное копирование по расписанию](../../modules/miko/module-backup.md#rezervnoe\_kopirovanie\_po\_raspisaniju)»
-3. Подключение должно производиться по **SFTP**
-4. **Имя пользователя** и **пароль** те, что используются для [подключения по ssh](../troubleshooting/connecting-to-a-pbx-using-an-ssh-client.md)
-5. «**Путь на сервере**» укажите «**/storage/usbdisk1/mikopbx/backup/**»
-6. Дождитесь завершения резервного копирования
-7. **Отключите основную машину**
-8. На целевой машине выполните [восстановление из резервной копии](../../modules/miko/module-backup.md#vosstanovlenie\_iz\_arxiva)
+# Перенос с помощью rsync
 
 ### Вариант №3 <a href="#variant_3" id="variant_3"></a>
 
