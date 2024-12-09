@@ -94,7 +94,7 @@ In the **Info** column, click the **i** button for each binding to view detailed
 
 In the **Action** column, use the **Drop** button to **unbind the license** from the current host.
 
-<figure><img src="../../.gitbook/assets/dropBtn.png" alt=""><figcaption><p>Resetting the license on the host</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/dropBtn (1).png" alt=""><figcaption><p>Resetting the license on the host</p></figcaption></figure>
 
 ***
 
