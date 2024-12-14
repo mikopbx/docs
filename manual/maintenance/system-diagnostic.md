@@ -27,9 +27,9 @@ description: Описание функций раздела
 
 Доступны следующие возможности:&#x20;
 
-1\. **Cкачать** полученную выборку в виде файла ![](../../.gitbook/assets/sistem\_logi\_skachat.png)
+1\. **Cкачать** полученную выборку в виде файла ![](../../.gitbook/assets/sistem_logi_skachat.png)
 
-2\. **Обновить** выборку ![](../../.gitbook/assets/sistem\_logi\_obnovit.png)
+2\. **Обновить** выборку ![](../../.gitbook/assets/sistem_logi_obnovit.png)
 
 3\. **Автоматическое обновление** выборки ![](<../../.gitbook/assets/image (77).png>)
 
@@ -109,6 +109,6 @@ description: Описание функций раздела
 
 #### Другие способы снятия лога:
 
-* С помощью [SSH-клиента](../../faq/troubleshooting/connecting-to-a-pbx-using-an-ssh-client.md)
+* С помощью [SSH-клиента](../../faq/troubleshooting/podklyuchenie-k-ats-s-pomoshyu-ssh/connecting-to-a-pbx-using-an-ssh-client.md)
 * С помощью [утилиты Wireshark](../../faq/troubleshooting/capturing-logs-from-pbx-using-wireshark.md)
 * С помощью [приложения tcpdump](../../faq/troubleshooting/getting-logs-using-the-tcpdump-application.md)

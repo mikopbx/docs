@@ -95,7 +95,7 @@
 ## Получение "App api\_id" и "App api\_hash" <a href="#poluchenie_app_api_id_i_app_api_hash" id="poluchenie_app_api_id_i_app_api_hash"></a>
 
 {% hint style="danger" %}
-«**App api\_id**» и «**App api\_hash**» - это секретные параметры, которые привязываются к вашему _telegram_ аккаунту. **Никому не сообщайте эти значения!** Они необходимы для подключения к API Telegram. Подробнее можно почитать в [документации](https://core.telegram.org/api/obtaining\_api\_id).
+«**App api\_id**» и «**App api\_hash**» - это секретные параметры, которые привязываются к вашему _telegram_ аккаунту. **Никому не сообщайте эти значения!** Они необходимы для подключения к API Telegram. Подробнее можно почитать в [документации](https://core.telegram.org/api/obtaining_api_id).
 {% endhint %}
 
 1. Перейдите по ссылке [https://my.telegram.org/auth](https://my.telegram.org/auth)
@@ -156,7 +156,7 @@
 {% endhint %}
 
 {% hint style="warning" %}
-В случае возникновения проблем, может потребоваться очистить служебные каталоги ([с помощью SSH-клиента](../../faq/troubleshooting/connecting-to-a-pbx-using-an-ssh-client.md)):
+В случае возникновения проблем, может потребоваться очистить служебные каталоги ([с помощью SSH-клиента](../../faq/troubleshooting/podklyuchenie-k-ats-s-pomoshyu-ssh/connecting-to-a-pbx-using-an-ssh-client.md)):
 
 * /storage/usbdisk1/mikopbx/custom\_modules/ModuleTelegramProvider/db/**7906660000**
 * /storage/usbdisk1/mikopbx/custom\_modules/ModuleTelegramProvider/db/madeline/**7906660000**
