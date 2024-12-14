@@ -9,7 +9,7 @@ description: Описание вариантов подключения к АТ�
 * Подключение с помощью пароля через сторонние приложения (в данной статье в примере - putty)
 * Подключение с помощью ключей, что и будет рассмотренно далее с примером на Windows, Linux (MacOS)
 
-{% content-ref url="connecting-to-a-pbx-using-an-ssh-client.md" %}
-[connecting-to-a-pbx-using-an-ssh-client.md](connecting-to-a-pbx-using-an-ssh-client.md)
+{% content-ref url="putty.md" %}
+[putty.md](putty.md)
 {% endcontent-ref %}
 

@@ -146,7 +146,7 @@ miko.bitrix24.ru
 Если при попытке подключения модуля внутри MIKOPbx АТС пишет **Отключен от Bitrix24** проверьте:
 
 1. Адрес портала указан без указания протокола и ресурса, например mikopbxb24.ru
-2. Проверьте из консоли АТС ping до вашего портала(в примере ping mikopbxb24.ru). [Инструкция](../../../faq/troubleshooting/podklyuchenie-k-ats-s-pomoshyu-ssh/connecting-to-a-pbx-using-an-ssh-client.md) по доступу к консоли.
+2. Проверьте из консоли АТС ping до вашего портала(в примере ping mikopbxb24.ru). [Инструкция](../../../faq/troubleshooting/connecting-to-a-pbx-using-an-ssh-client/putty.md) по доступу к консоли.
 
 ### Приложения нет в Marketplace <a href="#prilozhenija_net_v_marketplehjs" id="prilozhenija_net_v_marketplehjs"></a>
 

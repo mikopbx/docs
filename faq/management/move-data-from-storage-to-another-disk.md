@@ -6,7 +6,7 @@ MikoPBX установлена на отдельно выделенный сер
 
 ## Решение <a href="#reshenie" id="reshenie"></a>
 
-1. Подключитесь к MikoPBX через SSH-клиент по [инструкции](../troubleshooting/podklyuchenie-k-ats-s-pomoshyu-ssh/connecting-to-a-pbx-using-an-ssh-client.md)
+1. Подключитесь к MikoPBX через SSH-клиент по [инструкции](../troubleshooting/connecting-to-a-pbx-using-an-ssh-client/putty.md)
 
 <figure><img src="../../.gitbook/assets/sshConnection (1).png" alt=""><figcaption></figcaption></figure>
 
