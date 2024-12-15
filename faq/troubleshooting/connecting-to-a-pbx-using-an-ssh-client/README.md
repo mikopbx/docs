@@ -13,3 +13,14 @@ description: Описание вариантов подключения к АТ�
 [putty.md](putty.md)
 {% endcontent-ref %}
 
+***
+
+{% content-ref url="powershell.md" %}
+[powershell.md](powershell.md)
+{% endcontent-ref %}
+
+***
+
+{% content-ref url="podklyuchenie-s-pomoshyu-ssh-linux-macos.md" %}
+[podklyuchenie-s-pomoshyu-ssh-linux-macos.md](podklyuchenie-s-pomoshyu-ssh-linux-macos.md)
+{% endcontent-ref %}
