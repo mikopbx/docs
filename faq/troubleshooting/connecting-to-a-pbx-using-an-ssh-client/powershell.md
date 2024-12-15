@@ -53,7 +53,7 @@ Get-Content ~/.ssh/id_ed25519.pub
 
 4. Перейдите в web-интерфейс MikoPBX, во вкладку "**Система**" -> "**Общие настройки**":
 
-<figure><img src="../../../.gitbook/assets/generalSettingsSection.png" alt=""><figcaption><p>Раздел "<strong>Общие настройки</strong>"</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/generalSettingsSection (1).png" alt=""><figcaption><p>Раздел "<strong>Общие настройки</strong>"</p></figcaption></figure>
 
 5. Перейдите в раздел "**SSH**" и вставьте публичный ключ в поле "**SSH Authorized Keys**" в формате:
 
@@ -79,6 +79,6 @@ ssh -i C:\Users\<Username>\.ssh\id_ed25519 root@mikopbxipadress
 * Путь к SSH ключу.
 * Подставьте IP вашей MikoPBX вместо _mikopbxipadress._
 
-Введите пароль от ssh. Произойдет подключение к консоли MikoPBX с помощью SSH:
+Произойдет подключение к консоли MikoPBX с помощью SSH:
 
-<figure><img src="../../../.gitbook/assets/mikopbxconsoleSSH.png" alt=""><figcaption><p>Успешное подключение!</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/mikopbxconsoleSSH (1).png" alt=""><figcaption><p>Успешное подключение!</p></figcaption></figure>
