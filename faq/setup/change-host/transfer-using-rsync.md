@@ -1,93 +1,50 @@
-# Перенос с помощью rsync (в разработке)
+---
+description: Вариант переноса данных с использованием rsync (предпочтительный)
+---
 
-{% hint style="danger" %}
-Пока страница в разработке - пользуйтесь первым скриптом, если это необходимо!
-{% endhint %}
+# Перенос с помощью rsync
 
-### Вариант №3 <a href="#variant_3" id="variant_3"></a>
+В данной статье будет разобран вариант переноса данных на новый хост с помощью rsync. Данный вариант - перенос с использованием генерируемого ключа для ssh-авторизации (предпочтительный). Этот способ является самым надёжным из представленных в разделе, поэтому и является рекомендуемым к использованию.
 
-Скрипт для переноса данных вручную.
+## Создание файла для хранения скрипта и наполнение его содержимым <a href="#variant_3" id="variant_3"></a>
 
-```php
-#
-# MikoPBX - free phone system for small business
-# Copyright © 2017-2024 Alexey Portnov and Nikolay Beketov
-#
-# This program is free software: you can redistribute it and/or modify
-# it under the terms of the GNU General Public License as published by
-# the Free Software Foundation; either version 3 of the License, or
-# (at your option) any later version.
-#
-# This program is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU General Public License for more details.
-#
-# You should have received a copy of the GNU General Public License along with this program.
-# If not, see <>.
-#
+1. Для начала нам необходимо установить SSH соединение с **новой** MikoPBX. Прочитать как сделать это, можно в [этой статье](../../troubleshooting/connecting-to-a-pbx-using-an-ssh-client/).&#x20;
 
-SSH_PORT=22;
-PBX_HOST='root@PBX-ADDRESS-OR-IP';
-CONF_DB_FILE='/cf/conf/mikopbx.db';
-STORAGE_PBX_DIR='/storage/usbdisk1/mikopbx';
-SYNC_APP='rsync';
-type "$SYNC_APP" > /dev/null 2> /dev/null
-if [ "$?" = '1' ];then
-  SYNC_APP='scp';
-fi;
+<figure><img src="../../../.gitbook/assets/sshConnection (2).png" alt=""><figcaption><p>Успешное SSH соединение с новой MikoPBX</p></figcaption></figure>
 
-# TODO
-# Копирование SSH ключей, чтобы не вводить многократно пароль.
-#rsaPubKey="$HOME/.ssh/id_rsa.pub";
-#if [ ! -f "$rsaPubKey" ];then
-#  dropbearkey -y -f /etc/dropbear/dropbear_rsa_host_key | grep "^ssh-rsa" > "$rsaPubKey";
-#fi;
-#ssh "$PBX_HOST" -p "$SSH_PORT" "echo >> /root/.ssh/authorized_keys && echo '$(cat "$rsaPubKey")' >> /root/.ssh/authorized_keys && nohup sh -c 'killall dropbear && /usr/sbin/dropbear -p $SSH_PORT' 2>&1 &";
-#ssh "$PBX_HOST" -p "$SSH_PORT" 'sqlite3 /cf/conf/mikopbx.db .tables';
+2. Далее переходим в консоль (**\[9] Console**). Первым делом необходимо создать директорию для хранения файла со скриптом. Используйте следующую команду:
 
-# Дамп.
-ssh "$PBX_HOST" -p "$SSH_PORT" "sqlite3 $CONF_DB_FILE .dump > $STORAGE_PBX_DIR/tmp/mikopbx.db.dmp";
-# Копируем дамп на локальную машину.
-"$SYNC_APP" "$PBX_HOST":"$STORAGE_PBX_DIR/tmp/mikopbx.db.dmp" "$STORAGE_PBX_DIR/tmp/mikopbx.db.dmp"
-# Восстанавливаем базу данных из дампа.
-sqlite3 "$STORAGE_PBX_DIR/tmp/mikopbx.db" < "$STORAGE_PBX_DIR/tmp/mikopbx.db.dmp";
-# Перемещаем восстановленную базу данных.
-mv "$STORAGE_PBX_DIR/tmp/mikopbx.db" "$CONF_DB_FILE";
-# Чистим временные файлы.
-rm -rf "$STORAGE_PBX_DIR/tmp/mikopbx.db";
-ssh "$PBX_HOST" -p "$SSH_PORT" "rm -rf $STORAGE_PBX_DIR/tmp/mikopbx.db";
-
-# Отключаем провайдеров на локальной машине.
-sqlite3 "$CONF_DB_FILE" "UPDATE m_Sip SET disabled='1' WHERE type='friend'"
-
-# Копируем медиа файлы с удаленной машины.
-"$SYNC_APP" -r "$PBX_HOST":"$STORAGE_PBX_DIR"/media/* "$STORAGE_PBX_DIR"/media
-# Копируем дополнительные модули с удаленной машины.
-"$SYNC_APP" -r "$PBX_HOST":"$STORAGE_PBX_DIR"/custom_modules/* "$STORAGE_PBX_DIR"/custom_modules
-
-# Копируем историю звонков.
-# Дамп.
-ssh "$PBX_HOST" -p "$SSH_PORT" "sqlite3 $STORAGE_PBX_DIR/astlogs/asterisk/cdr.db .dump > $STORAGE_PBX_DIR/astlogs/asterisk/cdr.db.dmp";
-# Копируем дамп на локальную машину.
-"$SYNC_APP" -r "$PBX_HOST":"$STORAGE_PBX_DIR"/astlogs/asterisk/cdr.db.dmp "$STORAGE_PBX_DIR"/astlogs/asterisk/cdr.db.dmp;
-# Восстанавливаем базу данных из дампа.
-sqlite3 "$STORAGE_PBX_DIR"/astlogs/asterisk/cdrdb.tmp < "$STORAGE_PBX_DIR"/astlogs/asterisk/cdr.db.dmp;
-# Удаляем текущую базу данных истории звонков.
-rm -rf "$STORAGE_PBX_DIR"/astlogs/asterisk/cdr.db*;
-# Перемещаем восстановленную базу данных.
-mv "$STORAGE_PBX_DIR"/astlogs/asterisk/cdrdb.tmp "$STORAGE_PBX_DIR"/astlogs/asterisk/cdr.db;
-
-# Чистим временные файлы.
-rm -rf "$STORAGE_PBX_DIR"/astlogs/asterisk/cdr.db.dmp;
-ssh "$PBX_HOST" -p "$SSH_PORT" "rm -rf $STORAGE_PBX_DIR/astlogs/asterisk/cdr.db.dmp";
-
-# Обновление структуры баз данных sqlite3.
-php -r 'require_once "Globals.php"; use MikoPBX\Core\System\Upgrade\UpdateDatabase; $dbUpdater = new UpdateDatabase(); $dbUpdater->updateDatabaseStructure();'
-
-# Копирование записей разговоров.
-"$SYNC_APP" -r "$PBX_HOST":"$STORAGE_PBX_DIR"/astspool/monitor "$STORAGE_PBX_DIR"/astspool/monitor
 ```
+mkdir -p /storage/usbdisk1/transfer
+```
+
+3. Перейдите в созданную директорию:
+
+```
+cd /storage/usbdisk1/transfer
+```
+
+4. Создадим файл "**transfer-rsync.sh**"  для хранения скрипта:
+
+```
+touch transfer-rsync.sh
+```
+
+<figure><img src="../../../.gitbook/assets/firstPartOfCommands.png" alt=""><figcaption><p>Выполнение команд для создания файла</p></figcaption></figure>
+
+5. Далее переходим к редактированию созданного файла. Для этого введём команду:
+
+```
+vi transfer-rsync.sh
+```
+
+Откроется окно редактирования файла:
+
+<figure><img src="../../../.gitbook/assets/editingFile.png" alt=""><figcaption><p>Окно редактирования файла</p></figcaption></figure>
+
+6. Вставьте следующий скрипт:
+
+В нем необходимо заменить `root@PBX-ADDRESS-OR-IP` на ваши параметры (root на имя для ssh авторизации на **старой MikoPBX**, PBX-ADDRESS-OR-IP на IP-адрес **старой MikoPBX)**
 
 ```php
 #!/bin/bash
@@ -111,7 +68,7 @@ php -r 'require_once "Globals.php"; use MikoPBX\Core\System\Upgrade\UpdateDataba
 
 # Configuration
 SSH_PORT=22
-PBX_HOST='root@192.168.0.201'
+PBX_HOST='root@PBX-ADDRESS-OR-IP'
 CONF_DB_FILE='/cf/conf/mikopbx.db'
 STORAGE_PBX_DIR='/storage/usbdisk1/mikopbx'
 SSH_KEY_PATH="$HOME/.ssh/id_ed25519"
@@ -296,4 +253,38 @@ else
 fi
 ```
 
-***
+5. Для сохранения изменений в файле нажмите "**esc**" -> впишите `:wq`.
+
+## Запуск и работа со скриптом
+
+1. На данном этапе необходимо сделать файл исполняемым. Для этого используйте следующую команду:
+
+```
+chmod +x transfer-rsync.sh
+```
+
+2. Запустите скрипт, используя команду:
+
+```
+./transfer-rsync.sh
+```
+
+3. Для начала будет предложено сгенерировать новый ключ. В случае, если ранее вы этого не делали, введите "y" для подтверждения. Если ранее вы уже генерировали ключ для доступа ко второй MikoPBX - введите "n":
+
+<figure><img src="../../../.gitbook/assets/newKey.png" alt=""><figcaption><p>Предложение о генерации нового ключа</p></figcaption></figure>
+
+4. Будет создан новый ключ. Вам необходимо скопировать его и вставить в web-Интерфейсе старой MikoPBX. Сделать это нужно в разделе "**Общие настройки**" -> "**SSH**" -> Поле "**SSH Authorized keys**"
+
+<figure><img src="../../../.gitbook/assets/generatedKey.png" alt=""><figcaption><p>Сгенерированный ключ типа ed25519</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/SshAuthorizedKeysField.png" alt=""><figcaption><p>Вставленный ключ</p></figcaption></figure>
+
+5. После того, как вы сохранили ключ на старой MikoPBX, подождите несколько секунд и нажмите любую клавишу для продолжения выполнения скрипта.
+
+Будет произведен перенос всех данных на новый хост. Это может занять некоторое время.
+
+{% hint style="danger" %}
+После переноса обязательно проверяйте целостность всех данных, перед тем, как сбрасывать старую MikoPBX!
+{% endhint %}
+
+<figure><img src="../../../.gitbook/assets/successfulTransfer.png" alt=""><figcaption><p>Успешный перенос</p></figcaption></figure>

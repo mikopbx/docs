@@ -92,7 +92,7 @@
   * [Перенос MikoPBX на другой сервер](faq/setup/change-host/README.md)
     * [Перенос с помощью резервного копирования](faq/setup/change-host/transfer-using-backup.md)
     * [Перенос с помощью резервного копирования по расписанию](faq/setup/change-host/transfer-using-scheduled-backup.md)
-    * [Перенос с помощью rsync (в разработке)](faq/setup/change-host/transfer-using-rsync.md)
+    * [Перенос с помощью rsync](faq/setup/change-host/transfer-using-rsync.md)
   * [Сброс к заводским настройкам](faq/setup/factory-reset.md)
   * [Мониторинг провайдеров на MikoPBX](faq/setup/monitoring-providers-on-mikopbx.md)
 * [Обслуживание](faq/management/README.md)
