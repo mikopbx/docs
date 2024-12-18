@@ -8,7 +8,7 @@ This article discusses transferring data to a new host using `rsync`. This appro
 
 ## Creating the Script File and Adding Content
 
-1. First, establish an SSH connection to your **new** MikoPBX. You can find instructions on how to do this in [this article](../../troubleshooting/connecting-to-a-pbx-using-an-ssh-client.md).
+1. First, establish an SSH connection to your **new** MikoPBX. You can find instructions on how to do this in [this article](../../troubleshooting/connecting-to-a-pbx-using-ssh/connecting-to-a-pbx-using-an-ssh-client.md).
 
 <figure><img src="../../../.gitbook/assets/sshConnection.png" alt=""><figcaption><p>Successful SSH connection to the new MikoPBX</p></figcaption></figure>
 
