@@ -22,7 +22,9 @@ A backup of the current MikoPBX configuration is created and then uploaded to th
 * May be less reliable for large amounts of data.
 * Requires intermediate storage for the backup (e.g., local disk or cloud).
 
-
+{% content-ref url="transfer-using-backup.md" %}
+[transfer-using-backup.md](transfer-using-backup.md)
+{% endcontent-ref %}
 
 ***
 
@@ -43,7 +45,9 @@ A backup is automatically created and saved directly to the target server via th
 * Requires SFTP configuration on both servers.
 * Needs correct SSH user settings for proper operation.
 
-
+{% content-ref url="transfer-using-scheduled-backup.md" %}
+[transfer-using-scheduled-backup.md](transfer-using-scheduled-backup.md)
+{% endcontent-ref %}
 
 ***
 
@@ -65,6 +69,8 @@ The `rsync` command is used to directly synchronize data between the old and new
 * Possible errors if configurations (e.g., paths) are incorrect.
 * Both servers must be accessible on the network at the same time.
 
-
+{% content-ref url="transfer-using-rsync.md" %}
+[transfer-using-rsync.md](transfer-using-rsync.md)
+{% endcontent-ref %}
 
 ***

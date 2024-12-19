@@ -1,4 +1,8 @@
-# Connecting to a PBX using an SSH client
+---
+description: This tutorial will describe how to connect via SSH using Putty
+---
+
+# Connecting to PBX using SSH client (Putty)
 
 1. Download the program to connect via SSH. This can be done on the official website at the [link](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
 2. Run the downloaded program. The main menu will open for you.
