@@ -20,6 +20,8 @@ You can also specify a path where the key files will be saved. By default, keys 
 ssh-keygen -t ed25519 -f ~/.ssh/my_new_key
 ```
 
+<figure><img src="../../../.gitbook/assets/createdKeyPair.png" alt=""><figcaption><p>Creating the SSH Keys (pair)</p></figcaption></figure>
+
 {% hint style="info" %}
 By default, the key is saved at `/Users/Username/.ssh/id_ed25519.pub on macOS or /home/Username/.ssh/id_ed25519.pub` on Linux.
 {% endhint %}
@@ -30,8 +32,12 @@ By default, the key is saved at `/Users/Username/.ssh/id_ed25519.pub on macOS or
 cat ~/.ssh/id_ed25519.pub
 ```
 
+<figure><img src="../../../.gitbook/assets/DisplayedKey.png" alt=""><figcaption><p>Public key</p></figcaption></figure>
+
 3. Open the MikoPBX web interface and go to **System** → **General Settings**:
 4. Paste your public key into the **"SSH Authorized Keys"** field:
+
+
 
 ## Connecting via SSH
 
@@ -47,3 +53,5 @@ Replace the following with your actual parameters:
 * The IP address of your MikoPBX in place of `mikopbxipadress`.
 
 You will then be prompted for the SSH passphrase if you set one. Upon successful authentication, you will be connected to the MikoPBX console via SSH:
+
+<figure><img src="../../../.gitbook/assets/mikopbxconsoleSSH.png" alt=""><figcaption><p>Successful connection!</p></figcaption></figure>

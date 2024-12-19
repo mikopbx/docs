@@ -52,7 +52,7 @@ Copy the public key from the output.
 
 4. Open the MikoPBX web interface and go to "**System" → "General Settings"**:
 
-<figure><img src="../../../.gitbook/assets/generalSettingsSection.png" alt=""><figcaption><p>"General settings" section</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/generalSettingsSection (1).png" alt=""><figcaption><p>"General settings" section</p></figcaption></figure>
 
 5. Navigate to the **SSH** section and paste the public key into the **"SSH Authorized Keys"** field in the following format:
 
