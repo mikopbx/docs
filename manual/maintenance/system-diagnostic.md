@@ -109,6 +109,6 @@ description: Описание функций раздела
 
 #### Другие способы снятия лога:
 
-* С помощью [SSH-клиента](../../faq/troubleshooting/connecting-to-a-pbx-using-an-ssh-client/putty.md)
+* С помощью [SSH-клиента](../../faq/troubleshooting/connecting-to-a-pbx-using-ssh/putty.md)
 * С помощью [утилиты Wireshark](../../faq/troubleshooting/capturing-logs-from-pbx-using-wireshark.md)
 * С помощью [приложения tcpdump](../../faq/troubleshooting/getting-logs-using-the-tcpdump-application.md)

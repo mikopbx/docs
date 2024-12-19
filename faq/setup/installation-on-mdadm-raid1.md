@@ -8,7 +8,7 @@
 
 1. Подготовьте ПК с двумя дисками одинакового объема
 2. Загрузите машину в режиме [LiveCD или LiveUSB](../../setup/bare-metal.md)
-3. Подключитесь к машине через [SSH](../troubleshooting/connecting-to-a-pbx-using-an-ssh-client/putty.md)
+3. Подключитесь к машине через [SSH](../troubleshooting/connecting-to-a-pbx-using-ssh/putty.md)
 
 ## Сборка RAID 1 <a href="#sborka_raid_1" id="sborka_raid_1"></a>
 

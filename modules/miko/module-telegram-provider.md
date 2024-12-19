@@ -156,7 +156,7 @@
 {% endhint %}
 
 {% hint style="warning" %}
-В случае возникновения проблем, может потребоваться очистить служебные каталоги ([с помощью SSH-клиента](../../faq/troubleshooting/connecting-to-a-pbx-using-an-ssh-client/putty.md)):
+В случае возникновения проблем, может потребоваться очистить служебные каталоги ([с помощью SSH-клиента](../../faq/troubleshooting/connecting-to-a-pbx-using-ssh/putty.md)):
 
 * /storage/usbdisk1/mikopbx/custom\_modules/ModuleTelegramProvider/db/**7906660000**
 * /storage/usbdisk1/mikopbx/custom\_modules/ModuleTelegramProvider/db/madeline/**7906660000**
