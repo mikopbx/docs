@@ -6,8 +6,8 @@
 
 К примеру у МИКО есть номера телефонов:
 
-* \+7(495)229-30-42
-* \+7(499)638-25-84
+* `+7(495)229-30-42`
+* `+7(499)638-25-84`
 
 В интерфейсе MikoPBX создана только одна учетная запись «[Провайдер телефонии](../../manual/routing/providers.md)». Каждый номер телефона необходимо направить на свой маршрут, к примеру на различные IVR.
 
@@ -17,7 +17,7 @@
 
 Для анализа звонков я обычно использую «[приложение Sngrep](https://wiki.mikopbx.ru/faq:sngrep)». Вот пример запроса от провайдера при входящем:
 
-```
+```php
 INVITE sip:84996382584@93.188.XX.XX SIP/2.0
 Via: SIP/2.0/UDP 81.88.86.65:5060;branch=z9hG4bK1cf7.16247c44.0;cid=2
 Max-Forwards: 67
@@ -33,15 +33,15 @@ User-Agent: Softswitch3
 Content-Length: 351
 ```
 
-При получении такого пакета, MikoPBX проанализирует первую строку с ключевым словом «**INVITE**», значение «**84996382584**» и будет являться **DID** номером.
+При получении такого пакета, MikoPBX проанализирует первую строку с ключевым словом «**`INVITE`**», значение «**`84996382584`**» и будет являться **DID** номером.
 
-### Возможные проблемы <a href="#vozmozhnye_problemy" id="vozmozhnye_problemy"></a>
+### Возможные особенности <a href="#vozmozhnye_problemy" id="vozmozhnye_problemy"></a>
 
 #### DID в заголовке To <a href="#did_v_zagolovke_to" id="did_v_zagolovke_to"></a>
 
-На практике, не всегда все так просто. К примеру я встречал провайдера, который присылает следующий INVITE:
+На практике, не всегда все так просто. К примеру я встречал провайдера, который присылает следующий `INVITE`:
 
-```
+```php
 INVITE sip:mikoteam@93.188.XX.XX SIP/2.0
 Via: SIP/2.0/UDP 81.88.86.65:5060;branch=z9hG4bK1cf7.16247c44.0;cid=2
 Max-Forwards: 67
@@ -57,28 +57,65 @@ User-Agent: Softswitch3
 Content-Length: 351
 ```
 
-В этом случае в строке «INVITE» описывается логин учетной записи, в вот DID уже описывается в заголовке «To». Для корректной настройки достаточно в разделе [Кастомизация системных файлов](../../manual/system/custom-files.md) добавить в конец файла «extensions.conf» следующие строки:
+В этом случае в строке «`INVITE`» описывается логин учетной записи, в вот DID уже описывается в заголовке «To[^1]». Для корректной настройки достаточно в разделе [Кастомизация системных файлов](../../manual/system/custom-files.md) добавить в конец файла «extensions.conf» следующие строки:
 
 ```php
 [SIP-1622040384-incoming-custom]
 exten => _[0-9*#+a-zA-Z][0-9*#+a-zA-Z]!,1,NoOp(------)
 	same => n,Set(toNum=${PJSIP_PARSE_URI(${PJSIP_HEADER(read,To)},user)})
-	same => n,ExecIf($["${toNum}" != "${EXTEN}"]?Gosub(${CUT(CONTEXT,,1-3)},${toNum},1))
+	same => n,ExecIf($["${toNum}" != "${EXTEN}"]?Goto(${CUT(CONTEXT,,1-3)},${toNum},1))
 	same => n,return
 ```
 
-1. функция «**PJSIP\_HEADER**» считывает значение заголовка «**To**»
-2. функция «**PJSIP\_PARSE\_URI**» получает из значения заголовка поле «**user**», которое соответствует значению DID
-3. Gosub перемещает канал в начало, для повторной инициализации маршрута
-4. **SIP-1622040384** - это ID учетной записи провайдера MikoPBX, можно подсмотреть в адресной строке браузера при редактировании учетной записи
+* функция «**`PJSIP_HEADER`**» считывает значение заголовка «**`To`**»
+* функция «**`PJSIP_PARSE_URI`**» получает из значения заголовка поле «**`user`**», которое соответствует значению DID
+* `Goto` перемещает канал в начало, для повторной инициализации маршрута
+* "`1-3`" - означает, что нужно взять первые три слова из "`SIP-1622040384-incoming-custom`", по сути, нужно из этой строки получить все до "`-custom`", в старых версиях АТС может потребоваться скорректировать это правило
+* **`SIP-1622040384`** - это ID учетной записи провайдера MikoPBX, можно подсмотреть в адресной строке браузера при редактировании учетной записи
 
 <figure><img src="../../.gitbook/assets/codeForExtensions2.png" alt=""><figcaption><p>Код для решения проблемы</p></figcaption></figure>
+
+#### Замена DID на произвольный <a href="#zamena_did_na_proizvolnyj" id="zamena_did_na_proizvolnyj"></a>
+
+Следующий пример удобно применять, когда провайдер не предоставляет информации по номеру, на который пришел вызов, поступает информация только о логине. При этом, важно, чтобы одному логину соответствовал один DID.
+
+```php
+[add-trim-prefix-clid-custom]
+exten => user1,1,Goto(SIP-1622040384-incoming,74952293042,1)
+exten => admin,1,Goto(SIP-1622040000-incoming,74952291111,1)
+
+exten => _[0-9*#+a-zA-Z]!,2,return
+```
+
+* "`user1`" и "`admin`" - это примеры популярных логин
+
+
+
+#### Установить CID на основании DID <a href="#ustanovit_cid_na_osnovanii_did" id="ustanovit_cid_na_osnovanii_did"></a>
+
+```php
+[add-trim-prefix-clid-custom]
+exten => _[0-9*#+a-zA-Z][0-9*#+a-zA-Z]!,1,NoOp(...)
+	same => n,GosubIf($["${DIALPLAN_EXISTS(did-from-cid-map,${EXTEN},1)}" == "1"]?cid-from-did-map,${EXTEN},1)
+	same => n,return
+```
+
+```php
+[cid-from-did-map]
+exten => 74952293042,1,Set(CALLERID(name)=Sales)
+exten => 74952291111,1,Set(CALLERID(name)=Support)
+
+exten => _[0-9*#+a-zA-Z]!,2,return
+```
+
+* Если вызов поступен на номер **`74952293042`**, то `CID (name)` будет установлен в значение **`Sales`**
+* Если вызов поступен на номер **`74952291111`**, то `CID (name)` будет установлен в значение **`Support`**
 
 #### DID произвольном заголовке <a href="#did_proizvolnom_zagolovke" id="did_proizvolnom_zagolovke"></a>
 
 Такое встречается при использовании сервиса **roistat**. Сервис при входящем может прислать следующий запрос:
 
-```
+```php
 INVITE sip:mikoteam@93.188.XX.XX SIP/2.0
 Via: SIP/2.0/UDP 81.88.86.65:5060;branch=z9hG4bK1cf7.16247c44.0;cid=2
 Max-Forwards: 67
@@ -95,7 +132,7 @@ x-roistat-phone: 84996382584
 Content-Length: 351
 ```
 
-Корректного DID нет ни в **INVITE**, ни в поле **To**, но при этом появился новый заголовок «x-roistat-phone».
+Корректного DID нет ни в **`INVITE`**, ни в поле **To**, но при этом появился новый заголовок «x-roistat-phone».
 
 Для корректной настройки достаточно в разделе [Кастомизация системных файлов](https://wiki.mikopbx.ru/custom-files) добавить в конец файла «extensions.conf» следующие строки:
 
@@ -103,36 +140,50 @@ Content-Length: 351
 [SIP-1622040384-incoming-custom]
 exten => _[0-9*#+a-zA-Z][0-9*#+a-zA-Z]!,1,NoOp(------)
 	same => n,Set(toNum=${PJSIP_HEADER(read,x-roistat-phone)})
-	same => n,ExecIf($["${toNum}x" != "x" && "${toNum}" != "${EXTEN}"]?Gosub(${CUT(CONTEXT,,1-3)},${toNum},1))
+	same => n,ExecIf($["${toNum}x" != "x" && "${toNum}" != "${EXTEN}"]?Goto(${CUT(CONTEXT,,1-3)},${toNum},1))
 	same => n,return
 ```
 
-1. функция «**PJSIP\_HEADER**» считывает значение заголовка «**x-roistat-phone**»
-2. Gosub перемещает канал в начало, для повторной инициализации маршрута
+1. функция «**`PJSIP_HEADER`**» считывает значение заголовка «**`x-roistat-phone`**»
+2. `Goto` перемещает канал в начало, для повторной инициализации маршрута
 
 <figure><img src="../../.gitbook/assets/codeForExtensions3.png" alt=""><figcaption></figcaption></figure>
 
 #### Манго офис <a href="#mango_ofis" id="mango_ofis"></a>
 
-Получение номера, на который позвонил клиент из поля «Diversion»:
+Получение номера, на который позвонил клиент из поля «`Diversion`»:
 
 ```php
 [SIP-1622040384-incoming-custom]
 exten => _[0-9*#+a-zA-Z][0-9*#+a-zA-Z]!,1,NoOp(------)
 	same => n,Set(tmpDiversion=${PJSIP_HEADER(read,Diversion)})
 	same => n,ExecIf($["x${tmpDiversion}" != "x"]?Set(toNum=${CUT(CUT(tmpDiversion,>,1),:,2)}))
-	same => n,ExecIf($["${toNum}x" != "x" && "${toNum}" != "${EXTEN}"]?Gosub(${CUT(CONTEXT,,1-3)},${toNum},1))
+	same => n,ExecIf($["${toNum}x" != "x" && "${toNum}" != "${EXTEN}"]?Goto(${CUT(CONTEXT,,1-3)},${toNum},1))
+	same => n,return
+	
+```
+
+Более универсальный вариант:
+
+```php
+[add-trim-prefix-clid-custom]
+exten => _[0-9*#+a-zA-Z][0-9*#+a-zA-Z]!,1,NoOp(------)
+	same => n,Set(tmpDiversion=${PJSIP_HEADER(read,Diversion)})
+	same => n,ExecIf($["x${tmpDiversion}" != "x"]?Set(toNum=${CUT(CUT(tmpDiversion,@,1),:,2)}))
+	same => n,ExecIf($["${toNum}x" != "x" && "${toNum}" != "${EXTEN}"]?Goto(${contextID},${toNum},1))
 	same => n,return
 ```
 
 #### Novafon (zadarma) <a href="#novafon_zadarma" id="novafon_zadarma"></a>
 
-Получение номера, на который позвонил клиент из заголовка «CALLED\_DID»:
+Получение номера, на который позвонил клиент из заголовка «`CALLED_DID`»:
 
 ```php
 [SIP-1622040384-incoming-custom]
 exten => _[0-9*#+a-zA-Z][0-9*#+a-zA-Z]!,1,NoOp(------)
 	same => n,Set(toNum=${PJSIP_HEADER(read,CALLED_DID)})
-	same => n,ExecIf($["${toNum}x" != "x" && "${toNum}" != "${EXTEN}"]?Gosub(${CUT(CONTEXT,,1-3)},${toNum},1))
+	same => n,ExecIf($["${toNum}x" != "x" && "${toNum}" != "${EXTEN}"]?Goto(${CUT(CONTEXT,,1-3)},${toNum},1))
 	same => n,return
 ```
+
+[^1]: 
