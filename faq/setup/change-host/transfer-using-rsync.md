@@ -37,7 +37,7 @@ touch transfer-rsync.sh
 Use the following command to download the script:
 
 ```php
-curl -o /storage/usbdisk1/transfer/transfer-rsync.sh https://gist.githubusercontent.com/excla1mmm/c9891306b459cac0c7ea3c785ab0936e/raw/41ada1e25e2c60b64d69f17120d3147da188cf27/transfer-rsync.sh
+curl -o /storage/usbdisk1/transfer/transfer-rsync.sh https://gist.githubusercontent.com/excla1mmm/c9891306b459cac0c7ea3c785ab0936e/raw/ec57ab60ee48112b4a16635e7b47955e5a044513/transfer-rsync.sh
 ```
 
 ## Running and Using the Script
