@@ -69,8 +69,8 @@ description: Разбор вариантов переноса MikoPBX на др�
 * Возможны ошибки при настройке (например, указание неправильных путей).
 * Серверы должны быть одновременно доступны в сети.
 
-{% content-ref url="../../../other/mikopbx2/transfer-using-rsync.md" %}
-[transfer-using-rsync.md](../../../other/mikopbx2/transfer-using-rsync.md)
+{% content-ref url="transfer-using-rsync.md" %}
+[transfer-using-rsync.md](transfer-using-rsync.md)
 {% endcontent-ref %}
 
 ***

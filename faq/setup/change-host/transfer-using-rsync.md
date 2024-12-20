@@ -2,15 +2,15 @@
 description: Вариант переноса данных с использованием rsync (предпочтительный)
 ---
 
-# Перенос с помощью rsync (isnt working now)
+# Перенос с помощью rsync
 
 В данной статье будет разобран вариант переноса данных на новый хост с помощью rsync. Данный вариант - перенос с использованием генерируемого ключа для ssh-авторизации (предпочтительный). Этот способ является самым надёжным из представленных в разделе, поэтому и является рекомендуемым к использованию.
 
 ## Создание файла для хранения скрипта и наполнение его содержимым <a href="#variant_3" id="variant_3"></a>
 
-1. Для начала нам необходимо установить SSH соединение с **новой** MikoPBX. Прочитать как сделать это, можно в [этой статье](../../faq/troubleshooting/connecting-to-a-pbx-using-ssh/).&#x20;
+1. Для начала нам необходимо установить SSH соединение с **новой** MikoPBX. Прочитать как сделать это, можно в [этой статье](../../troubleshooting/connecting-to-a-pbx-using-ssh/).&#x20;
 
-<figure><img src="../../.gitbook/assets/sshConnection (2).png" alt=""><figcaption><p>Успешное SSH соединение с новой MikoPBX</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/sshConnection (2).png" alt=""><figcaption><p>Успешное SSH соединение с новой MikoPBX</p></figcaption></figure>
 
 2. Далее переходим в консоль (**\[9] Console**). Первым делом необходимо создать директорию для хранения файла со скриптом. Используйте следующую команду:
 
@@ -30,7 +30,7 @@ cd /storage/usbdisk1/transfer
 touch transfer-rsync.sh
 ```
 
-<figure><img src="../../.gitbook/assets/firstPartOfCommands (1).png" alt=""><figcaption><p>Выполнение команд для создания файла</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/firstPartOfCommands (1).png" alt=""><figcaption><p>Выполнение команд для создания файла</p></figcaption></figure>
 
 5. Далее необходимо заполнить файл содержимым (скриптом). Ознакомиться с ним Вы можете[ по ссылке](https://gist.github.com/excla1mmm/c9891306b459cac0c7ea3c785ab0936e).
 
@@ -58,17 +58,17 @@ chmod +x transfer-rsync.sh
 * Имя для ssh-авторизации
 * Порт для ssh-авторизации
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Ввод необходимых данных</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption><p>Ввод необходимых данных</p></figcaption></figure>
 
 4. Далее будет предложено сгенерировать новый ключ. В случае, если ранее вы этого не делали, введите "y" для подтверждения. Если ранее вы уже генерировали ключ для доступа ко второй MikoPBX - введите "n":
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Генерация нового ключа</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Генерация нового ключа</p></figcaption></figure>
 
 5. Будет создан новый ключ. Вам необходимо скопировать его и вставить в web-Интерфейсе старой MikoPBX. Сделать это нужно в разделе "**Общие настройки**" -> "**SSH**" -> Поле "**SSH Authorized keys**"
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Сгенерированный ключ ssh</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Сгенерированный ключ ssh</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/SshAuthorizedKeysField.png" alt=""><figcaption><p>Вставленный ключ</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/SshAuthorizedKeysField.png" alt=""><figcaption><p>Вставленный ключ</p></figcaption></figure>
 
 6. После того, как вы сохранили ключ на старой MikoPBX, подождите несколько секунд и нажмите любую клавишу для продолжения выполнения скрипта.
 
@@ -78,4 +78,4 @@ chmod +x transfer-rsync.sh
 После переноса обязательно проверяйте целостность всех данных, перед тем, как сбрасывать старую MikoPBX!
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/successfulTransfer.png" alt=""><figcaption><p>Успешный перенос</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/successfulTransfer.png" alt=""><figcaption><p>Успешный перенос</p></figcaption></figure>
