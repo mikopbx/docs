@@ -2,7 +2,7 @@
 description: Вариант переноса данных с использованием rsync (предпочтительный)
 ---
 
-# Перенос с помощью rsync
+# Перенос с помощью rsync (isnt working now)
 
 В данной статье будет разобран вариант переноса данных на новый хост с помощью rsync. Данный вариант - перенос с использованием генерируемого ключа для ssh-авторизации (предпочтительный). Этот способ является самым надёжным из представленных в разделе, поэтому и является рекомендуемым к использованию.
 
@@ -35,7 +35,7 @@ touch transfer-rsync.sh
 5. Далее необходимо заполнить файл содержимым (скриптом). Ознакомиться с ним Вы можете[ по ссылке](https://gist.github.com/excla1mmm/c9891306b459cac0c7ea3c785ab0936e).
 
 ```php
-curl -o /storage/usbdisk1/transfer/transfer-rsync.sh https://gist.githubusercontent.com/excla1mmm/c9891306b459cac0c7ea3c785ab0936e/raw/41ada1e25e2c60b64d69f17120d3147da188cf27/transfer-rsync.sh
+curl -o /storage/usbdisk1/transfer/transfer-rsync.sh https://gist.githubusercontent.com/excla1mmm/c9891306b459cac0c7ea3c785ab0936e/raw/ec57ab60ee48112b4a16635e7b47955e5a044513/transfer-rsync.sh
 ```
 
 ## Запуск и работа со скриптом
