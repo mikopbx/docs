@@ -62,6 +62,7 @@
     * [Обновление Docker](manual/maintenance/update/obnovlenie-docker.md)
   * [Диагностика системы](manual/maintenance/system-diagnostic.md)
   * [Перезагрузка и выключение системы](manual/maintenance/restart.md)
+  * [Резервный интернет и перерегистрация провайдеров](manual/maintenance/rezervnyi-internet-i-pereregistraciya-provaiderov.md)
 * [Сеть и Firewall](manual/connectivity/README.md)
   * [Сетевые интерфейсы](manual/connectivity/network.md)
   * [Сетевой экран](manual/connectivity/firewall.md)
