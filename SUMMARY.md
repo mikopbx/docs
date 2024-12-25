@@ -82,6 +82,7 @@
   * [Change the login name](faq/management/change-the-login-name.md)
   * [The extra disk space has run out, the disk size has increased](faq/management/the-extra-disk-space-has-run-out-the-disk-size-has-increased.md)
   * [Storing Recordings in a Shared Windows Folder](faq/management/storing-records-in-a-windows-shared-folder.md)
+  * [Resetting WEB Interface Credentials](faq/management/password-reset.md)
 * [Troubleshooting](faq/troubleshooting/README.md)
   * [Connecting to the PBX using SSH](faq/troubleshooting/connecting-to-a-pbx-using-ssh/README.md)
     * [Connecting to PBX using SSH client (Putty)](faq/troubleshooting/connecting-to-a-pbx-using-ssh/connecting-to-a-pbx-using-an-ssh-client.md)
