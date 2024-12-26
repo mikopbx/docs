@@ -4,6 +4,12 @@ description: Установка MikoPBX с помощью Vscale
 
 # Vscale
 
+{% hint style="danger" %}
+Vscale переехал в Selectel
+
+Инструкция по установке MikoPBX в Selectel доступна по ссылке: [https://docs.mikopbx.com/mikopbx/setup/cloud/selectel](https://docs.mikopbx.com/mikopbx/setup/cloud/selectel)
+{% endhint %}
+
 ### Загрузка образа
 
 1. Скачайте актуальный образ системы с расширением **.raw** на [сайте](https://github.com/mikopbx/Core/releases)&#x20;
