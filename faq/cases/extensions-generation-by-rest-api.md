@@ -135,11 +135,13 @@ if __name__ == "__main__":
 Для запуска подобного скрипта, сохраним его в папке /tmp внутри MikoPBX. Т.к. скрипт имеет несколько зависимостей, добавим их через установщик пакетов pip3 и запустим скрипт для генерации.
 
 ```bash
-
+cd /tmp
+python -m venv venv --without-pip
+source venv/bin/activate
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+python get-pip.py
 pip3 install faker requests
-
 python CreateRandomExtensions.py
-
 ```
 
 В результате работы скрипта мы увидим вывод в консоль списка создаваемых сотрудников, а в веб интерфейсе появятся новые учетные записи.
