@@ -81,7 +81,7 @@ http://127.0.0.1:8081/pbxcore/api/extensions/getRecord?id=
 
 В результате был сгенерирован Python скрипт, который позволил выполнить этот тест.
 
-{% code fullWidth="true" %}
+{% code title="CreateRandomExtensions.py" fullWidth="true" %}
 ```python
 import requests
 import random
