@@ -43,3 +43,7 @@ MikoPBX поддерживает установку с помощью многи
 {% content-ref url="selectel.md" %}
 [selectel.md](selectel.md)
 {% endcontent-ref %}
+
+{% content-ref url="digitalocean.md" %}
+[digitalocean.md](digitalocean.md)
+{% endcontent-ref %}
