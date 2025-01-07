@@ -63,7 +63,7 @@ If the result of the saveRecord or getRecord request is false, also print the me
 
 As a result, a Python script was generated that allowed us to perform this test.
 
-{% code fullWidth="true" %}
+{% code title="CreateRandomExtensions.py" fullWidth="true" %}
 ```python
 import requests
 import random
@@ -113,6 +113,18 @@ if __name__ == "__main__":
 
 ```
 {% endcode %}
+
+Save file content in /tmp/CreateRandomExtensions.py and run in with the following approach.
+
+```bash
+cd /tmp
+python -m venv venv --without-pip
+source venv/bin/activate
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+python get-pip.py
+pip3 install faker requests
+python CreateRandomExtensions.py
+```
 
 As a result of the script's execution, you will see a list of created employees in the console, and new user accounts will appear in the web interface.
 
