@@ -4,6 +4,8 @@ description: Installing MikoPBX using Proxmox.
 
 # Proxmox
 
+{% embed url="https://youtu.be/2fwv8AGmwuc" %}
+
 ### **Loading the MikoPBX image**
 
 1. Open the local / **ISO images** tab and select **Download from URL**
