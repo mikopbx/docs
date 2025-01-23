@@ -6,6 +6,8 @@ description: Установка в Yandex cloud произвольного об�
 
 Для начала зарегистрируйтесь в сервисе [Yandex Cloud](https://console.cloud.yandex.ru/?referralCode=dn22bvnhhe64i62i71ua).
 
+{% embed url="https://rutube.ru/video/0fed3f457757028e1b87dc81bb3d8c27/" %}
+
 Приступим к настройке
 
 ### Создание виртуальной машины
@@ -101,7 +103,7 @@ description: Установка в Yandex cloud произвольного об�
 ### Настройка параметров SSH
 
 1. В разделе Доступ укажите Сервисный аккаунт
-2. Введите Логин и SSH-ключ, предварительно сгенерированный по [инструкции](https://yandex.cloud/ru/docs/compute/operations/vm-connect/ssh?utm\_source=console\&utm\_medium=side-bar-left\&utm\_campaign=compute)
+2. Введите Логин и SSH-ключ, предварительно сгенерированный по [инструкции](https://yandex.cloud/ru/docs/compute/operations/vm-connect/ssh?utm_source=console\&utm_medium=side-bar-left\&utm_campaign=compute)
 3. В разделе Дополнительные настройки установите флажок **Разрешить доступ к серийной консоли**
 
 <figure><img src="../../../.gitbook/assets/MikoPBXYandexInstallation_12.png" alt=""><figcaption></figcaption></figure>
